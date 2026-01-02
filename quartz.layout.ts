@@ -40,7 +40,39 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer({
+      folderDefaultState: "open",
+      useSavedState: false,
+      sortFn: (a, b) => {
+        // Custom folder order: projects, genuary, then alphabetical
+        const folderOrder = ["projects", "genuary"]
+
+        if (a.isFolder && b.isFolder) {
+          const aIndex = folderOrder.indexOf(a.slugSegment.toLowerCase())
+          const bIndex = folderOrder.indexOf(b.slugSegment.toLowerCase())
+
+          if (aIndex !== -1 && bIndex !== -1) {
+            return aIndex - bIndex
+          }
+          if (aIndex !== -1) return -1
+          if (bIndex !== -1) return 1
+        }
+
+        // Default sorting: folders first, then alphabetical
+        if ((!a.isFolder && !b.isFolder) || (a.isFolder && b.isFolder)) {
+          return a.displayName.localeCompare(b.displayName, undefined, {
+            numeric: true,
+            sensitivity: "base",
+          })
+        }
+
+        if (!a.isFolder && b.isFolder) {
+          return 1
+        } else {
+          return -1
+        }
+      },
+    }),
   ],
   right: [
     Component.Graph(),
@@ -64,7 +96,39 @@ export const defaultListPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer({
+      folderDefaultState: "open",
+      useSavedState: false,
+      sortFn: (a, b) => {
+        // Custom folder order: projects, genuary, then alphabetical
+        const folderOrder = ["projects", "genuary"]
+
+        if (a.isFolder && b.isFolder) {
+          const aIndex = folderOrder.indexOf(a.slugSegment.toLowerCase())
+          const bIndex = folderOrder.indexOf(b.slugSegment.toLowerCase())
+
+          if (aIndex !== -1 && bIndex !== -1) {
+            return aIndex - bIndex
+          }
+          if (aIndex !== -1) return -1
+          if (bIndex !== -1) return 1
+        }
+
+        // Default sorting: folders first, then alphabetical
+        if ((!a.isFolder && !b.isFolder) || (a.isFolder && b.isFolder)) {
+          return a.displayName.localeCompare(b.displayName, undefined, {
+            numeric: true,
+            sensitivity: "base",
+          })
+        }
+
+        if (!a.isFolder && b.isFolder) {
+          return 1
+        } else {
+          return -1
+        }
+      },
+    }),
   ],
   right: [],
 }

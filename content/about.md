@@ -52,5 +52,5 @@ Thank you for taking the time to read! If you want to collaborate on something o
 - [LinkedIn](https://www.linkedin.com/in/peter-ariet/)
 - [Twitter](https://twitter.com/peterariet)
 - [Instagram](https://www.instagram.com/peterariet/)
-- [Download Résumé](/static/Ariet_Peter_Producer_Resume_2024.pdf)
+- [Download Résumé](/static/Ariet_Peter_Senior_Producer_Resume_2025.pdf)
 
