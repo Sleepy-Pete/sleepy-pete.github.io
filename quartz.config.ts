@@ -17,7 +17,7 @@ const config: QuartzConfig = {
     },
     locale: "en-US",
     baseUrl: "peterariet.com",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    ignorePatterns: ["private", "templates", ".obsidian", "README - Using Obsidian.md"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
