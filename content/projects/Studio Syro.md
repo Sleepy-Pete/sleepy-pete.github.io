@@ -18,6 +18,8 @@ Studio Syro is a pioneering VR animation studio that creates immersive storytell
 
 Our flagship project, "Tales From Soda Island," is a VR animated series created for Oculus Quest headsets using the VR painting tool Quill. The series showcases innovative storytelling techniques and demonstrates the potential of VR as a primary production tool.
 
+**[[projects/Tales From Soda Island|Read more about Tales From Soda Island →]]**
+
 ### Recognition
 
 - **80th Venice International Film Festival** - Immersive Media for "Tales From Soda Island: The First Ingredient"

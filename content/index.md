@@ -10,7 +10,9 @@ My name is Peter Ariet, and I'm one of the passionate and creative forces behind
 
 ## Featured Work
 
-- [[projects/Studio Syro|Studio Syro]] - VR Animation Studio & "Tales From Soda Island"
+- [[projects/Studio Syro|Studio Syro]] - VR Animation Studio
+- [[projects/Tales From Soda Island|Tales From Soda Island]] - VR Animated Series
+- [[projects/Audio Behind the Scenes|Audio Behind the Scenes]] - BTS Video
 
 ## About
 
