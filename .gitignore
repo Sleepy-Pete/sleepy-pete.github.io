@@ -4,8 +4,16 @@ node_modules
 public
 prof
 tsconfig.tsbuildinfo
-.obsidian
 .quartz-cache
 private/
 .replit
 replit.nix
+
+# Obsidian - ignore root .obsidian but track content/.obsidian config
+/.obsidian
+
+# Obsidian workspace (user-specific, don't track)
+content/.obsidian/workspace.json
+content/.obsidian/workspace-mobile.json
+content/.obsidian/plugins/
+content/.obsidian/community-plugins.json
