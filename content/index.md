@@ -4,15 +4,84 @@ title: Peter Ariet | Creative Producer
 
 # Peter Ariet
 
+
+
 **Creative Producer** based in San Diego
 
 My name is Peter Ariet, and I'm one of the passionate and creative forces behind Studio Syro, a pioneering VR animation studio. My journey in this dynamic field has been driven by a blend of technical expertise and artistic vision, and has led to the creation of immersive and captivating VR experiences.
 
 ## Featured Work
 
-- [[projects/Studio Syro|Studio Syro]] - VR Animation Studio
-- [[projects/Tales From Soda Island|Tales From Soda Island]] - VR Animated Series
-- [[projects/Audio Behind the Scenes|Audio Behind the Scenes]] - BTS Video
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin: 2rem 0;">
+
+<div style="border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.2s;">
+  <a href="Productions/Studio%20Syro" style="text-decoration: none; color: inherit;">
+    <img src="/static/images/branding/social-logo-large.png" alt="Studio Syro" style="width: 100%; height: 200px; object-fit: contain; background-color: #000;">
+    <div style="padding: 1.5rem;">
+      <h3 style="margin: 0 0 0.5rem 0;">Studio Syro</h3>
+      <p style="margin: 0; color: var(--gray);">VR Animation Studio</p>
+    </div>
+  </a>
+</div>
+
+<div style="border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.2s;">
+  <a href="Productions/Studio%20Syro/Animated%20Experiences/Tales%20From%20Soda%20Island" style="text-decoration: none; color: inherit;">
+    <img src="/static/images/work/bakery.jpg" alt="Tales From Soda Island" style="width: 100%; height: 200px; object-fit: cover;">
+    <div style="padding: 1.5rem;">
+      <h3 style="margin: 0 0 0.5rem 0;">Tales From Soda Island</h3>
+      <p style="margin: 0; color: var(--gray);">VR Animated Series</p>
+    </div>
+  </a>
+</div>
+
+<div style="border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.2s;">
+  <a href="Productions/Studio%20Syro/Interactive%20Experiences/PondQuest" style="text-decoration: none; color: inherit;">
+    <img src="/static/images/work/PondQuest_Thumbnail.png" alt="PondQuest" style="width: 100%; height: 200px; object-fit: cover;">
+    <div style="padding: 1.5rem;">
+      <h3 style="margin: 0 0 0.5rem 0;">PondQuest</h3>
+      <p style="margin: 0; color: var(--gray);">Mixed Reality Platformer</p>
+    </div>
+  </a>
+</div>
+
+<div style="border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.2s;">
+  <a href="Productions/Studio%20Syro/Animated%20Experiences/The%20Art%20of%20Change" style="text-decoration: none; color: inherit;">
+    <img src="/static/images/artofchange/promoposter.png" alt="The Art of Change" style="width: 100%; height: 200px; object-fit: cover;">
+    <div style="padding: 1.5rem;">
+      <h3 style="margin: 0 0 0.5rem 0;">The Art of Change</h3>
+      <p style="margin: 0; color: var(--gray);">VR Music Experience</p>
+    </div>
+  </a>
+</div>
+
+<div style="border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.2s;">
+  <a href="Productions/Studio%20Syro/Interactive%20Experiences/Dear%20Metaverse" style="text-decoration: none; color: inherit;">
+    <img src="/static/images/work/DearMetaverse_Thumbnail_Landscape.png" alt="Dear Metaverse" style="width: 100%; height: 200px; object-fit: cover;">
+    <div style="padding: 1.5rem;">
+      <h3 style="margin: 0 0 0.5rem 0;">Dear Metaverse</h3>
+      <p style="margin: 0; color: var(--gray);">VR/AR Messaging App</p>
+    </div>
+  </a>
+</div>
+
+<div style="border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.2s;">
+  <a href="Productions/Wevr" style="text-decoration: none; color: inherit;">
+    <img src="/static/images/wevr/slide_image_2.png" alt="Terracotta Warriors" style="width: 100%; height: 200px; object-fit: cover;">
+    <div style="padding: 1.5rem;">
+      <h3 style="margin: 0 0 0.5rem 0;">Terracotta Warriors</h3>
+      <p style="margin: 0; color: var(--gray);">Location-Based VR Experience</p>
+    </div>
+  </a>
+</div>
+
+</div>
+
+## Publications & Research
+
+- **[Creating a Universe from Scratch: Studio Syro's Handcrafted VR Pipeline](publications/Creating%20a%20Universe%20from%20Scratch)** (with Nick Ladd)
+  *SIGGRAPH Spatial Storytelling '25*, Vancouver, BC, Canada, August 2025
+
+[[publications/index|View all publications →]]
 
 ## About
 
