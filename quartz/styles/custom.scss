@@ -1,3 +1,17 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+
+// Fix for grey line on thumbnails in card containers
+div[style*="border-radius: 8px"] {
+  img {
+    margin: 0 !important;
+    display: block;
+    vertical-align: bottom;
+  }
+
+  a {
+    display: block;
+    line-height: 0;
+  }
+}

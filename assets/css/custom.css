@@ -91,4 +91,13 @@
   .fade-out {
     animation: flip 0.5s forwards;
   }
-  
+
+  /* Fix for grey line on card thumbnails */
+  .card-img::before {
+    background: transparent !important;
+    border: none !important;
+  }
+
+  .card-img {
+    line-height: 0;
+  }
