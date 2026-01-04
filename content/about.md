@@ -36,10 +36,55 @@ Thank you for taking the time to read! If you want to collaborate on something o
 
 ## Experience
 
-- **Studio Syro:** Co-Founder & Producer (2020 - Present)
-- **Kwest:** Technical Artist & Producer (2019)
-- **e-TechServices:** Technical Sales Engineer (2018)
-- **Perilous Orbit:** Technical Artist Intern (2017)
+### Studio Syro - Producer (Jan 2020 - Present)
+
+**VR Producer**
+- "The Art of Change" [81st Venice International Film Festival] - Directed by Simone Fougnier (Funilab) and Vincent Rooijers (Droeloe)
+- "Tales From Soda Island" - Sponsored and Published by Meta
+  - Ch 1 - The Multiverse Bakery
+  - Ch 2 - The Neon Jungle [VR Theater SIGGRAPH '21]
+  - Ch 3 - The Quantum Race
+  - Ch 4 - The Golden Record
+  - Ch 5 - The School Trip
+  - Ch 6 - Silence
+  - Ch 7 - The First Ingredient [Best of, 80th Venice International Film Festival]
+- "Reimagined Vol. I: Nyssa" [79th Venice International Film Festival] - Directed by Julie Cavaliere
+
+**Producer // Technical Artist // Animation**
+- Flipside: Vertical Slice (Unreleased)
+- Level99: Commercial Work
+- Area23: Commercial Work (Unreleased)
+- Bad Bunny: Concert Visuals
+- Dreaming of You / Far Away - Slushii: Music Video
+- Mr. Bill: Concert Visuals, Album Visuals
+
+**Technical Producer // Technical Artist // Development**
+- Paradiddle VR: Environments for Quest Release (Unreal Engine & Quill)
+- Google Cloud Source Control & Perforce: All Studio Projects
+- Dawson College Virtual Vernissage: Web Metaverse Platform (Unity3D & Quill)
+- Shader Development: Unity3D Quill Shaders
+- Spatial Audio for VR Animated Shorts
+
+### Kwest - Producer & Technical Artist (Apr 2019 - Dec 2019)
+
+Led the creative and technical development of the platform's features for release. Worked with a multidisciplinary team of engineers, artists, technical artists, and designers to deliver compelling narratives in Augmented Reality that could be played anywhere in the world.
+
+**Technical Artist (Dec 2018 - Apr 2019)**
+- Asset Implementation: 3D models, animations, UI/UX designs
+- Visual FX Creation: Particle systems, materials, and shaders
+- Optimization: Projects and builds for maximum performance
+
+### e-TechServices - Technical Sales Engineer (Mar 2018 - Dec 2018)
+
+Provided customized server solutions to customers, drawing on extensive knowledge of server hardware and software. Collaborated with sales teams to understand customer needs and develop detailed server configurations. Responsibilities included sales support, customer collaboration, technical research, server configuration, and post-sales technical support.
+
+### Perilous Orbit, Inc. - Technical Artist Intern (Sep 2017 - Feb 2018)
+
+Gained hands-on experience with Unreal Engine 4, shader networks, visual scripting, and C++. Worked with Virtual Reality to understand the challenges of creating intuitive tools for novice players. Conducted research on Technical Art best practices and contributed to high-quality projects in both traditional and VR formats.
+
+### UF Digital Worlds Institute - AV Technician & Student Assistant (Aug 2016 - Jun 2017)
+
+Operated classrooms, prepared equipment before lectures, and managed AV systems throughout the building. Responsibilities included setting up projectors and computers, live-streaming for online students, recording and editing lectures, and providing technical support to students and faculty.
 
 ## Awards & Recognition
 
