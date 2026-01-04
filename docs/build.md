@@ -25,3 +25,19 @@ This will start a local web server to run your Quartz on your computer. Open a w
 > [!warning] Not to be used for production
 > Serve mode is intended for local previews only.
 > For production workloads, see the page on [[hosting]].
+
+## Validating Links
+
+Before building for production, it's recommended to validate all wikilinks in your content:
+
+```bash
+./scripts/validate-site.sh
+```
+
+This script will:
+1. Check all markdown files for broken wikilinks
+2. Automatically fix common issues (URL encoding, missing paths, etc.)
+3. Build the Quartz site
+4. Generate detailed logs in the `logs/` directory
+
+For more information, see [[LINK-VALIDATION|Link Validation & Wikilink Checking]].

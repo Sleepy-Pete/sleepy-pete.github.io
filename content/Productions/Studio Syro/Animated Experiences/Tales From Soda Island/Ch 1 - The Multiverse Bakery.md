@@ -56,5 +56,5 @@ Explore the creation and evolution of the Multiverse Bakery environment and char
 
 ---
 
-[[Tales From Soda Island|← Back to Tales From Soda Island]] | [[Studio Syro|← Studio Syro]] | [[index|← Home]]
+[[Productions/Studio Syro/Animated Experiences/Tales From Soda Island|← Back to Tales From Soda Island]] | [[Productions/Studio Syro|← Studio Syro]] | [[index|← Home]]
 

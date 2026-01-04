@@ -127,5 +127,5 @@ As hardware becomes more capable and accessible, Mixed Reality is poised to tran
 
 ---
 
-[[Productions/Studio%20Syro|← Back to Studio Syro]] | [[index|← Home]]
+[[Productions/Studio Syro|← Back to Studio Syro]] | [[index|← Home]]
 

@@ -32,7 +32,7 @@ Wevr specializes in creating location-based virtual reality (LBEVR) experiences 
 - **Cultural Heritage**: Partnering with museums and cultural institutions to preserve and share history
 - **Technical Innovation**: Developing frameworks for synchronized, shared VR adventures
 
-**[[Productions/Wevr/Location-Based%20Experiences|Learn more about Location-Based Experiences →]]**
+**[[Productions/Wevr/Location-Based Experiences|Learn more about Location-Based Experiences →]]**
 
 ## My Role at Wevr
 
@@ -47,7 +47,7 @@ As a **Producer** at Wevr, I coordinated international production teams across m
 
 ## Projects
 
-### [[Location-Based Experiences/Terracotta Warriors|Terracotta Warriors: Secrets of the First Emperor's Mausoleum]]
+### [[Productions/Wevr/Location-Based Experiences/Terracotta Warriors|Terracotta Warriors: Secrets of the First Emperor's Mausoleum]]
 
 A groundbreaking 40-minute location-based VR experience that transports visitors inside Emperor Qin Shi Huang's mausoleum. As Line Producer, I coordinated production teams across six cities to deliver this historically accurate, large-scale immersive experience.
 

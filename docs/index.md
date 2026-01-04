@@ -39,6 +39,19 @@ If you prefer instructions in a video format you can try following Nicole van de
 
 For a comprehensive list of features, visit the [features page](./features/). You can read more about the _why_ behind these features on the [[philosophy]] page and a technical overview on the [[architecture]] page.
 
+## 🔗 Link Validation
+
+Your site includes an automated link validation system that checks and fixes broken wikilinks:
+
+- **[[SETUP-GUIDE|Setup Guide]]** - Overview and quick start
+- **[[LINK-VALIDATION|Link Validation Guide]]** - Comprehensive documentation
+- **[[QUICK-REFERENCE|Quick Reference]]** - Common commands
+
+**Quick Start:**
+```bash
+./scripts/validate-site.sh
+```
+
 ### 🚧 Troubleshooting + Updating
 
 Having trouble with Quartz? Try searching for your issue using the search feature. If you haven't already, [[upgrading|upgrade]] to the newest version of Quartz to see if this fixes your issue.

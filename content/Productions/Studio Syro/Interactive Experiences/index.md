@@ -11,7 +11,7 @@ tags:
 
 Studio Syro's interactive projects push the boundaries of mixed reality and hand-tracking technology, creating playful and innovative ways to interact in virtual spaces.
 
-**[[Productions/Studio%20Syro/Mixed%20Reality|Learn more about Mixed Reality →]]**
+**[[Productions/Studio Syro/Mixed Reality|Learn more about Mixed Reality →]]**
 
 ## Projects
 
@@ -19,7 +19,7 @@ Studio Syro's interactive projects push the boundaries of mixed reality and hand
 
 ![PondQuest](/static/images/work/PondQuest_Thumbnail.png)
 
-**[[PondQuest|Explore PondQuest →]]**
+**[[Productions/Studio Syro/Interactive Experiences/PondQuest|Explore PondQuest →]]**
 
 Mixed reality platformer featuring innovative hand tracking gameplay. Take control of a frog as you leap, swim, and swing through nature-filled levels.
 
@@ -27,7 +27,7 @@ Mixed reality platformer featuring innovative hand tracking gameplay. Take contr
 
 ![Dear Metaverse](/static/images/work/DearMetaverse_Thumbnail_Landscape.png)
 
-**[[Dear Metaverse|Explore Dear Metaverse →]]**
+**[[Productions/Studio Syro/Interactive Experiences/Dear Metaverse|Explore Dear Metaverse →]]**
 
 Hand-tracking VR/AR messaging app that reimagines communication in spatial computing environments.
 

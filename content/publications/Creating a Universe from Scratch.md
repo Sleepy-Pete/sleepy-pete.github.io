@@ -79,12 +79,12 @@ The Spatial Storytelling track at SIGGRAPH 2025 brought together creators, resea
 
 ## Related Projects
 
-- [Tales from Soda Island](../projects/Tales%20From%20Soda%20Island) - First VR-animated series
-- [Reimagined Volume I: Nyssa](../projects/Reimagined%20Volume%20I%20-%20Nyssa) - VR short film
-- [The Art of Change](../projects/The%20Art%20of%20Change) - Music experience
-- [PondQuest](../projects/PondQuest) - Interactive VR
-- [Dear Metaverse](../projects/Dear%20Metaverse) - Interactive narrative
-- [Studio Syro](../projects/Studio%20Syro) - Main studio page
+- [Tales from Soda Island](../Productions/Studio%20Syro/Animated%20Experiences/Tales%20From%20Soda%20Island) - First VR-animated series
+- [Reimagined Volume I: Nyssa](../Productions/Studio%20Syro/Animated%20Experiences/Reimagined%20Volume%20I%20-%20Nyssa) - VR short film
+- [The Art of Change](../Productions/Studio%20Syro/Animated%20Experiences/The%20Art%20of%20Change) - Music experience
+- [PondQuest](../Productions/Studio%20Syro/Interactive%20Experiences/PondQuest) - Interactive VR
+- [Dear Metaverse](../Productions/Studio%20Syro/Interactive%20Experiences/Dear%20Metaverse) - Interactive narrative
+- [Studio Syro](../Productions/Studio%20Syro) - Main studio page
 
 ## Citation
 

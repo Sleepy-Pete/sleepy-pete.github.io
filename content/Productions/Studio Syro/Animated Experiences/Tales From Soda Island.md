@@ -29,7 +29,7 @@ Explore each chapter of the Tales from Soda Island series:
 
 <img src="../../../../static/images/tfsi/episodes/1_TheMultiverseBakery_notimecode.png" alt="The Multiverse Bakery" />
 
-**[[Tales From Soda Island/Ch 1 - The Multiverse Bakery|Watch Chapter 1 →]]**
+**[[Productions/Studio Syro/Animated Experiences/Tales From Soda Island/Ch 1 - The Multiverse Bakery|Watch Chapter 1 →]]**
 
 Begin your journey to Soda Island! Witness a strange ritual with shifting rooms, magical mayhem and cosmic delights.
 
@@ -37,7 +37,7 @@ Begin your journey to Soda Island! Witness a strange ritual with shifting rooms,
 
 <img src="../../../../static/images/tfsi/episodes/2_TheNeonJungle_notimecode.png" alt="The Neon Jungle" />
 
-**[[Tales From Soda Island/Ch 2 - The Neon Jungle|Watch Chapter 2 →]]**
+**[[Productions/Studio Syro/Animated Experiences/Tales From Soda Island/Ch 2 - The Neon Jungle|Watch Chapter 2 →]]**
 
 Embark on an adventure through the Neon Jungle as you follow a Tadpolotl on its quest to deliver a package.
 
@@ -45,7 +45,7 @@ Embark on an adventure through the Neon Jungle as you follow a Tadpolotl on its 
 
 <img src="../../../../static/images/tfsi/episodes/3_TheQuantumRace_notimecode.png" alt="The Quantum Race" />
 
-**[[Tales From Soda Island/Ch 3 - The Quantum Race|Watch Chapter 3 →]]**
+**[[Productions/Studio Syro/Animated Experiences/Tales From Soda Island/Ch 3 - The Quantum Race|Watch Chapter 3 →]]**
 
 Experience high-octave speed and molecular deconstruction as racers compete across a subatomic racetrack.
 
@@ -53,7 +53,7 @@ Experience high-octave speed and molecular deconstruction as racers compete acro
 
 <img src="../../../../static/images/tfsi/episodes/4_TheGoldenRecord_notimecode.png" alt="The Golden Record" />
 
-**[[Tales From Soda Island/Ch 4 - The Golden Record|Watch Chapter 4 →]]**
+**[[Productions/Studio Syro/Animated Experiences/Tales From Soda Island/Ch 4 - The Golden Record|Watch Chapter 4 →]]**
 
 Follow TT, a lone worker in the Ant Megacolony, after discovering an alien artifact that has fallen from the stars.
 
@@ -61,7 +61,7 @@ Follow TT, a lone worker in the Ant Megacolony, after discovering an alien artif
 
 <img src="../../../../static/images/tfsi/episodes/5_TheSchoolTrip_notimecode.png" alt="The School Trip" />
 
-**[[Tales From Soda Island/Ch 5 - The School Trip|Watch Chapter 5 →]]**
+**[[Productions/Studio Syro/Animated Experiences/Tales From Soda Island/Ch 5 - The School Trip|Watch Chapter 5 →]]**
 
 Follow a single drop of glucose rain on a transformative journey as the ecosystem processes it into a delicious carbonated beverage.
 
@@ -69,7 +69,7 @@ Follow a single drop of glucose rain on a transformative journey as the ecosyste
 
 <img src="../../../../static/images/tfsi/episodes/6_Silence_notimecode.png" alt="Silence" />
 
-**[[Tales From Soda Island/Ch 6 - Silence|Watch Chapter 6 →]]**
+**[[Productions/Studio Syro/Animated Experiences/Tales From Soda Island/Ch 6 - Silence|Watch Chapter 6 →]]**
 
 When a mystical coastal ritual is interrupted by an unwelcome visitor, events are set in motion that leave the island in total dissonance.
 
@@ -77,7 +77,7 @@ When a mystical coastal ritual is interrupted by an unwelcome visitor, events ar
 
 <img src="../../../../static/images/tfsi/episodes/7_TheFirstIngredient_notimecode.png" alt="The First Ingredient" />
 
-**[[Tales From Soda Island/Ch 7 - The First Ingredient|Watch Chapter 7 →]]**
+**[[Productions/Studio Syro/Animated Experiences/Tales From Soda Island/Ch 7 - The First Ingredient|Watch Chapter 7 →]]**
 
 Follow a group of rogue sodians on a mission into the unknown to restore balance and bring harmony back to the ecosystem.
 

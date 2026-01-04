@@ -17,7 +17,7 @@ Studio Syro's VR animated projects are hand-painted entirely in Quill, creating 
 
 ![The Art of Change](/static/images/artofchange/promoposter.png)
 
-**[[The Art of Change|Explore The Art of Change →]]**
+**[[Productions/Studio Syro/Animated Experiences/The Art of Change|Explore The Art of Change →]]**
 
 VR animated music experience created in collaboration with DROELOE, bringing music to life through immersive spatial storytelling and hand-painted VR animation.
 
@@ -25,7 +25,7 @@ VR animated music experience created in collaboration with DROELOE, bringing mus
 
 ![Tales From Soda Island](/static/images/work/bakery.jpg)
 
-**[[Tales From Soda Island|Explore Tales From Soda Island →]]**
+**[[Productions/Studio Syro/Animated Experiences/Tales From Soda Island|Explore Tales From Soda Island →]]**
 
 Our flagship VR animated series created for Meta Quest. A collection of standalone episodes set in the whimsical world of Soda Island, each exploring different themes and characters. Features 7 unique episodes.
 
@@ -33,7 +33,7 @@ Our flagship VR animated series created for Meta Quest. A collection of standalo
 
 ![Nyssa](/static/images/nyssa/nyssa-hero.jpg)
 
-**[[Reimagined Volume I - Nyssa|Explore Nyssa →]]**
+**[[Productions/Studio Syro/Animated Experiences/Reimagined Volume I - Nyssa|Explore Nyssa →]]**
 
 A 15-minute VR animated short film reimagining the Brothers Grimm folktale. Premiered at the 79th Venice International Film Festival and debuted on Meta Quest TV.
 

@@ -18,7 +18,7 @@ date: 2024-12-31
 
 <img src="../../../static/images/wevr/slide_image_2.png" alt="Terracotta Warriors" />
 
-**[[Location-Based Experiences/Terracotta Warriors|Explore Terracotta Warriors →]]**
+**[[Productions/Wevr/Location-Based Experiences/Terracotta Warriors|Explore Terracotta Warriors →]]**
 
 A groundbreaking 40-minute location-based VR experience that transports visitors inside Emperor Qin Shi Huang's mausoleum. As Line Producer, I coordinated production teams across six cities to deliver this historically accurate, large-scale immersive experience.
 
@@ -83,7 +83,7 @@ Museum and heritage site experiences:
 
 ## My Work in Location-Based Experiences
 
-### [[Location-Based Experiences/Terracotta Warriors|Terracotta Warriors: Secrets of the First Emperor's Mausoleum]]
+### [[Productions/Wevr/Location-Based Experiences/Terracotta Warriors|Terracotta Warriors: Secrets of the First Emperor's Mausoleum]]
 As **Line Producer** on this groundbreaking LBE project, I coordinated the creation of a 40-minute immersive journey through Emperor Qin Shi Huang's mausoleum.
 
 **Scale & Scope:**

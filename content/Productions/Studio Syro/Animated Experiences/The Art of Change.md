@@ -64,5 +64,5 @@ Featured as a showcase of innovative VR storytelling and the creative potential 
 
 ---
 
-[← Back to Studio Syro](Studio%20Syro) | [← Back to Home](/)
+[[Productions/Studio Syro|← Back to Studio Syro]] | [[index|← Back to Home]]
 

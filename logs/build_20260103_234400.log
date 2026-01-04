@@ -1,0 +1,13 @@
+
+ Quartz v4.5.2  
+
+Cleaned output directory `public` in 64ms
+Found 26 input files from `content` in 9ms
+Parsing input files using 1 threads
+
+Warning: content/Productions/Studio Syro/index.md isn't yet tracked by git, dates will be inaccurate
+Parsed 26 Markdown files in 249ms
+Filtered out 0 files in 51μs
+Emitting files
+Emitted 404 files to `public` in 2s
+Done processing 26 files in 2s

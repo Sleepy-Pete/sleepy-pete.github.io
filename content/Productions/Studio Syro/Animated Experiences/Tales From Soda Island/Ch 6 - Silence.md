@@ -56,5 +56,5 @@ Experience this episode in VR on Meta Quest:
 
 ---
 
-[[Tales From Soda Island|← Back to Tales From Soda Island]] | [[Studio Syro|← Studio Syro]] | [[index|← Home]]
+[[Productions/Studio Syro/Animated Experiences/Tales From Soda Island|← Back to Tales From Soda Island]] | [[Productions/Studio Syro|← Studio Syro]] | [[index|← Home]]
 

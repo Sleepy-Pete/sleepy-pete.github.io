@@ -1,0 +1,206 @@
+
+ Quartz v4.5.2  
+
+Cleaned output directory `public` in 54ms
+Found 26 input files from `content` in 8ms
+Parsing input files using 1 threads
+
+Warning: content/Productions/Studio Syro/index.md isn't yet tracked by git, dates will be inaccurate
+Parsed 26 Markdown files in 243ms
+Filtered out 0 files in 39μs
+Emitting files
+Emitted 404 files to `public` in 2s
+Done processing 26 files in 2s
+Started a Quartz server listening at http://localhost:8080
+hint: exit with ctrl+c
+[200] /
+[200] /about
+[200] /static/icon.png
+[200] /index.css
+[200] /Productions/Studio-Syro/
+[200] /tags/Technology
+[200] /tags/XR
+[200] /tags/VR
+[200] /tags/Animation
+[200] /tags/TechnicalArt
+[200] /tags/StudioSyro
+[200] /tags/MR
+[200] /Productions/Studio-Syro/Technical-Art-Reel-2024
+[200] /Productions/
+[200] /Productions/Studio-Syro/Animated-Experiences/The-Art-of-Change
+[200] /Productions/Studio-Syro/Interactive-Experiences/
+[200] /Productions/Studio-Syro/Mixed-Reality
+[200] /tags/MixedReality
+[200] /Productions/Studio-Syro/Animated-Experiences/Reimagined-Volume-I---Nyssa
+[200] /
+[200] /Productions/Studio-Syro/Animated-Experiences/
+[200] /tags/Tools
+[200] /tags/Reel
+[200] /Productions/Studio-Syro/Animated-Experiences/Tales-From-Soda-Island
+[200] /tags/Interactive
+[200] /Productions/Studio-Syro/Interactive-Experiences/Dear-Metaverse
+[200] /tags/Quill
+[200] /tags/Portfolio
+[200] /tags/Meta
+[200] /Productions/Studio-Syro/Interactive-Experiences/PondQuest
+[200] /Productions/Studio-Syro/Quill
+[200] /static/Ariet_Peter_Senior_Producer_Resume_2025.pdf
+[302] /Productions/Wevr -> /Productions/Wevr/
+[200] /Productions/Wevr/
+[200] /tags/LBE
+[200] /tags/ImmersiveExperiences
+[200] /tags/Producer
+[200] /Productions/Wevr/
+[200] /tags/Production
+[200] /tags/UnrealEngine
+[200] /tags/CulturalHeritage
+[200] /Productions/Wevr/Location-Based-Experiences
+[200] /Productions/Wevr/Location-Based-Experiences/Terracotta-Warriors
+[200] /tags/Wevr
+[200] /tags/Entertainment
+[200] /Productions/Studio-Syro/Animated-Experiences/Tales-From-Soda-Island/Ch-3---The-Quantum-Race
+[302] /Productions/Studio-Syro -> /Productions/Studio-Syro/
+[200] /Productions/Studio-Syro/
+[200] /tags/Episode3
+[200] /tags/AnimatedExperience
+[200] /tags/TFSI
+[200] /Productions/Studio-Syro/Animated-Experiences/Tales-From-Soda-Island/
+[200] /tags/Episode6
+[200] /Productions/Studio-Syro/Animated-Experiences/Tales-From-Soda-Island/Ch-2---The-Neon-Jungle
+[200] /Productions/Studio-Syro/Animated-Experiences/Tales-From-Soda-Island/Ch-4---The-Golden-Record
+[200] /Productions/Studio-Syro/Animated-Experiences/Tales-From-Soda-Island/Ch-6---Silence
+[200] /tags/Episode5
+[200] /tags/VeniceFilmFestival
+[200] /Productions/Studio-Syro/Animated-Experiences/Tales-From-Soda-Island/Ch-7---The-First-Ingredient
+[200] /tags/Episode2
+[200] /tags/Episode1
+[200] /tags/Episode7
+[200] /tags/Episode4
+[200] /Productions/Studio-Syro/Animated-Experiences/Tales-From-Soda-Island/Ch-5---The-School-Trip
+[200] /Productions/Studio-Syro/Animated-Experiences/Tales-From-Soda-Island/Ch-1---The-Multiverse-Bakery
+[200] /publications/Creating-a-Universe-from-Scratch
+[200] /tags/SIGGRAPH
+[200] /tags/Publications
+[200] /publications/
+[200] /tags/Pipeline
+[200] /tags/Research
+[200] /tags/Publication
+[200] /tags/Studio-Syro
+[200] /tags/Academic
+-Nyssa
+[2026-01-03T23:38:36.106442]   ✓ 200 OK
+[2026-01-03T23:38:36.106964] Testing: http://localhost:8080/
+[2026-01-03T23:38:36.114738]   ✓ 200 OK
+[2026-01-03T23:38:36.115457] Testing: http://localhost:8080/Productions/Studio-Syro/Animated-Experiences/
+[2026-01-03T23:38:36.121107]   ✓ 200 OK
+[2026-01-03T23:38:36.121709] Testing: http://localhost:8080/tags/Tools
+[2026-01-03T23:38:36.124392]   ✓ 200 OK
+[2026-01-03T23:38:36.124735] Testing: http://localhost:8080/tags/Reel
+[2026-01-03T23:38:36.128293]   ✓ 200 OK
+[2026-01-03T23:38:36.128528] Testing: http://localhost:8080/Productions/Studio-Syro/Animated-Experiences/Tales-From-Soda-Island
+[2026-01-03T23:38:36.130806]   ✓ 200 OK
+[2026-01-03T23:38:36.131958] Testing: http://localhost:8080/tags/Interactive
+[2026-01-03T23:38:36.134751]   ✓ 200 OK
+[2026-01-03T23:38:36.134946] Testing: http://localhost:8080/Productions/Studio-Syro/Interactive-Experiences/Dear-Metaverse
+[2026-01-03T23:38:36.137013]   ✓ 200 OK
+[2026-01-03T23:38:36.137475] Testing: http://localhost:8080/tags/Quill
+[2026-01-03T23:38:36.139408]   ✓ 200 OK
+[2026-01-03T23:38:36.140713] Testing: http://localhost:8080/tags/Portfolio
+[2026-01-03T23:38:36.142734]   ✓ 200 OK
+[2026-01-03T23:38:36.142954] Testing: http://localhost:8080/tags/Meta
+[2026-01-03T23:38:36.145192]   ✓ 200 OK
+[2026-01-03T23:38:36.145554] Testing: http://localhost:8080/Productions/Studio-Syro/Interactive-Experiences/PondQuest
+[2026-01-03T23:38:36.147580]   ✓ 200 OK
+[2026-01-03T23:38:36.147984] Testing: http://localhost:8080/Productions/Studio-Syro/Quill
+[2026-01-03T23:38:36.150774]   ✓ 200 OK
+[2026-01-03T23:38:36.151088] Testing: http://localhost:8080/static/Ariet_Peter_Senior_Producer_Resume_2025.pdf
+[2026-01-03T23:38:36.154703]   ✓ 200 OK
+[2026-01-03T23:38:36.172073] Testing: http://localhost:8080/Productions/Wevr
+[2026-01-03T23:38:36.181357]   ✓ 200 OK
+[2026-01-03T23:38:36.181665] Testing: http://localhost:8080/tags/LBE
+[2026-01-03T23:38:36.183900]   ✓ 200 OK
+[2026-01-03T23:38:36.184233] Testing: http://localhost:8080/tags/ImmersiveExperiences
+[2026-01-03T23:38:36.186673]   ✓ 200 OK
+[2026-01-03T23:38:36.186897] Testing: http://localhost:8080/tags/Producer
+[2026-01-03T23:38:36.189475]   ✓ 200 OK
+[2026-01-03T23:38:36.189776] Testing: http://localhost:8080/Productions/Wevr/
+[2026-01-03T23:38:36.191611]   ✓ 200 OK
+[2026-01-03T23:38:36.191941] Testing: http://localhost:8080/tags/Production
+[2026-01-03T23:38:36.193869]   ✓ 200 OK
+[2026-01-03T23:38:36.194210] Testing: http://localhost:8080/tags/UnrealEngine
+[2026-01-03T23:38:36.196518]   ✓ 200 OK
+[2026-01-03T23:38:36.196755] Testing: http://localhost:8080/tags/CulturalHeritage
+[2026-01-03T23:38:36.198734]   ✓ 200 OK
+[2026-01-03T23:38:36.198947] Testing: http://localhost:8080/Productions/Wevr/Location-Based-Experiences
+[2026-01-03T23:38:36.201158]   ✓ 200 OK
+[2026-01-03T23:38:36.201590] Testing: http://localhost:8080/Productions/Wevr/Location-Based-Experiences/Terracotta-Warriors
+[2026-01-03T23:38:36.204068]   ✓ 200 OK
+[2026-01-03T23:38:36.204403] Testing: http://localhost:8080/tags/Wevr
+[2026-01-03T23:38:36.211534]   ✓ 200 OK
+[2026-01-03T23:38:36.211783] Testing: http://localhost:8080/tags/Entertainment
+[2026-01-03T23:38:36.214900]   ✓ 200 OK
+[2026-01-03T23:38:36.215149] Testing: http://localhost:8080/Productions/Studio-Syro/Animated-Experiences/Tales-From-Soda-Island/Ch-3---The-Quantum-Race
+[2026-01-03T23:38:36.219486]   ✓ 200 OK
+[2026-01-03T23:38:36.219907] Testing: http://localhost:8080/Productions/Studio-Syro
+[2026-01-03T23:38:36.228806]   ✓ 200 OK
+[2026-01-03T23:38:36.229512] Testing: http://localhost:8080/tags/Episode3
+[2026-01-03T23:38:36.231888]   ✓ 200 OK
+[2026-01-03T23:38:36.232133] Testing: http://localhost:8080/tags/AnimatedExperience
+[2026-01-03T23:38:36.239048]   ✓ 200 OK
+[2026-01-03T23:38:36.239911] Testing: http://localhost:8080/tags/TFSI
+[2026-01-03T23:38:36.242602]   ✓ 200 OK
+[2026-01-03T23:38:36.243506] Testing: http://localhost:8080/Productions/Studio-Syro/Animated-Experiences/Tales-From-Soda-Island/
+[2026-01-03T23:38:36.246045]   ✓ 200 OK
+[2026-01-03T23:38:36.247026] Testing: http://localhost:8080/tags/Episode6
+[2026-01-03T23:38:36.249570]   ✓ 200 OK
+[2026-01-03T23:38:36.249863] Testing: http://localhost:8080/Productions/Studio-Syro/Animated-Experiences/Tales-From-Soda-Island/Ch-2---The-Neon-Jungle
+[2026-01-03T23:38:36.256690]   ✓ 200 OK
+[2026-01-03T23:38:36.257217] Testing: http://localhost:8080/Productions/Studio-Syro/Animated-Experiences/Tales-From-Soda-Island/Ch-4---The-Golden-Record
+[2026-01-03T23:38:36.259675]   ✓ 200 OK
+[2026-01-03T23:38:36.260081] Testing: http://localhost:8080/Productions/Studio-Syro/Animated-Experiences/Tales-From-Soda-Island/Ch-6---Silence
+[2026-01-03T23:38:36.262091]   ✓ 200 OK
+[2026-01-03T23:38:36.262520] Testing: http://localhost:8080/tags/Episode5
+[2026-01-03T23:38:36.264444]   ✓ 200 OK
+[2026-01-03T23:38:36.264699] Testing: http://localhost:8080/tags/VeniceFilmFestival
+[2026-01-03T23:38:36.266493]   ✓ 200 OK
+[2026-01-03T23:38:36.266761] Testing: http://localhost:8080/Productions/Studio-Syro/Animated-Experiences/Tales-From-Soda-Island/Ch-7---The-First-Ingredient
+[2026-01-03T23:38:36.268857]   ✓ 200 OK
+[2026-01-03T23:38:36.269265] Testing: http://localhost:8080/tags/Episode2
+[2026-01-03T23:38:36.271135]   ✓ 200 OK
+[2026-01-03T23:38:36.271425] Testing: http://localhost:8080/tags/Episode1
+[2026-01-03T23:38:36.273216]   ✓ 200 OK
+[2026-01-03T23:38:36.273462] Testing: http://localhost:8080/tags/Episode7
+[2026-01-03T23:38:36.275371]   ✓ 200 OK
+[2026-01-03T23:38:36.275583] Testing: http://localhost:8080/tags/Episode4
+[2026-01-03T23:38:36.277472]   ✓ 200 OK
+[2026-01-03T23:38:36.277714] Testing: http://localhost:8080/Productions/Studio-Syro/Animated-Experiences/Tales-From-Soda-Island/Ch-5---The-School-Trip
+[2026-01-03T23:38:36.279609]   ✓ 200 OK
+[2026-01-03T23:38:36.280004] Testing: http://localhost:8080/Productions/Studio-Syro/Animated-Experiences/Tales-From-Soda-Island/Ch-1---The-Multiverse-Bakery
+[2026-01-03T23:38:36.282005]   ✓ 200 OK
+[2026-01-03T23:38:36.282471] Testing: http://localhost:8080/publications/Creating-a-Universe-from-Scratch
+[2026-01-03T23:38:36.284264]   ✓ 200 OK
+[2026-01-03T23:38:36.284699] Testing: http://localhost:8080/tags/SIGGRAPH
+[2026-01-03T23:38:36.286596]   ✓ 200 OK
+[2026-01-03T23:38:36.286957] Testing: http://localhost:8080/tags/Publications
+[2026-01-03T23:38:36.288709]   ✓ 200 OK
+[2026-01-03T23:38:36.288914] Testing: http://localhost:8080/publications/
+[2026-01-03T23:38:36.290615]   ✓ 200 OK
+[2026-01-03T23:38:36.291101] Testing: http://localhost:8080/tags/Pipeline
+[2026-01-03T23:38:36.292838]   ✓ 200 OK
+[2026-01-03T23:38:36.293105] Testing: http://localhost:8080/tags/Research
+[2026-01-03T23:38:36.294785]   ✓ 200 OK
+[2026-01-03T23:38:36.295077] Testing: http://localhost:8080/tags/Publication
+[2026-01-03T23:38:36.296861]   ✓ 200 OK
+[2026-01-03T23:38:36.297079] Testing: http://localhost:8080/tags/Studio-Syro
+[2026-01-03T23:38:36.298767]   ✓ 200 OK
+[2026-01-03T23:38:36.299250] Testing: http://localhost:8080/tags/Academic
+[2026-01-03T23:38:36.300915]   ✓ 200 OK
+[2026-01-03T23:38:36.301152] 
+[2026-01-03T23:38:36.301185] ============================================================
+[2026-01-03T23:38:36.301213] RESULTS
+[2026-01-03T23:38:36.301241] ============================================================
+[2026-01-03T23:38:36.301270] Pages tested: 72
+[2026-01-03T23:38:36.301295] Broken links: 0
+[2026-01-03T23:38:36.301321] Errors: 0
+[2026-01-03T23:38:36.301351] 
+[2026-01-03T23:38:36.301375] ✓ All links working!
