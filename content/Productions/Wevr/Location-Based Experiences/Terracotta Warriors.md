@@ -9,6 +9,7 @@ tags:
   - Producer
   - UnrealEngine
 date: 2025-07-29
+socialImage: /static/images/wevr/slide_image_2.png
 ---
 
 # Terracotta Warriors: Secrets of the First Emperor's Mausoleum
