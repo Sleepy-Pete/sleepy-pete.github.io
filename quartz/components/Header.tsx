@@ -6,11 +6,16 @@ const Header: QuartzComponent = ({ children }: QuartzComponentProps) => {
 
 Header.css = `
 header {
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 2rem 0;
+  justify-content: center;
+  padding: 1rem 0;
+  margin: 0;
   gap: 1.5rem;
+  border-bottom: 1px solid var(--lightgray);
+  background: var(--light);
 }
 
 header h1 {

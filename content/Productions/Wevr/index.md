@@ -11,8 +11,6 @@ date: 2024-12-31
 
 # Wevr
 
-<img src="../static/images/branding/logo.png" alt="Wevr" />
-
 ## Terracotta Warriors: Secrets of the First Emperor's Mausoleum
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/MSUy3UzvWiI" title="Terracotta Warriors VR Experience" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

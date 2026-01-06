@@ -9,6 +9,15 @@
   margin: 0;
   text-align: inherit;
   flex-shrink: 0;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(1.15);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
 
   & svg {
     position: absolute;
@@ -17,7 +26,12 @@
     top: calc(50% - 10px);
     fill: var(--darkgray);
     stroke: var(--darkgray);
-    transition: opacity 0.1s ease;
+    transition: opacity 0.3s ease, fill 0.2s ease, stroke 0.2s ease;
+  }
+
+  &:hover svg {
+    fill: var(--secondary);
+    stroke: var(--secondary);
   }
 }
 
@@ -25,10 +39,20 @@
   & .sidebar.left,
   & .sidebar.right {
     opacity: 0;
-    transition: opacity 0.2s ease;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateX(-10px);
 
     &:hover {
       opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  & .sidebar.right {
+    transform: translateX(10px);
+
+    &:hover {
+      transform: translateX(0);
     }
   }
 }

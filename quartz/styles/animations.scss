@@ -1,0 +1,286 @@
+// Smooth scrolling for the entire page
+html {
+  scroll-behavior: smooth;
+}
+
+// Reduce motion for users who prefer it
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+// Fade in animation for page content
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Slide in from left
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+// Slide in from right
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+// Gentle pulse for interactive elements
+@keyframes gentlePulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+}
+
+// Smooth hover lift
+@mixin hoverLift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+}
+
+// Apply animations to main content areas
+article {
+  animation: fadeIn 0.5s ease-out;
+}
+
+// Sidebar animations - only when reader mode is off
+:root:not([reader-mode="on"]) {
+  .sidebar.left {
+    animation: slideInLeft 0.4s ease-out;
+  }
+
+  .sidebar.right {
+    animation: slideInRight 0.4s ease-out;
+  }
+}
+
+// When reader mode is on, sidebars start hidden (no animation flash)
+:root[reader-mode="on"] {
+  .sidebar.left,
+  .sidebar.right {
+    animation: none;
+  }
+}
+
+// Explorer items fade in
+.explorer-ul li {
+  animation: fadeIn 0.3s ease-out backwards;
+  
+  @for $i from 1 through 20 {
+    &:nth-child(#{$i}) {
+      animation-delay: #{$i * 0.03}s;
+    }
+  }
+}
+
+// Smooth transitions for links
+a {
+  transition: color 0.2s ease, opacity 0.2s ease;
+  
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+// Card-like elements get hover lift
+.backlinks ul li,
+.recent-notes li,
+.page-listing li {
+  @include hoverLift;
+}
+
+// Search bar animation
+.search {
+  transition: all 0.3s ease;
+  
+  &:focus-within {
+    transform: scale(1.02);
+  }
+}
+
+// Button animations
+button {
+  transition: all 0.2s ease;
+  
+  &:hover {
+    transform: scale(1.05);
+  }
+  
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+// Graph nodes gentle pulse
+#graph-container {
+  canvas {
+    animation: fadeIn 0.8s ease-out;
+  }
+}
+
+// Table of contents smooth scroll
+.toc {
+  a {
+    transition: all 0.2s ease;
+    
+    &:hover {
+      padding-left: 0.5rem;
+    }
+  }
+}
+
+// Tag animations
+.tags a {
+  transition: all 0.2s ease;
+  
+  &:hover {
+    transform: translateY(-1px);
+  }
+}
+
+// Profile photo subtle animation
+.profile-photo {
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+// Smooth page transitions
+.page {
+  animation: fadeIn 0.4s ease-out;
+}
+
+// Enhanced search animations
+.search-button {
+  &:hover {
+    border-color: var(--secondary) !important;
+    box-shadow: 0 0 0 2px rgba(var(--secondary-rgb), 0.1);
+  }
+}
+
+.search-container {
+  &.active {
+    animation: fadeIn 0.3s ease-out;
+  }
+}
+
+// Folder animations in explorer
+.folder-outer {
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+
+  &:not(.open) {
+    max-height: 0;
+    opacity: 0;
+  }
+
+  &.open {
+    opacity: 1;
+  }
+}
+
+.folder-button {
+  &:hover {
+    color: var(--secondary);
+  }
+}
+
+// Breadcrumb animations
+.breadcrumb-container {
+  animation: slideInLeft 0.4s ease-out;
+
+  a {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--secondary);
+      transition: width 0.3s ease;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
+}
+
+// Graph interactive animations
+.graph-node {
+  transition: all 0.3s ease;
+}
+
+// Backlinks hover effect
+.backlinks {
+  li {
+    border-radius: 8px;
+    padding: 0.5rem;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background-color: var(--lightgray);
+    }
+  }
+}
+
+// Content meta animations
+.content-meta {
+  animation: fadeIn 0.5s ease-out 0.2s backwards;
+}
+
+// Article title entrance
+h1.article-title {
+  animation: slideInLeft 0.5s ease-out;
+}
+
+// Image lazy load animation
+img {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+// Footer fade in
+footer {
+  animation: fadeIn 0.6s ease-out 0.3s backwards;
+}
+
