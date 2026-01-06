@@ -25,7 +25,6 @@ import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
 import ProfilePhoto from "./ProfilePhoto"
 import Navigation from "./Navigation"
-import CoverFlow from "./CoverFlow"
 
 export {
   ArticleTitle,
@@ -55,5 +54,4 @@ export {
   ConditionalRender,
   ProfilePhoto,
   Navigation,
-  CoverFlow,
 }

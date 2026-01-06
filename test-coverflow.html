@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CoverFlow Test</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: sans-serif;
+            background: #f5f5f5;
+        }
+        
+        .coverflow-section {
+            width: 100vw;
+            margin-left: calc(-50vw + 50%);
+            padding: 5rem 0 6rem;
+            background: #e8e8e8;
+            overflow: hidden;
+        }
+        
+        .coverflow-header {
+            text-align: center;
+            margin-bottom: 4rem;
+            padding: 0 1rem;
+        }
+        
+        .coverflow-header h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin: 0 0 0.75rem 0;
+            color: #1a1a1a;
+        }
+        
+        .coverflow-carousel-container {
+            position: relative;
+            width: 100%;
+            height: 600px;
+            perspective: 1500px;
+            perspective-origin: 50% 50%;
+            overflow: visible;
+        }
+        
+        .coverflow-carousel {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            cursor: grab;
+            user-select: none;
+            overflow: visible;
+        }
+        
+        .coverflow-carousel.dragging {
+            cursor: grabbing;
+        }
+        
+        .coverflow-card {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 380px;
+            height: 520px;
+            margin-left: -190px;
+            margin-top: -260px;
+            text-decoration: none;
+            color: inherit;
+            transform-style: preserve-3d;
+            pointer-events: all;
+            backface-visibility: hidden;
+            transform-origin: center center;
+        }
+        
+        .coverflow-card-image {
+            width: 100%;
+            height: 100%;
+            border-radius: 16px;
+            overflow: hidden;
+            background: #fff;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <section class="coverflow-section">
+        <div class="coverflow-header">
+            <h2>CoverFlow Test</h2>
+        </div>
+        <div class="coverflow-carousel-container">
+            <div class="coverflow-carousel" id="carousel">
+                <div class="coverflow-card" data-index="0">
+                    <div class="coverflow-card-image" style="background: #ff6b6b;">1</div>
+                </div>
+                <div class="coverflow-card" data-index="1">
+                    <div class="coverflow-card-image" style="background: #4ecdc4;">2</div>
+                </div>
+                <div class="coverflow-card" data-index="2">
+                    <div class="coverflow-card-image" style="background: #45b7d1;">3</div>
+                </div>
+                <div class="coverflow-card" data-index="3">
+                    <div class="coverflow-card-image" style="background: #f9ca24;">4</div>
+                </div>
+                <div class="coverflow-card" data-index="4">
+                    <div class="coverflow-card-image" style="background: #6c5ce7;">5</div>
+                </div>
+                <div class="coverflow-card" data-index="5">
+                    <div class="coverflow-card-image" style="background: #a29bfe;">6</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const carousel = document.getElementById('carousel');
+        const cards = Array.from(carousel.querySelectorAll('.coverflow-card'));
+        
+        console.log(`Found ${cards.length} cards`);
+        
+        let rotation = 0;
+        let targetRotation = 0;
+        let velocity = 0;
+        let isDragging = false;
+        let startX = 0;
+        let lastX = 0;
+        let lastTime = Date.now();
+        
+        const ROTATION_PER_ITEM = 50;
+        const FRICTION = 0.92;
+        const SNAP_THRESHOLD = 0.3;
+        
+        function updatePositions() {
+            rotation += (targetRotation - rotation) * 0.15;
+            
+            if (!isDragging && Math.abs(velocity) > 0.01) {
+                targetRotation += velocity;
+                velocity *= FRICTION;
+                
+                if (Math.abs(velocity) < SNAP_THRESHOLD) {
+                    const nearestIndex = Math.round(-targetRotation / ROTATION_PER_ITEM);
+                    const targetIndex = Math.max(0, Math.min(cards.length - 1, nearestIndex));
+                    targetRotation = -targetIndex * ROTATION_PER_ITEM;
+                    velocity = 0;
+                }
+            }
+            
+            cards.forEach((card, index) => {
+                const offset = index + (rotation / ROTATION_PER_ITEM);
+                const absOffset = Math.abs(offset);
+                
+                let translateX = 0, translateZ = 0, rotateY = 0, scale = 1, opacity = 1, zIndex = 0;
+                
+                if (absOffset < 0.01) {
+                    translateZ = 150;
+                    zIndex = 100;
+                } else if (absOffset <= 1) {
+                    translateX = offset * 300;
+                    translateZ = 50 - (absOffset * 100);
+                    rotateY = offset * -60;
+                    scale = 1 - (absOffset * 0.15);
+                    opacity = 1 - (absOffset * 0.2);
+                    zIndex = Math.round(100 - absOffset * 50);
+                } else {
+                    translateX = offset * 400;
+                    translateZ = -150;
+                    rotateY = offset * -75;
+                    scale = 0.6;
+                    opacity = 0.3;
+                    zIndex = 0;
+                }
+                
+                card.style.transform = `translateX(${translateX}px) translateZ(${translateZ}px) rotateY(${rotateY}deg) scale(${scale})`;
+                card.style.opacity = opacity;
+                card.style.zIndex = zIndex;
+            });
+            
+            requestAnimationFrame(updatePositions);
+        }
+        
+        carousel.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            startX = e.clientX;
+            lastX = e.clientX;
+            lastTime = Date.now();
+            velocity = 0;
+            carousel.classList.add('dragging');
+        });
+        
+        document.addEventListener('mousemove', (e) => {
+            if (!isDragging) return;
+            e.preventDefault();
+            
+            const currentTime = Date.now();
+            const deltaTime = currentTime - lastTime;
+            const deltaX = e.clientX - lastX;
+            
+            if (deltaTime > 0) {
+                velocity = (deltaX / deltaTime) * 16;
+            }
+            
+            const dragAmount = (e.clientX - startX) * 0.3;
+            const currentIndex = Math.round(-targetRotation / ROTATION_PER_ITEM);
+            targetRotation = (-currentIndex * ROTATION_PER_ITEM) + dragAmount;
+            
+            lastX = e.clientX;
+            lastTime = currentTime;
+        });
+        
+        document.addEventListener('mouseup', () => {
+            if (!isDragging) return;
+            isDragging = false;
+            carousel.classList.remove('dragging');
+        });
+        
+        updatePositions();
+    </script>
+</body>
+</html>
+

@@ -101,3 +101,165 @@
   .card-img {
     line-height: 0;
   }
+
+  /* Cover Flow Carousel Styles */
+  .case-studies-section {
+    padding: 120px 0;
+    background: #f8f8f8;
+    overflow: hidden;
+  }
+
+  .case-studies-header {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  .case-studies-header h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #1a1a1a;
+  }
+
+  .case-studies-header p {
+    font-size: 18px;
+    color: #666;
+  }
+
+  .carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .carousel {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding: 40px 0;
+    gap: 16px;
+    overscroll-behavior-x: contain;
+  }
+
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
+
+  .carousel-item {
+    flex: 0 0 auto;
+    scroll-snap-align: center;
+    width: 400px;
+    position: relative;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    cursor: pointer;
+  }
+
+  .carousel-item:first-child {
+    margin-left: calc(50vw - 200px);
+  }
+
+  .carousel-item:last-child {
+    margin-right: calc(50vw - 200px);
+  }
+
+  .carousel-item-inner {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .carousel-item:hover .carousel-item-inner {
+    transform: scale(1.01);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  }
+
+  .carousel-item-image {
+    position: relative;
+    width: 100%;
+    padding-bottom: 125%;
+    overflow: hidden;
+    background: #e0e0e0;
+  }
+
+  .carousel-item-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .carousel-item:hover .carousel-item-image img {
+    transform: scale(1.05);
+  }
+
+  .carousel-item-content {
+    padding: 24px;
+    text-align: center;
+  }
+
+  .carousel-item-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 0;
+  }
+
+  /* Dark theme support */
+  .inverted .case-studies-section {
+    background: #1a1a1a;
+  }
+
+  .inverted .case-studies-header h2 {
+    color: #fff;
+  }
+
+  .inverted .case-studies-header p {
+    color: #999;
+  }
+
+  .inverted .carousel-item-inner {
+    background: #2a2a2a;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .inverted .carousel-item:hover .carousel-item-inner {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  }
+
+  .inverted .carousel-item-title {
+    color: #fff;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .carousel-item {
+      width: 300px;
+    }
+
+    .carousel-item:first-child {
+      margin-left: calc(50vw - 150px);
+    }
+
+    .carousel-item:last-child {
+      margin-right: calc(50vw - 150px);
+    }
+
+    .case-studies-header h2 {
+      font-size: 36px;
+    }
+
+    .case-studies-section {
+      padding: 80px 0;
+    }
+  }
