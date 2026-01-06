@@ -1,0 +1,324 @@
+@use "../../styles/variables.scss" as *;
+
+.coverflow-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 3rem auto;
+  padding: 2rem 1rem;
+  overflow: hidden;
+
+  .coverflow-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    color: var(--dark);
+  }
+
+  .coverflow-wrapper {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 2rem;
+  }
+
+  .coverflow-stage {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    perspective: 1200px;
+    perspective-origin: 50% 50%;
+    transform-style: preserve-3d;
+  }
+
+  .coverflow-item {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 320px;
+    height: 400px;
+    margin-left: -160px;
+    margin-top: -200px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+
+    &.active {
+      cursor: pointer;
+      
+      .coverflow-item-inner {
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+      }
+    }
+
+    &:hover:not(.active) {
+      transform: scale(1.05) !important;
+    }
+  }
+
+  .coverflow-item-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    background: var(--light);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      user-select: none;
+      -webkit-user-drag: none;
+    }
+  }
+
+  .coverflow-reflection {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0) 50%
+    );
+    transform: scaleY(-1);
+    opacity: 0.3;
+    pointer-events: none;
+  }
+
+  .coverflow-info {
+    position: absolute;
+    bottom: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 0 1rem;
+
+    .coverflow-project-title {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin: 0 0 0.5rem 0;
+      color: var(--dark);
+      transition: all 0.3s ease;
+    }
+
+    .coverflow-project-description {
+      font-size: 1.1rem;
+      color: var(--gray);
+      margin: 0;
+      transition: all 0.3s ease;
+    }
+  }
+
+  .coverflow-controls {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 6rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .coverflow-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid var(--lightgray);
+    background: var(--light);
+    color: var(--dark);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+      background: var(--secondary);
+      color: white;
+      border-color: var(--secondary);
+      transform: scale(1.1);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .coverflow-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+  }
+
+  .coverflow-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid var(--lightgray);
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 0;
+
+    &.active {
+      background: var(--secondary);
+      border-color: var(--secondary);
+      transform: scale(1.2);
+    }
+
+    &:hover:not(.active) {
+      background: var(--gray);
+      border-color: var(--gray);
+    }
+  }
+}
+
+// Dark mode support
+.darkmode {
+  .coverflow-container {
+    .coverflow-title {
+      color: var(--light);
+    }
+
+    .coverflow-item-inner {
+      background: var(--darkgray);
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+    }
+
+    .coverflow-info {
+      .coverflow-project-title {
+        color: var(--light);
+      }
+
+      .coverflow-project-description {
+        color: var(--lightgray);
+      }
+    }
+
+    .coverflow-btn {
+      background: var(--darkgray);
+      color: var(--light);
+      border-color: var(--gray);
+
+      &:hover {
+        background: var(--secondary);
+        color: white;
+        border-color: var(--secondary);
+      }
+    }
+  }
+}
+
+// Responsive design
+@media (max-width: 1200px) {
+  .coverflow-container {
+    .coverflow-item {
+      width: 280px;
+      height: 350px;
+      margin-left: -140px;
+      margin-top: -175px;
+    }
+
+    .coverflow-wrapper {
+      height: 450px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .coverflow-container {
+    padding: 1rem 0.5rem;
+
+    .coverflow-title {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .coverflow-wrapper {
+      height: 350px;
+    }
+
+    .coverflow-stage {
+      perspective: 800px;
+    }
+
+    .coverflow-item {
+      width: 220px;
+      height: 280px;
+      margin-left: -110px;
+      margin-top: -140px;
+    }
+
+    .coverflow-info {
+      bottom: -60px;
+
+      .coverflow-project-title {
+        font-size: 1.3rem;
+      }
+
+      .coverflow-project-description {
+        font-size: 0.95rem;
+      }
+    }
+
+    .coverflow-controls {
+      margin-top: 4rem;
+      gap: 1rem;
+    }
+
+    .coverflow-btn {
+      width: 40px;
+      height: 40px;
+
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    .coverflow-dot {
+      width: 10px;
+      height: 10px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .coverflow-container {
+    .coverflow-item {
+      width: 180px;
+      height: 240px;
+      margin-left: -90px;
+      margin-top: -120px;
+    }
+
+    .coverflow-wrapper {
+      height: 300px;
+    }
+
+    .coverflow-info {
+      .coverflow-project-title {
+        font-size: 1.1rem;
+      }
+
+      .coverflow-project-description {
+        font-size: 0.85rem;
+      }
+    }
+  }
+}
+
