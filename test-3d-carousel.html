@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Carousel Test - Peter Ariet Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #faf8f8;
+            color: #2b2b2b;
+            overflow-x: hidden;
+        }
+
+        .featured-carousel-section {
+            width: 100vw;
+            padding: 4rem 0 5rem;
+            background: linear-gradient(180deg, #faf8f8 0%, #e5e5e5 100%);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .carousel-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 0 1rem;
+        }
+
+        .carousel-header h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin: 0 0 0.5rem 0;
+            color: #2b2b2b;
+        }
+
+        .carousel-subtitle {
+            font-size: 1.1rem;
+            color: #646464;
+            margin: 0;
+        }
+
+        .carousel-container {
+            position: relative;
+            width: 100%;
+            height: 700px; /* Increased to accommodate text below cards */
+            perspective: 2000px; /* Increased for more dramatic 3D effect */
+            perspective-origin: 50% 50%;
+            overflow: visible; /* Allow text to show below */
+        }
+
+        .carousel-viewport {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            overflow: visible; /* Allow text to show below cards */
+        }
+
+        .carousel-track {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            cursor: grab;
+            user-select: none;
+        }
+
+        .carousel-track.dragging {
+            cursor: grabbing;
+        }
+
+        .carousel-card {
+            position: absolute;
+            left: 50%;
+            top: 10%; /* Pushed up higher to avoid overlapping indicators */
+            width: 400px;
+            height: auto;
+            margin-left: -200px;
+            text-decoration: none;
+            color: inherit;
+            pointer-events: all;
+        }
+
+        .carousel-track.dragging .carousel-card {
+            transition: none;
+        }
+
+        .card-image-wrapper {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            width: 400px;
+            height: 533px;
+            margin-left: -200px;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+            background: transparent;
+            transform-origin: center center;
+            transform-style: preserve-3d;
+            transition: transform 0.05s linear;
+            will-change: transform;
+        }
+
+        .card-image-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card-overlay {
+            display: none;
+        }
+
+        .card-content {
+            position: absolute;
+            left: 50%;
+            top: 560px; /* Below the image (533px + some spacing) */
+            width: 400px;
+            margin-left: -200px;
+            text-align: center;
+            transform-origin: center center;
+            transition: transform 0.05s linear;
+            will-change: transform;
+        }
+
+        .card-title {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin: 0;
+            color: #1a1a1a;
+            letter-spacing: -0.01em;
+        }
+
+        .card-description {
+            font-size: 0.875rem;
+            margin: 0.25rem 0 0 0;
+            color: #666;
+            opacity: 0.8;
+        }
+
+        .carousel-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.9);
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            color: #2b2b2b;
+        }
+
+        .carousel-nav:hover {
+            background: white;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+            transform: translateY(-50%) scale(1.1);
+        }
+
+        .carousel-nav-prev {
+            left: 2rem;
+        }
+
+        .carousel-nav-next {
+            right: 2rem;
+        }
+
+        .carousel-indicators {
+            display: flex;
+            justify-content: center;
+            gap: 0.75rem;
+            margin-top: 2.5rem;
+            padding: 0 1rem;
+        }
+
+        .indicator-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            border: 2px solid #646464;
+            background: transparent;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            padding: 0;
+        }
+
+        .indicator-dot.active {
+            background: #284b63;
+            border-color: #284b63;
+            transform: scale(1.2);
+        }
+
+        .indicator-dot:hover {
+            border-color: #284b63;
+        }
+
+        @media (max-width: 768px) {
+            .carousel-container {
+                height: 400px;
+            }
+
+            .carousel-card {
+                width: 320px;
+                height: 180px;
+                margin-left: -160px;
+                margin-top: -90px;
+            }
+
+            .carousel-nav {
+                width: 40px;
+                height: 40px;
+            }
+
+            .carousel-nav-prev {
+                left: 1rem;
+            }
+
+            .carousel-nav-next {
+                right: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="featured-carousel-section">
+        <div class="carousel-header">
+            <h2>Featured Projects</h2>
+            <p class="carousel-subtitle">Explore my work in VR, AR, and immersive experiences</p>
+        </div>
+
+        <div class="carousel-container">
+            <div class="carousel-viewport">
+                <div class="carousel-track" id="carousel-track">
+                    <a href="#" class="carousel-card" data-index="0">
+                        <div class="card-image-wrapper" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <div class="card-overlay"></div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Studio Syro</h3>
+                            <p class="card-description">VR Animation Studio</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="carousel-card" data-index="1">
+                        <div class="card-image-wrapper" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <div class="card-overlay"></div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Tales From Soda Island</h3>
+                            <p class="card-description">VR Animated Series</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="carousel-card" data-index="2">
+                        <div class="card-image-wrapper" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <div class="card-overlay"></div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">PondQuest</h3>
+                            <p class="card-description">Mixed Reality Platformer</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="carousel-card" data-index="3">
+                        <div class="card-image-wrapper" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                            <div class="card-overlay"></div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">The Art of Change</h3>
+                            <p class="card-description">VR Music Experience</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="carousel-card" data-index="4">
+                        <div class="card-image-wrapper" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                            <div class="card-overlay"></div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Dear Metaverse</h3>
+                            <p class="card-description">VR/AR Messaging App</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="carousel-card" data-index="5">
+                        <div class="card-image-wrapper" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
+                            <div class="card-overlay"></div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Terracotta Warriors</h3>
+                            <p class="card-description">Location-Based VR Experience</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="carousel-card" data-index="6">
+                        <div class="card-image-wrapper" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                            <div class="card-overlay"></div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Immersive Storytelling</h3>
+                            <p class="card-description">Next-Gen Narrative Experiences</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <button class="carousel-nav carousel-nav-prev" aria-label="Previous project">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+            </button>
+
+            <button class="carousel-nav carousel-nav-next" aria-label="Next project">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
+        </div>
+
+        <div class="carousel-indicators">
+            <button class="indicator-dot" data-index="0"></button>
+            <button class="indicator-dot" data-index="1"></button>
+            <button class="indicator-dot" data-index="2"></button>
+            <button class="indicator-dot active" data-index="3"></button>
+            <button class="indicator-dot" data-index="4"></button>
+            <button class="indicator-dot" data-index="5"></button>
+            <button class="indicator-dot" data-index="6"></button>
+        </div>
+    </div>
+
+    <script>
+        const track = document.getElementById('carousel-track');
+        const cards = Array.from(track.querySelectorAll('.carousel-card'));
+        const indicators = Array.from(document.querySelectorAll('.indicator-dot'));
+        const prevBtn = document.querySelector('.carousel-nav-prev');
+        const nextBtn = document.querySelector('.carousel-nav-next');
+
+        const totalCards = cards.length;
+        const autoRotateDelay = 5000;
+        const autoRotateInterval = 4000;
+
+        // Start at index 3 (middle card) so there are 3 cards on each side
+        let currentIndex = 3;
+        let targetIndex = 3;
+        let rotation = 3;
+        let targetRotation = 3;
+        let velocity = 0;
+        let isDragging = false;
+        let startX = 0;
+        let lastX = 0;
+        let lastTime = Date.now();
+        let autoRotateTimer = null;
+
+        const FRICTION = 0.95;
+        const SNAP_THRESHOLD = 0.1;
+        const LERP_FACTOR = 0.1;
+        const CARD_SPACING = 140; // Horizontal spacing between cards
+        const STACK_DEPTH = 60; // Depth spacing for stacked cards
+
+        function updateCardPositions() {
+            // Smooth interpolation - continuous movement
+            rotation += (targetRotation - rotation) * LERP_FACTOR;
+
+            // Apply momentum when not dragging
+            if (!isDragging && Math.abs(velocity) > 0.01) {
+                targetRotation += velocity;
+                velocity *= FRICTION;
+
+                // Snap to nearest card only when velocity is very low
+                if (Math.abs(velocity) < SNAP_THRESHOLD) {
+                    targetRotation = Math.round(targetRotation);
+                    velocity = 0;
+                    currentIndex = ((Math.round(targetRotation) % totalCards) + totalCards) % totalCards;
+                    updateIndicators();
+                }
+            }
+
+            // Infinite scroll: wrap rotation to keep it in reasonable bounds
+            if (rotation > totalCards) {
+                rotation -= totalCards;
+                targetRotation -= totalCards;
+            } else if (rotation < -totalCards) {
+                rotation += totalCards;
+                targetRotation += totalCards;
+            }
+
+            cards.forEach((card, index) => {
+                // Calculate CONTINUOUS position - this is the key!
+                // No rounding, cards slide smoothly with decimal positions
+                let position = index - rotation;
+
+                // Normalize position to be within -totalCards/2 to +totalCards/2
+                while (position > totalCards / 2) position -= totalCards;
+                while (position < -totalCards / 2) position += totalCards;
+
+                // Continuous translation - cards slide pixel by pixel
+                let translateX = position * CARD_SPACING;
+                let translateY = 0;
+                let translateZ = -Math.abs(position) * STACK_DEPTH;
+
+                // Y-AXIS ROTATION - This is the key 3D effect!
+                // Cards rotate as they move left/right, creating perspective
+                let rotateY = position * -15; // -15 degrees per card position
+
+                let zIndex = Math.round(100 - Math.abs(position) * 10);
+
+                // Apply transform to the image wrapper only
+                const imageWrapper = card.querySelector('.card-image-wrapper');
+                if (imageWrapper) {
+                    imageWrapper.style.transform = `
+                        translateX(${translateX}px)
+                        translateY(${translateY}px)
+                        translateZ(${translateZ}px)
+                        rotateY(${rotateY}deg)
+                    `;
+                    imageWrapper.style.zIndex = zIndex;
+                }
+
+                // Keep text flat - only translate horizontally
+                // Only show text for the center card (position close to 0)
+                const cardContent = card.querySelector('.card-content');
+                if (cardContent) {
+                    const isCenterCard = Math.abs(position) < 0.3; // Show text only when very close to center
+                    cardContent.style.transform = `translateX(${translateX}px)`;
+                    cardContent.style.zIndex = zIndex;
+                    cardContent.style.opacity = isCenterCard ? 1 : 0;
+                    cardContent.style.transition = 'opacity 0.3s ease';
+                }
+
+                card.style.opacity = 1; // No opacity changes
+            });
+
+            requestAnimationFrame(updateCardPositions);
+        }
+
+        function updateIndicators() {
+            // Wrap currentIndex to 0-6 range for indicator display
+            const displayIndex = ((Math.round(rotation) % totalCards) + totalCards) % totalCards;
+            indicators.forEach((dot, index) => {
+                dot.classList.toggle('active', index === displayIndex);
+            });
+        }
+
+        function goToIndex(index) {
+            // For manual clicks, snap to specific index
+            const wrappedIndex = ((index % totalCards) + totalCards) % totalCards;
+            targetRotation = Math.round(targetRotation) - currentIndex + wrappedIndex;
+            currentIndex = wrappedIndex;
+            velocity = 0;
+            updateIndicators();
+            resetAutoRotate();
+        }
+
+        function nextCard() {
+            // Infinite scroll - just increment, don't wrap
+            targetRotation += 1;
+            currentIndex = ((Math.round(targetRotation) % totalCards) + totalCards) % totalCards;
+            velocity = 0;
+            updateIndicators();
+            resetAutoRotate();
+        }
+
+        function prevCard() {
+            // Infinite scroll - just decrement, don't wrap
+            targetRotation -= 1;
+            currentIndex = ((Math.round(targetRotation) % totalCards) + totalCards) % totalCards;
+            velocity = 0;
+            updateIndicators();
+            resetAutoRotate();
+        }
+
+        function resetAutoRotate() {
+            if (autoRotateTimer) clearTimeout(autoRotateTimer);
+            autoRotateTimer = setTimeout(startAutoRotate, autoRotateDelay);
+        }
+
+        function startAutoRotate() {
+            if (autoRotateTimer) clearTimeout(autoRotateTimer);
+            autoRotateTimer = setTimeout(() => {
+                nextCard();
+                startAutoRotate();
+            }, autoRotateInterval);
+        }
+
+        // Mouse events
+        track.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            startX = e.clientX;
+            lastX = e.clientX;
+            lastTime = Date.now();
+            velocity = 0;
+            track.classList.add('dragging');
+            resetAutoRotate();
+        });
+
+        document.addEventListener('mousemove', (e) => {
+            if (!isDragging) return;
+            e.preventDefault();
+
+            const currentTime = Date.now();
+            const deltaTime = currentTime - lastTime;
+            const deltaX = e.clientX - lastX;
+
+            if (deltaTime > 0) {
+                velocity = -(deltaX / deltaTime) * 16 * 0.01;
+            }
+
+            const dragAmount = -(e.clientX - startX) * 0.0025; // Continuous sliding
+            targetRotation = currentIndex + dragAmount;
+
+            lastX = e.clientX;
+            lastTime = currentTime;
+        });
+
+        document.addEventListener('mouseup', () => {
+            if (!isDragging) return;
+            isDragging = false;
+            track.classList.remove('dragging');
+        });
+
+        // Touch events
+        let touchStartX = 0, touchLastX = 0;
+
+        track.addEventListener('touchstart', (e) => {
+            isDragging = true;
+            touchStartX = e.touches[0].clientX;
+            touchLastX = e.touches[0].clientX;
+            lastTime = Date.now();
+            velocity = 0;
+            resetAutoRotate();
+        });
+
+        track.addEventListener('touchmove', (e) => {
+            if (!isDragging) return;
+            e.preventDefault();
+
+            const currentTime = Date.now();
+            const deltaTime = currentTime - lastTime;
+            const deltaX = e.touches[0].clientX - touchLastX;
+
+            if (deltaTime > 0) {
+                velocity = -(deltaX / deltaTime) * 16 * 0.01;
+            }
+
+            const dragAmount = -(e.touches[0].clientX - touchStartX) * 0.0025; // Continuous sliding
+            targetRotation = currentIndex + dragAmount;
+
+            touchLastX = e.touches[0].clientX;
+            lastTime = currentTime;
+        });
+
+        track.addEventListener('touchend', () => {
+            if (!isDragging) return;
+            isDragging = false;
+        });
+
+        // Navigation
+        prevBtn.addEventListener('click', prevCard);
+        nextBtn.addEventListener('click', nextCard);
+
+        indicators.forEach((dot, index) => {
+            dot.addEventListener('click', () => goToIndex(index));
+        });
+
+        // Keyboard
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') {
+                e.preventDefault();
+                prevCard();
+            } else if (e.key === 'ArrowRight') {
+                e.preventDefault();
+                nextCard();
+            }
+        });
+
+        // Wheel
+        track.addEventListener('wheel', (e) => {
+            e.preventDefault();
+            if (e.deltaY > 0) {
+                nextCard();
+            } else if (e.deltaY < 0) {
+                prevCard();
+            }
+        });
+
+        // Initial animation - start from card 1 and animate to card 0
+        rotation = 1;
+        targetRotation = 0;
+        setTimeout(() => {
+            resetAutoRotate();
+        }, 1500);
+
+        updateIndicators();
+        updateCardPositions();
+    </script>
+</body>
+</html>
+
