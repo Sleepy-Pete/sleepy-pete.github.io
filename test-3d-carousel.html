@@ -49,7 +49,7 @@
             position: relative;
             width: 100%;
             height: 700px; /* Increased to accommodate text below cards */
-            perspective: 2000px; /* Increased for more dramatic 3D effect */
+            perspective: 1500px; /* Match coverflow perspective */
             perspective-origin: 50% 50%;
             overflow: visible; /* Allow text to show below */
         }
@@ -78,16 +78,25 @@
         .carousel-card {
             position: absolute;
             left: 50%;
-            top: 10%; /* Pushed up higher to avoid overlapping indicators */
-            width: 400px;
+            top: 50%;
+            width: 600px;
             height: auto;
-            margin-left: -200px;
+            margin-left: -300px;
+            margin-top: -169px; /* Half of image height (337.5 / 2) */
             text-decoration: none;
             color: inherit;
             pointer-events: all;
+            transform-style: preserve-3d;
+            backface-visibility: visible;
+            transform-origin: center center;
+            cursor: pointer;
         }
 
-        .carousel-track.dragging .carousel-card {
+        .carousel-track.dragging .carousel-card .card-image-wrapper {
+            transition: none;
+        }
+
+        .carousel-track.dragging .carousel-card .card-content {
             transition: none;
         }
 
@@ -95,17 +104,18 @@
             position: absolute;
             left: 50%;
             top: 0;
-            width: 400px;
-            height: 533px;
-            margin-left: -200px;
+            width: 600px;
+            height: 337.5px; /* 16:9 aspect ratio (600 / 16 * 9) */
+            margin-left: -300px;
             border-radius: 16px;
             overflow: hidden;
             box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
             background: transparent;
             transform-origin: center center;
             transform-style: preserve-3d;
-            transition: transform 0.05s linear;
             will-change: transform;
+            transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                        opacity 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
         }
 
         .card-image-wrapper img {
@@ -122,13 +132,14 @@
         .card-content {
             position: absolute;
             left: 50%;
-            top: 560px; /* Below the image (533px + some spacing) */
-            width: 400px;
-            margin-left: -200px;
+            top: 370px; /* Below the image (337.5px + some spacing) */
+            width: 600px;
+            margin-left: -300px;
             text-align: center;
             transform-origin: center center;
-            transition: transform 0.05s linear;
             will-change: transform;
+            transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                        opacity 0.4s ease;
         }
 
         .card-title {
@@ -209,15 +220,45 @@
         }
 
         @media (max-width: 768px) {
+            .carousel-header h2 {
+                font-size: 1.75rem;
+            }
+
+            .carousel-subtitle {
+                font-size: 0.95rem;
+            }
+
             .carousel-container {
-                height: 400px;
+                height: 450px;
+                perspective: 1000px; /* Reduced perspective for mobile */
             }
 
             .carousel-card {
-                width: 320px;
-                height: 180px;
-                margin-left: -160px;
-                margin-top: -90px;
+                width: 280px;
+                margin-left: -140px;
+                margin-top: -78.75px; /* Half of 157.5px (280 * 9/16 / 2) */
+            }
+
+            .card-image-wrapper {
+                width: 280px;
+                height: 157.5px; /* 16:9 aspect ratio (280 / 16 * 9) */
+                margin-left: -140px;
+                border-radius: 12px;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+            }
+
+            .card-content {
+                width: 280px;
+                margin-left: -140px;
+                top: 190px; /* Below the image (157.5px + spacing) */
+            }
+
+            .card-title {
+                font-size: 1rem;
+            }
+
+            .card-description {
+                font-size: 0.8rem;
             }
 
             .carousel-nav {
@@ -226,11 +267,73 @@
             }
 
             .carousel-nav-prev {
-                left: 1rem;
+                left: 0.5rem;
             }
 
             .carousel-nav-next {
-                right: 1rem;
+                right: 0.5rem;
+            }
+
+            .carousel-indicators {
+                gap: 0.5rem;
+                margin-top: 1.5rem;
+            }
+
+            .indicator-dot {
+                width: 10px;
+                height: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .carousel-header h2 {
+                font-size: 1.5rem;
+            }
+
+            .carousel-subtitle {
+                font-size: 0.875rem;
+            }
+
+            .carousel-container {
+                height: 380px;
+                perspective: 800px;
+            }
+
+            .carousel-card {
+                width: 240px;
+                margin-left: -120px;
+                margin-top: -67.5px; /* Half of 135px (240 * 9/16 / 2) */
+            }
+
+            .card-image-wrapper {
+                width: 240px;
+                height: 135px; /* 16:9 aspect ratio (240 / 16 * 9) */
+                margin-left: -120px;
+                border-radius: 10px;
+            }
+
+            .card-content {
+                width: 240px;
+                margin-left: -120px;
+                top: 165px; /* Below the image (135px + spacing) */
+            }
+
+            .card-title {
+                font-size: 0.95rem;
+            }
+
+            .card-description {
+                font-size: 0.75rem;
+            }
+
+            .carousel-nav {
+                width: 36px;
+                height: 36px;
+            }
+
+            .carousel-nav svg {
+                width: 20px;
+                height: 20px;
             }
         }
     </style>
@@ -364,13 +467,36 @@
         let lastTime = Date.now();
         let autoRotateTimer = null;
 
-        const FRICTION = 0.95;
-        const SNAP_THRESHOLD = 0.1;
-        const LERP_FACTOR = 0.1;
-        const CARD_SPACING = 140; // Horizontal spacing between cards
-        const STACK_DEPTH = 60; // Depth spacing for stacked cards
+        const FRICTION = 0.88; // Higher friction = less slidey
+        const SNAP_THRESHOLD = 0.15; // Lower threshold = smoother snap
+        const LERP_FACTOR = 0.08; // Lower value = smoother, more gradual movement
+
+        // Responsive values based on screen size
+        function getResponsiveValues() {
+            const width = window.innerWidth;
+            if (width <= 480) {
+                return {
+                    spacing: 150,
+                    sideZ: -250,
+                    rotation: 35
+                };
+            } else if (width <= 768) {
+                return {
+                    spacing: 180,
+                    sideZ: -300,
+                    rotation: 40
+                };
+            } else {
+                return {
+                    spacing: 250,
+                    sideZ: -400,
+                    rotation: 45
+                };
+            }
+        }
 
         function updateCardPositions() {
+            const responsive = getResponsiveValues();
             // Smooth interpolation - continuous movement
             rotation += (targetRotation - rotation) * LERP_FACTOR;
 
@@ -406,27 +532,53 @@
                 while (position > totalCards / 2) position -= totalCards;
                 while (position < -totalCards / 2) position += totalCards;
 
-                // Continuous translation - cards slide pixel by pixel
-                let translateX = position * CARD_SPACING;
-                let translateY = 0;
-                let translateZ = -Math.abs(position) * STACK_DEPTH;
+                // Coverflow-style positioning
+                const absPosition = Math.abs(position);
+                let translateX = 0, translateZ = 0, rotateY = 0, scale = 1, opacity = 1, zIndex = 0;
 
-                // Y-AXIS ROTATION - This is the key 3D effect!
-                // Cards rotate as they move left/right, creating perspective
-                let rotateY = position * -15; // -15 degrees per card position
+                // Show up to 3 cards: center + one on each side
+                const isVisible = absPosition <= 1.5;
+                card.style.opacity = isVisible ? 1 : 0;
+                card.style.pointerEvents = isVisible ? 'all' : 'none';
 
-                let zIndex = Math.round(100 - Math.abs(position) * 10);
+                if (!isVisible) return;
 
-                // Apply transform to the image wrapper only
+                // Smoothly move from center (Z=0) to side depth over the first half-step,
+                // then keep side depth constant so left/right stay the same size while dragging.
+                const RADIUS = 0.5; // how quickly it reaches side depth (0.5 = half a card step)
+                const t = Math.min(absPosition / RADIUS, 1); // 0..1
+                const ease = t * t * (3 - 2 * t); // smoothstep
+
+                translateX = position * responsive.spacing;
+                translateZ = responsive.sideZ * ease;
+
+                // Rotation eases in the same way (prevents the "snap" feeling)
+                rotateY = -position * responsive.rotation * ease;
+
+                scale = 1;
+                opacity = 1;
+                zIndex = Math.round(100 - absPosition * 50);
+
+                // Console logging for debugging - only log when settled (velocity is 0 and not dragging)
+                const isSettled = !isDragging && Math.abs(velocity) < 0.01;
+                if (isSettled) {
+                    const cardTitle = card.querySelector('.card-title')?.textContent || `Card ${index}`;
+                    console.log(`[${cardTitle}] index=${index}, rotation=${rotation.toFixed(2)}, position=${position.toFixed(2)}, absPos=${absPosition.toFixed(2)} | X=${translateX.toFixed(0)}, Z=${translateZ.toFixed(0)}, rotY=${rotateY.toFixed(1)}, scale=${scale}`);
+                }
+
+                // Apply zIndex to the card itself for proper layering
+                card.style.zIndex = zIndex;
+
+                // Apply transform to the image wrapper
                 const imageWrapper = card.querySelector('.card-image-wrapper');
                 if (imageWrapper) {
                     imageWrapper.style.transform = `
                         translateX(${translateX}px)
-                        translateY(${translateY}px)
                         translateZ(${translateZ}px)
                         rotateY(${rotateY}deg)
+                        scale(${scale})
                     `;
-                    imageWrapper.style.zIndex = zIndex;
+                    imageWrapper.style.opacity = opacity;
                 }
 
                 // Keep text flat - only translate horizontally
@@ -435,22 +587,16 @@
                 if (cardContent) {
                     const isCenterCard = Math.abs(position) < 0.3; // Show text only when very close to center
                     cardContent.style.transform = `translateX(${translateX}px)`;
-                    cardContent.style.zIndex = zIndex;
                     cardContent.style.opacity = isCenterCard ? 1 : 0;
-                    cardContent.style.transition = 'opacity 0.3s ease';
                 }
-
-                card.style.opacity = 1; // No opacity changes
             });
 
             requestAnimationFrame(updateCardPositions);
         }
 
         function updateIndicators() {
-            // Wrap currentIndex to 0-6 range for indicator display
-            const displayIndex = ((Math.round(rotation) % totalCards) + totalCards) % totalCards;
             indicators.forEach((dot, index) => {
-                dot.classList.toggle('active', index === displayIndex);
+                dot.classList.toggle('active', index === currentIndex);
             });
         }
 
@@ -465,18 +611,16 @@
         }
 
         function nextCard() {
-            // Infinite scroll - just increment, don't wrap
             targetRotation += 1;
-            currentIndex = ((Math.round(targetRotation) % totalCards) + totalCards) % totalCards;
+            currentIndex = (currentIndex + 1) % totalCards;
             velocity = 0;
             updateIndicators();
             resetAutoRotate();
         }
 
         function prevCard() {
-            // Infinite scroll - just decrement, don't wrap
             targetRotation -= 1;
-            currentIndex = ((Math.round(targetRotation) % totalCards) + totalCards) % totalCards;
+            currentIndex = (currentIndex - 1 + totalCards) % totalCards;
             velocity = 0;
             updateIndicators();
             resetAutoRotate();
@@ -495,11 +639,28 @@
             }, autoRotateInterval);
         }
 
-        // Mouse events
+        // Track which card was clicked (if any)
+        let clickedCardIndex = null;
+        let dragStartX = 0;
+        let dragStartY = 0;
+        let totalDragDistance = 0;
+
+        // Mouse events on track
         track.addEventListener('mousedown', (e) => {
+            // Check if click is on a card
+            const clickedCard = e.target.closest('.carousel-card');
+            if (clickedCard) {
+                clickedCardIndex = parseInt(clickedCard.dataset.index);
+            } else {
+                clickedCardIndex = null;
+            }
+
             isDragging = true;
             startX = e.clientX;
             lastX = e.clientX;
+            dragStartX = e.clientX;
+            dragStartY = e.clientY;
+            totalDragDistance = 0;
             lastTime = Date.now();
             velocity = 0;
             track.classList.add('dragging');
@@ -514,6 +675,9 @@
             const deltaTime = currentTime - lastTime;
             const deltaX = e.clientX - lastX;
 
+            // Track total drag distance
+            totalDragDistance += Math.abs(deltaX);
+
             if (deltaTime > 0) {
                 velocity = -(deltaX / deltaTime) * 16 * 0.01;
             }
@@ -525,34 +689,70 @@
             lastTime = currentTime;
         });
 
-        document.addEventListener('mouseup', () => {
+        document.addEventListener('mouseup', (e) => {
             if (!isDragging) return;
             isDragging = false;
             track.classList.remove('dragging');
+
+            // If total drag distance is small (< 10px), treat it as a click
+            if (totalDragDistance < 10 && clickedCardIndex !== null) {
+                goToIndex(clickedCardIndex);
+            }
+
+            clickedCardIndex = null;
+            totalDragDistance = 0;
         });
 
         // Touch events
-        let touchStartX = 0, touchLastX = 0;
+        let touchStartX = 0, touchLastX = 0, touchStartY = 0;
+        let touchDragDistance = 0;
+        let touchedCardIndex = null;
 
         track.addEventListener('touchstart', (e) => {
+            // Check if touch is on a card
+            const touchedCard = e.target.closest('.carousel-card');
+            if (touchedCard) {
+                touchedCardIndex = parseInt(touchedCard.dataset.index);
+            } else {
+                touchedCardIndex = null;
+            }
+
             isDragging = true;
             touchStartX = e.touches[0].clientX;
+            touchStartY = e.touches[0].clientY;
             touchLastX = e.touches[0].clientX;
+            touchDragDistance = 0;
             lastTime = Date.now();
             velocity = 0;
             resetAutoRotate();
-        });
+        }, { passive: true });
 
         track.addEventListener('touchmove', (e) => {
             if (!isDragging) return;
-            e.preventDefault();
+
+            // Check if this is a horizontal swipe (not vertical scroll)
+            const deltaX = Math.abs(e.touches[0].clientX - touchStartX);
+            const deltaY = Math.abs(e.touches[0].clientY - touchStartY);
+
+            // Only prevent default if horizontal swipe is dominant
+            if (deltaX > deltaY && deltaX > 10) {
+                e.preventDefault();
+            } else if (deltaY > deltaX) {
+                // User is trying to scroll vertically, cancel carousel drag
+                isDragging = false;
+                touchedCardIndex = null;
+                return;
+            }
 
             const currentTime = Date.now();
             const deltaTime = currentTime - lastTime;
-            const deltaX = e.touches[0].clientX - touchLastX;
+            const touchDeltaX = e.touches[0].clientX - touchLastX;
+
+            // Track total touch drag distance
+            touchDragDistance += Math.abs(touchDeltaX);
 
             if (deltaTime > 0) {
-                velocity = -(deltaX / deltaTime) * 16 * 0.01;
+                velocity = -(touchDeltaX / deltaTime) * 16 * 0.01;
             }
 
             const dragAmount = -(e.touches[0].clientX - touchStartX) * 0.0025; // Continuous sliding
@@ -560,12 +760,20 @@
 
             touchLastX = e.touches[0].clientX;
             lastTime = currentTime;
-        });
+        }, { passive: false });
 
-        track.addEventListener('touchend', () => {
+        track.addEventListener('touchend', (e) => {
             if (!isDragging) return;
             isDragging = false;
-        });
+
+            // If total drag distance is small (< 10px), treat it as a tap
+            if (touchDragDistance < 10 && touchedCardIndex !== null) {
+                goToIndex(touchedCardIndex);
+            }
+
+            touchedCardIndex = null;
+            touchDragDistance = 0;
+        }, { passive: true });
 
         // Navigation
         prevBtn.addEventListener('click', prevCard);
@@ -594,6 +802,16 @@
             } else if (e.deltaY < 0) {
                 prevCard();
             }
+        });
+
+        // Handle window resize and orientation changes
+        let resizeTimeout;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(() => {
+                // Force a re-render with new responsive values
+                updateCardPositions();
+            }, 100);
         });
 
         // Initial animation - start from card 1 and animate to card 0

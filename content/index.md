@@ -2,12 +2,6 @@
 title: Peter Ariet | Creative Producer
 ---
 
-# Peter Ariet
-
-
-
-**Creative Producer** based in San Diego
-
 My name is Peter Ariet, and I'm one of the passionate and creative forces behind Studio Syro, a pioneering VR animation studio. My journey in this dynamic field has been driven by a blend of technical expertise and artistic vision, and has led to the creation of immersive and captivating VR experiences.
 
 ## Featured Work

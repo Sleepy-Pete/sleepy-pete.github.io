@@ -25,6 +25,7 @@ import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
 import ProfilePhoto from "./ProfilePhoto"
 import Navigation from "./Navigation"
+import FeaturedCarousel from "./FeaturedCarousel"
 
 export {
   ArticleTitle,
@@ -54,4 +55,5 @@ export {
   ConditionalRender,
   ProfilePhoto,
   Navigation,
+  FeaturedCarousel,
 }

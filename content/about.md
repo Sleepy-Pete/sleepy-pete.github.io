@@ -1,9 +1,6 @@
 ---
 title: About Me
 ---
-
-# About
-
 ## Short Bio
 
 I am Peter Ariet, a Creative Producer and technical artist, and Co-Founder of Studio Syro. I lead end-to-end XR productions across VR, AR, and location based experiences, bridging storytelling, team leadership, and hands on technical problem solving. My work includes the Meta published VR animated series Tales From Soda Island and the immersive album experience The Art of Change, with projects showcased at Venice, SXSW, and SIGGRAPH.
