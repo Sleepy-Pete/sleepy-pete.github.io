@@ -1,12 +1,12 @@
 ---
-title: Creative Producer
+title:
 ---
 
 My name is Peter Ariet, and I'm one of the passionate and creative forces behind Studio Syro, a pioneering VR animation studio. My journey in this dynamic field has been driven by a blend of technical expertise and artistic vision, and has led to the creation of immersive and captivating VR experiences.
 
 ## Featured Work
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr)); gap: 1.5rem; margin: 2rem 0;">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 2rem; margin: 2rem 0;">
 
 <div style="border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.2s;">
   <a href="/Productions/Studio-Syro" style="text-decoration: none; color: inherit;">

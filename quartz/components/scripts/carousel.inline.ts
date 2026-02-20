@@ -40,9 +40,9 @@ document.addEventListener("nav", () => {
   function getResponsiveValues() {
     const width = window.innerWidth
     if (width <= 480) {
-      return { spacing: 130, sideZ: -200, rotation: 35 }
-    } else if (width <= 768) {
-      return { spacing: 160, sideZ: -250, rotation: 40 }
+      return { spacing: 110, sideZ: -180, rotation: 35 }
+    } else if (width <= 800) {
+      return { spacing: 150, sideZ: -230, rotation: 40 }
     } else {
       return { spacing: 200, sideZ: -300, rotation: 45 }
     }
@@ -296,7 +296,7 @@ document.addEventListener("nav", () => {
       velocity = -(touchDeltaX / deltaTime) * 16 * 0.01
     }
 
-    const dragAmount = -(e.touches[0].clientX - touchStartX) * 0.0025 // Continuous sliding
+    const dragAmount = -(e.touches[0].clientX - touchStartX) * 0.004 // Continuous sliding - higher sensitivity for touch
     targetRotation = currentIndex + dragAmount
 
     touchLastX = e.touches[0].clientX

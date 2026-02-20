@@ -9,6 +9,11 @@
   overflow-y: visible;
   position: relative;
 
+  @media all and ($mobile) {
+    width: 100%;
+    margin-left: 0;
+  }
+
   .carousel-header {
     text-align: center;
     margin-bottom: 1rem;
@@ -53,6 +58,7 @@
     transform-style: preserve-3d;
     cursor: grab;
     user-select: none;
+    touch-action: pan-y;
 
     &.dragging {
       cursor: grabbing;
@@ -205,8 +211,8 @@
     }
   }
 
-  // Mobile responsive
-  @media (max-width: 768px) {
+  // Tablet responsive - matches Quartz $mobile breakpoint
+  @media all and ($mobile) {
     padding: 1rem 0 1.5rem;
 
     .carousel-header {
@@ -222,7 +228,7 @@
     }
 
     .carousel-container {
-      height: 320px;
+      height: 300px;
       perspective: 1000px;
     }
 
@@ -278,6 +284,7 @@
     }
   }
 
+  // Small mobile
   @media (max-width: 480px) {
     padding: 0.75rem 0 1rem;
 
@@ -294,26 +301,26 @@
     }
 
     .carousel-container {
-      height: 280px;
+      height: 260px;
       perspective: 800px;
     }
 
     .carousel-card {
-      width: 220px;
-      margin-left: -110px;
-      margin-top: -62px;
+      width: 200px;
+      margin-left: -100px;
+      margin-top: -56px;
 
       .card-image-wrapper {
-        width: 220px;
-        height: 124px;
-        margin-left: -110px;
+        width: 200px;
+        height: 112px;
+        margin-left: -100px;
         border-radius: 8px;
       }
 
       .card-content {
-        width: 220px;
-        margin-left: -110px;
-        top: 135px;
+        width: 200px;
+        margin-left: -100px;
+        top: 125px;
 
         .card-title {
           font-size: 0.85rem;
