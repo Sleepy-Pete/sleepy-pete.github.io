@@ -1,22 +1,13 @@
 @use "../../styles/variables.scss" as *;
 
 .featured-carousel-section {
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
+  width: 100%;
   padding: 0 0 1.5rem;
-  background: transparent;
-  overflow-x: clip;
-  overflow-y: visible;
   position: relative;
-
-  @media all and ($mobile) {
-    width: 100%;
-    margin-left: 0;
-  }
 
   .carousel-header {
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 1.25rem;
     padding: 0 1rem;
 
     h2 {
@@ -34,175 +25,127 @@
     }
   }
 
-  .carousel-container {
-    position: relative;
-    width: 100%;
-    height: 320px;
-    perspective: 1200px;
-    perspective-origin: 50% 50%;
-    overflow: visible;
-  }
-
+  // --- Viewport & track ---
   .carousel-viewport {
     position: relative;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    overflow: visible;
+    overflow: hidden;
+    border-radius: 12px;
   }
 
   .carousel-track {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    cursor: grab;
-    user-select: none;
+    display: flex;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: transform;
     touch-action: pan-y;
-
-    &.dragging {
-      cursor: grabbing;
-
-      .carousel-card .card-image-wrapper,
-      .carousel-card .card-content {
-        transition: none;
-      }
-    }
   }
 
+  // --- Cards ---
   .carousel-card {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 380px;
-    height: auto;
-    margin-left: -190px;
-    margin-top: -107px; // Half of image height (214 / 2)
+    flex: 0 0 100%;
+    position: relative;
     text-decoration: none;
     color: inherit;
-    pointer-events: all;
-    transform-style: preserve-3d;
-    backface-visibility: visible;
-    transform-origin: center center;
-    cursor: pointer;
+    overflow: hidden;
+    border-radius: 12px;
 
-    .card-image-wrapper {
-      position: absolute;
-      left: 50%;
-      top: 0;
-      width: 380px;
-      height: 214px; // 16:9 aspect ratio
-      margin-left: -190px;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
-      background: #333;
-      transform-origin: center center;
-      will-change: transform;
-      transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    img {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      display: block;
+      margin: 0;
+      transition: transform 0.4s ease;
+    }
 
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        display: block;
-        margin: 0;
-      }
-
-      .card-overlay {
-        display: none;
-      }
+    &:hover img {
+      transform: scale(1.03);
     }
 
     .card-content {
       position: absolute;
-      left: 50%;
-      top: 230px; // Below the image
-      width: 380px;
-      margin-left: -190px;
-      text-align: center;
-      transform-origin: center center;
-      will-change: transform;
-      transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-                  opacity 0.4s ease;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 2rem 1.25rem 1rem;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, transparent 100%);
+      opacity: 0;
+      transition: opacity 0.35s ease;
+    }
 
-      .card-title {
-        font-size: 1rem;
-        font-weight: 600;
-        margin: 0;
-        color: var(--dark);
-        letter-spacing: -0.01em;
-        font-family: var(--headerFont);
-      }
+    &.active .card-content,
+    &:hover .card-content {
+      opacity: 1;
+    }
 
-      .card-description {
-        font-size: 0.8rem;
-        margin: 0.15rem 0 0 0;
-        color: var(--gray);
-        opacity: 0.8;
-      }
+    .card-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin: 0;
+      color: #fff;
+      font-family: var(--headerFont);
+    }
+
+    .card-description {
+      font-size: 0.85rem;
+      margin: 0.2rem 0 0;
+      color: rgba(255, 255, 255, 0.85);
     }
   }
 
+  // --- Navigation arrows ---
   .carousel-nav {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 100;
-    background: rgba(255, 255, 255, 0.9);
+    z-index: 10;
+    background: none;
     border: none;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 0.5rem;
     cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    color: var(--dark);
+    transition: opacity 0.2s, transform 0.2s;
+    color: #fff;
+    opacity: 0.8;
+    filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.5));
 
     &:hover {
-      background: white;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
-      transform: translateY(-50%) scale(1.1);
+      opacity: 1;
+      transform: translateY(-50%) scale(1.15);
     }
 
-    &.carousel-nav-prev {
-      left: 1rem;
+    &.carousel-prev {
+      left: 0.75rem;
     }
-
-    &.carousel-nav-next {
-      right: 1rem;
+    &.carousel-next {
+      right: 0.75rem;
     }
 
     svg {
-      width: 20px;
-      height: 20px;
+      width: 24px;
+      height: 24px;
     }
   }
 
-  .carousel-indicators {
+  // --- Dot indicators ---
+  .carousel-dots {
     display: flex;
     justify-content: center;
     gap: 0.5rem;
-    margin-top: 1rem;
-    padding: 0 1rem;
+    margin-top: 0.75rem;
 
-    .indicator-dot {
+    .carousel-dot {
       width: 8px;
       height: 8px;
       border-radius: 50%;
       border: 2px solid var(--gray);
       background: transparent;
-      cursor: pointer;
-      transition: all 0.3s ease;
       padding: 0;
+      cursor: pointer;
+      transition: all 0.25s ease;
 
       &.active {
         background: var(--secondary);
         border-color: var(--secondary);
-        transform: scale(1.2);
+        transform: scale(1.25);
       }
 
       &:hover {
@@ -211,134 +154,33 @@
     }
   }
 
-  // Tablet responsive - matches Quartz $mobile breakpoint
+  // --- Mobile ---
   @media all and ($mobile) {
-    padding: 1rem 0 1.5rem;
-
     .carousel-header {
       margin-bottom: 1rem;
 
-      h2 {
-        font-size: 1.5rem;
-      }
-
-      .carousel-subtitle {
-        font-size: 0.85rem;
-      }
+      h2 { font-size: 1.3rem; }
+      .carousel-subtitle { font-size: 0.85rem; }
     }
 
-    .carousel-container {
-      height: 300px;
-      perspective: 1000px;
-    }
-
-    .carousel-card {
-      width: 260px;
-      margin-left: -130px;
-      margin-top: -73px;
-
-      .card-image-wrapper {
-        width: 260px;
-        height: 146px;
-        margin-left: -130px;
-        border-radius: 10px;
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-      }
-
-      .card-content {
-        width: 260px;
-        margin-left: -130px;
-        top: 160px;
-
-        .card-title {
-          font-size: 0.9rem;
-        }
-
-        .card-description {
-          font-size: 0.75rem;
-        }
-      }
+    .carousel-viewport {
+      border-radius: 10px;
     }
 
     .carousel-nav {
-      width: 36px;
-      height: 36px;
-
-      &.carousel-nav-prev {
-        left: 0.5rem;
+      svg {
+        width: 20px;
+        height: 20px;
       }
-
-      &.carousel-nav-next {
-        right: 0.5rem;
-      }
+      &.carousel-prev { left: 0.5rem; }
+      &.carousel-next { right: 0.5rem; }
     }
 
-    .carousel-indicators {
+    .carousel-dots {
       gap: 0.4rem;
-      margin-top: 0.75rem;
-
-      .indicator-dot {
+      .carousel-dot {
         width: 6px;
         height: 6px;
-      }
-    }
-  }
-
-  // Small mobile
-  @media (max-width: 480px) {
-    padding: 0.75rem 0 1rem;
-
-    .carousel-header {
-      margin-bottom: 0.75rem;
-
-      h2 {
-        font-size: 1.25rem;
-      }
-
-      .carousel-subtitle {
-        font-size: 0.8rem;
-      }
-    }
-
-    .carousel-container {
-      height: 260px;
-      perspective: 800px;
-    }
-
-    .carousel-card {
-      width: 200px;
-      margin-left: -100px;
-      margin-top: -56px;
-
-      .card-image-wrapper {
-        width: 200px;
-        height: 112px;
-        margin-left: -100px;
-        border-radius: 8px;
-      }
-
-      .card-content {
-        width: 200px;
-        margin-left: -100px;
-        top: 125px;
-
-        .card-title {
-          font-size: 0.85rem;
-        }
-
-        .card-description {
-          font-size: 0.7rem;
-        }
-      }
-    }
-
-    .carousel-nav {
-      width: 32px;
-      height: 32px;
-
-      svg {
-        width: 16px;
-        height: 16px;
       }
     }
   }
