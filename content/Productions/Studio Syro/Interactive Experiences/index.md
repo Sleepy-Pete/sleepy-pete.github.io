@@ -7,8 +7,6 @@ tags:
   - StudioSyro
 ---
 
-# Interactive Experiences
-
 Studio Syro's interactive projects push the boundaries of mixed reality and hand-tracking technology, creating playful and innovative ways to interact in virtual spaces.
 
 **[[Productions/Studio Syro/Mixed Reality|Learn more about Mixed Reality →]]**

@@ -11,8 +11,6 @@ tags:
 date: 2025-01-16
 ---
 
-# Silence
-
 **Chapter 6 - Tales From Soda Island**
 
 ## Trailer

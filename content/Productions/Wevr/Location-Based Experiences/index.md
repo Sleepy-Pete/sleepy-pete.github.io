@@ -10,8 +10,6 @@ tags:
 date: 2024-12-31
 ---
 
-# Location-Based Experiences (LBE)
-
 ## Projects
 
 ### Terracotta Warriors: Secrets of the First Emperor's Mausoleum

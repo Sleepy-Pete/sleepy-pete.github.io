@@ -2,8 +2,6 @@
 title: Tales From Soda Island - Episodes
 ---
 
-# Tales From Soda Island - Episodes
-
 Explore all seven chapters of the Tales From Soda Island series:
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin: 2rem 0;">

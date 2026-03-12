@@ -523,25 +523,102 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     )
   }
 
+  // 3D orb effect: assign Z coordinates on a sphere and auto-rotate
+  const orbRadius = Math.min(width, height) * 0.35
+  let rotationAngle = 0
+  const rotationSpeed = 0.003
+
+  // Assign each node an angle on a sphere (distribute evenly)
+  const nodeAngles: Map<string, { theta: number; phi: number }> = new Map()
+  const goldenAngle = Math.PI * (3 - Math.sqrt(5))
+  graphData.nodes.forEach((n, i) => {
+    const count = Math.max(graphData.nodes.length - 1, 1)
+    const yPos = 1 - (i / count) * 2 // -1 to 1
+    const theta = goldenAngle * i
+    nodeAngles.set(n.id, {
+      theta,
+      phi: Math.asin(Math.max(-1, Math.min(1, yPos))),
+    })
+  })
+
+  function getOrb3D(nodeId: string, angle: number) {
+    const angles = nodeAngles.get(nodeId)
+    if (!angles) return { x: 0, y: 0, z: 0, depthScale: 0.5 }
+    const theta = angles.theta + angle
+    const phi = angles.phi
+    const x = orbRadius * Math.cos(phi) * Math.cos(theta)
+    const y = orbRadius * Math.sin(phi)
+    const z = orbRadius * Math.cos(phi) * Math.sin(theta)
+    // depthScale: 0.3 (far) to 1.0 (near)
+    const depthScale = 0.3 + 0.7 * ((z + orbRadius) / (2 * orbRadius))
+    return { x, y, z, depthScale }
+  }
+
   let stopAnimation = false
   function animate(time: number) {
     if (stopAnimation) return
+
+    // Only rotate when not dragging
+    if (!dragging) {
+      rotationAngle += rotationSpeed
+    }
+
+    // Sort nodes by Z for proper depth ordering
+    const sortedNodes = [...nodeRenderData].sort((a, b) => {
+      const za = getOrb3D(a.simulationData.id, rotationAngle).z
+      const zb = getOrb3D(b.simulationData.id, rotationAngle).z
+      return za - zb
+    })
+
+    // Update z-index by re-ordering children
+    try {
+      for (let i = 0; i < sortedNodes.length; i++) {
+        const n = sortedNodes[i]
+        if (n.gfx.parent === nodesContainer) nodesContainer.setChildIndex(n.gfx, i)
+        if (n.label.parent === labelsContainer) labelsContainer.setChildIndex(n.label, i)
+      }
+    } catch (_) {
+      // depth sorting is cosmetic — skip if it fails
+    }
+
     for (const n of nodeRenderData) {
       const { x, y } = n.simulationData
       if (!x || !y) continue
-      n.gfx.position.set(x + width / 2, y + height / 2)
+
+      const orb = getOrb3D(n.simulationData.id, rotationAngle)
+      // Blend simulation position with orb position for organic feel
+      const blendFactor = 0.6
+      const finalX = x * (1 - blendFactor) + orb.x * blendFactor
+      const finalY = y * (1 - blendFactor) + orb.y * blendFactor
+
+      n.gfx.position.set(finalX + width / 2, finalY + height / 2)
+      n.gfx.scale.set(orb.depthScale)
+      n.gfx.alpha = orb.depthScale * (hoveredNodeId && !n.active ? 0.2 : 1)
+
       if (n.label) {
-        n.label.position.set(x + width / 2, y + height / 2)
+        n.label.position.set(finalX + width / 2, finalY + height / 2)
+        n.label.alpha = n.label.alpha * orb.depthScale
       }
     }
 
     for (const l of linkRenderData) {
       const linkData = l.simulationData
+      const srcOrb = getOrb3D(linkData.source.id, rotationAngle)
+      const tgtOrb = getOrb3D(linkData.target.id, rotationAngle)
+
+      const blendFactor = 0.6
+      const sx = linkData.source.x! * (1 - blendFactor) + srcOrb.x * blendFactor + width / 2
+      const sy = linkData.source.y! * (1 - blendFactor) + srcOrb.y * blendFactor + height / 2
+      const tx = linkData.target.x! * (1 - blendFactor) + tgtOrb.x * blendFactor + width / 2
+      const ty = linkData.target.y! * (1 - blendFactor) + tgtOrb.y * blendFactor + height / 2
+
+      const linkDepth = Math.min(srcOrb.depthScale, tgtOrb.depthScale)
+
       l.gfx.clear()
-      l.gfx.moveTo(linkData.source.x! + width / 2, linkData.source.y! + height / 2)
+      l.gfx.moveTo(sx, sy)
       l.gfx
-        .lineTo(linkData.target.x! + width / 2, linkData.target.y! + height / 2)
-        .stroke({ alpha: l.alpha, width: 1, color: l.color })
+        .lineTo(tx, ty)
+        .stroke({ alpha: l.alpha * linkDepth, width: linkDepth, color: l.color })
     }
 
     tweens.forEach((t) => t.update(time))
@@ -599,11 +676,11 @@ document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
   async function renderGlobalGraph() {
     const slug = getFullSlug(window)
     for (const container of containers) {
-      container.classList.add("active")
-      const sidebar = container.closest(".sidebar") as HTMLElement
-      if (sidebar) {
-        sidebar.style.zIndex = "1"
+      // Move overlay to body so it escapes sidebar opacity/stacking context
+      if (container.parentElement !== document.body) {
+        document.body.appendChild(container)
       }
+      container.classList.add("active")
 
       const graphContainer = container.querySelector(".global-graph-container") as HTMLElement
       registerEscapeHandler(container, hideGlobalGraph)
@@ -617,10 +694,6 @@ document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
     cleanupGlobalGraphs()
     for (const container of containers) {
       container.classList.remove("active")
-      const sidebar = container.closest(".sidebar") as HTMLElement
-      if (sidebar) {
-        sidebar.style.zIndex = ""
-      }
     }
   }
 

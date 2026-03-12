@@ -11,8 +11,6 @@ tags:
 date: 2025-01-16
 ---
 
-# The School Trip
-
 **Chapter 5 - Tales From Soda Island**
 
 ## Trailer

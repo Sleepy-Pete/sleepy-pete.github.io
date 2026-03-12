@@ -56,7 +56,4 @@ Explore the projects and creative work that inform this research:
 - [PondQuest](../Productions/Studio%20Syro/Interactive%20Experiences/PondQuest) - Interactive VR experience
 - [Dear Metaverse](../Productions/Studio%20Syro/Interactive%20Experiences/Dear%20Metaverse) - Interactive narrative
 
----
-
-[← Back to Home](/)
 

@@ -11,8 +11,6 @@ tags:
   - Series
 ---
 
-# Tales From Soda Island
-
 ![Tales From Soda Island Banner](/static/images/work/bakery.jpg)
 
 ## Overview

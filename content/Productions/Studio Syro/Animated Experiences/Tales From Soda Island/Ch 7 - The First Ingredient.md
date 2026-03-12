@@ -12,8 +12,6 @@ tags:
 date: 2025-01-16
 ---
 
-# The First Ingredient
-
 **Chapter 7 - Tales From Soda Island**
 
 ## Trailer

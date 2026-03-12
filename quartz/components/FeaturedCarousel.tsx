@@ -20,7 +20,7 @@ const defaultProjects: Project[] = [
   {
     title: "Studio Syro",
     description: "VR Animation Studio",
-    image: "/static/images/branding/social-logo-large.png",
+    image: "/static/images/branding/Syro_logo_social.png",
     link: "/Productions/Studio-Syro",
   },
   {
@@ -51,7 +51,7 @@ const defaultProjects: Project[] = [
     title: "Terracotta Warriors",
     description: "Location-Based VR Experience",
     image: "/static/images/wevr/slide_image_2.png",
-    link: "/Productions/Wevr",
+    link: "/Productions/Wevr/Location-Based-Experiences/Terracotta-Warriors",
   },
 ]
 

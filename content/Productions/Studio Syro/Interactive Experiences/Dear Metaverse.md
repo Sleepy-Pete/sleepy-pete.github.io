@@ -10,8 +10,6 @@ tags:
 date: 2023-09-01
 ---
 
-# Dear Metaverse
-
 ## Trailer
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/p9p5aMJZnW8" title="Dear Metaverse Announcement Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

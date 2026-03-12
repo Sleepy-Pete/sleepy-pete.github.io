@@ -2,26 +2,28 @@
 
 .featured-carousel-section {
   width: 100%;
-  padding: 0 0 1.5rem;
+  padding: 1rem 0 3rem;
   position: relative;
 
   .carousel-header {
     text-align: center;
-    margin-bottom: 1.25rem;
+    margin-bottom: 2rem;
     padding: 0 1rem;
 
     h2 {
-      font-size: 1.5rem;
-      font-weight: 700;
-      margin: 0 0 0.25rem 0;
+      font-size: clamp(1.75rem, 4vw, 2.5rem);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin: 0 0 0.5rem 0;
       color: var(--dark);
       font-family: var(--headerFont);
     }
 
     .carousel-subtitle {
-      font-size: 0.9rem;
-      color: var(--gray);
+      font-size: 1rem;
+      color: var(--darkgray);
       margin: 0;
+      font-weight: 400;
     }
   }
 
@@ -29,12 +31,17 @@
   .carousel-viewport {
     position: relative;
     overflow: hidden;
-    border-radius: 12px;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  :root[saved-theme="dark"] & .carousel-viewport {
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
   }
 
   .carousel-track {
     display: flex;
-    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.6s cubic-bezier(0.25, 0.1, 0.25, 1);
     will-change: transform;
     touch-action: pan-y;
   }
@@ -46,7 +53,7 @@
     text-decoration: none;
     color: inherit;
     overflow: hidden;
-    border-radius: 12px;
+    border-radius: 16px;
 
     img {
       width: 100%;
@@ -54,135 +61,140 @@
       object-fit: cover;
       display: block;
       margin: 0;
-      transition: transform 0.4s ease;
+      transition: transform 0.6s cubic-bezier(0.25, 0.1, 0.25, 1);
     }
 
     &:hover img {
-      transform: scale(1.03);
+      transform: scale(1.04);
     }
 
+    // Always visible — Apple: content first
     .card-content {
       position: absolute;
       bottom: 0;
       left: 0;
       right: 0;
-      padding: 2rem 1.25rem 1rem;
-      background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, transparent 100%);
-      opacity: 0;
-      transition: opacity 0.35s ease;
-    }
-
-    &.active .card-content,
-    &:hover .card-content {
-      opacity: 1;
+      padding: 3rem 2rem 1.5rem;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.75) 0%, transparent 100%);
     }
 
     .card-title {
-      font-size: 1.1rem;
+      font-size: 1.25rem;
       font-weight: 600;
+      letter-spacing: -0.01em;
       margin: 0;
       color: #fff;
       font-family: var(--headerFont);
     }
 
     .card-description {
-      font-size: 0.85rem;
-      margin: 0.2rem 0 0;
+      font-size: 0.9rem;
+      margin: 0.25rem 0 0;
       color: rgba(255, 255, 255, 0.85);
+      font-weight: 400;
     }
   }
 
-  // --- Navigation arrows ---
+  // --- Navigation arrows (44px minimum tap target) ---
   .carousel-nav {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     z-index: 10;
-    background: none;
-    border: none;
-    padding: 0.5rem;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
     cursor: pointer;
-    transition: opacity 0.2s, transform 0.2s;
+    transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
     color: #fff;
-    opacity: 0.8;
-    filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.5));
 
     &:hover {
-      opacity: 1;
-      transform: translateY(-50%) scale(1.15);
+      background: rgba(255, 255, 255, 0.25);
+      transform: translateY(-50%) scale(1.08);
     }
 
     &.carousel-prev {
-      left: 0.75rem;
+      left: 1rem;
     }
     &.carousel-next {
-      right: 0.75rem;
+      right: 1rem;
     }
 
     svg {
-      width: 24px;
-      height: 24px;
+      width: 20px;
+      height: 20px;
     }
   }
 
-  // --- Dot indicators ---
+  // --- Dot indicators (44px tap target via padding) ---
   .carousel-dots {
     display: flex;
     justify-content: center;
-    gap: 0.5rem;
-    margin-top: 0.75rem;
+    gap: 0.25rem;
+    margin-top: 1rem;
 
     .carousel-dot {
       width: 8px;
       height: 8px;
+      padding: 18px;
+      border: none;
       border-radius: 50%;
-      border: 2px solid var(--gray);
-      background: transparent;
-      padding: 0;
+      background: var(--gray);
+      background-clip: content-box;
+      box-sizing: content-box;
       cursor: pointer;
-      transition: all 0.25s ease;
+      transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 
       &.active {
         background: var(--secondary);
-        border-color: var(--secondary);
-        transform: scale(1.25);
+        background-clip: content-box;
+        transform: scale(1.3);
       }
 
       &:hover {
-        border-color: var(--secondary);
+        background: var(--secondary);
+        background-clip: content-box;
       }
     }
   }
 
   // --- Mobile ---
   @media all and ($mobile) {
-    .carousel-header {
-      margin-bottom: 1rem;
+    padding: 0.5rem 0 2rem;
 
-      h2 { font-size: 1.3rem; }
-      .carousel-subtitle { font-size: 0.85rem; }
+    .carousel-header {
+      margin-bottom: 1.5rem;
     }
 
     .carousel-viewport {
-      border-radius: 10px;
+      border-radius: 12px;
+    }
+
+    .carousel-card {
+      border-radius: 12px;
+
+      .card-content {
+        padding: 2rem 1.5rem 1rem;
+      }
     }
 
     .carousel-nav {
+      width: 44px;
+      height: 44px;
+
       svg {
-        width: 20px;
-        height: 20px;
+        width: 18px;
+        height: 18px;
       }
       &.carousel-prev { left: 0.5rem; }
       &.carousel-next { right: 0.5rem; }
     }
-
-    .carousel-dots {
-      gap: 0.4rem;
-      .carousel-dot {
-        width: 6px;
-        height: 6px;
-      }
-    }
   }
 }
-

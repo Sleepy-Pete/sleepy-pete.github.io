@@ -7,8 +7,6 @@ tags:
   - Quill
 ---
 
-# Quill
-
 ![Quill](/static/images/branding/QuillLogo.png)
 
 **VR Illustration & Animation Tool** | Developed by Smoothstep (formerly Meta/Oculus)

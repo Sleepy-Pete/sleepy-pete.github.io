@@ -11,8 +11,6 @@ tags:
 date: 2025-01-16
 ---
 
-# The Neon Jungle
-
 **Chapter 2 - Tales From Soda Island**
 
 ## Trailer

@@ -11,8 +11,6 @@ tags:
 date: 2025-01-16
 ---
 
-# The Multiverse Bakery
-
 **Chapter 1 - Tales From Soda Island**
 
 ## Trailer

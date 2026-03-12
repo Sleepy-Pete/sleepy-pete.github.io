@@ -13,17 +13,20 @@ export default ((opts?: Options) => {
     const links = opts?.links ?? []
     return (
       <footer class={`${displayClass ?? ""}`}>
-        <p>
-          {i18n(cfg.locale).components.footer.createdWith}{" "}
-          <a href="https://quartz.jzhao.xyz/">Quartz v{version}</a> © {year}
+        <div class="footer-main">
+          <p class="footer-name">Peter Ariet</p>
+          <ul class="footer-links">
+            {Object.entries(links).map(([text, link]) => (
+              <li>
+                <a href={link}>{text}</a>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <p class="footer-meta">
+          © {year} Peter Ariet. Built with{" "}
+          <a href="https://quartz.jzhao.xyz/">Quartz</a>.
         </p>
-        <ul>
-          {Object.entries(links).map(([text, link]) => (
-            <li>
-              <a href={link}>{text}</a>
-            </li>
-          ))}
-        </ul>
       </footer>
     )
   }

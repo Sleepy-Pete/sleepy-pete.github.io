@@ -12,8 +12,6 @@ tags:
 date: 2023-03-03
 ---
 
-# Reimagined Volume I: Nyssa
-
 **VR Animated Short Film** | 15 minutes | 2023
 
 ## Trailer

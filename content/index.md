@@ -1,92 +1,76 @@
 ---
-title: Creative Producer
+title: "Peter Ariet — Creative Producer"
 ---
 
-My name is Peter Ariet, and I'm one of the passionate and creative forces behind Studio Syro, a pioneering VR animation studio. My journey in this dynamic field has been driven by a blend of technical expertise and artistic vision, and has led to the creation of immersive and captivating VR experiences.
+I'm one of the passionate and creative forces behind Studio Syro, a pioneering VR animation studio. My journey in this dynamic field has been driven by a blend of technical expertise and artistic vision, and has led to the creation of immersive and captivating VR experiences.
 
-## Featured Work
+## Productions
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr)); gap: 1.5rem; margin: 2rem 0;">
+<div class="productions-grid">
 
-<div style="border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.2s;">
-  <a href="/Productions/Studio-Syro" style="text-decoration: none; color: inherit;">
-    <img src="/static/images/branding/social-logo-large.png" alt="Studio Syro" style="width: 100%; height: 200px; object-fit: contain; background-color: #000;">
-    <div style="padding: 1.5rem;">
-      <div style="margin: 0 0 0.5rem 0; font-size: 1.12rem; font-weight: 600;">Studio Syro</div>
-      <p style="margin: 0; color: var(--gray);">VR Animation Studio</p>
-    </div>
-  </a>
-</div>
+<a href="/Productions/Studio-Syro" class="production-card">
+  <img src="/static/images/branding/Syro_logo_social.png" alt="Studio Syro" />
+  <div class="production-info">
+    <strong>Studio Syro</strong>
+    <span>VR Animation Studio</span>
+  </div>
+</a>
 
-<div style="border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.2s;">
-  <a href="/Productions/Studio-Syro/Animated-Experiences/Tales-From-Soda-Island" style="text-decoration: none; color: inherit;">
-    <img src="/static/images/work/bakery.jpg" alt="Tales From Soda Island" style="width: 100%; height: 200px; object-fit: cover;">
-    <div style="padding: 1.5rem;">
-      <div style="margin: 0 0 0.5rem 0; font-size: 1.12rem; font-weight: 600;">Tales From Soda Island</div>
-      <p style="margin: 0; color: var(--gray);">VR Animated Series</p>
-    </div>
-  </a>
-</div>
+<a href="/Productions/Studio-Syro/Animated-Experiences/Tales-From-Soda-Island" class="production-card">
+  <img src="/static/images/work/bakery.jpg" alt="Tales From Soda Island" />
+  <div class="production-info">
+    <strong>Tales From Soda Island</strong>
+    <span>VR Animated Series (Meta)</span>
+  </div>
+</a>
 
-<div style="border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.2s;">
-  <a href="/Productions/Studio-Syro/Interactive-Experiences/PondQuest" style="text-decoration: none; color: inherit;">
-    <img src="/static/images/work/PondQuest_Thumbnail.png" alt="PondQuest" style="width: 100%; height: 200px; object-fit: cover;">
-    <div style="padding: 1.5rem;">
-      <div style="margin: 0 0 0.5rem 0; font-size: 1.12rem; font-weight: 600;">PondQuest</div>
-      <p style="margin: 0; color: var(--gray);">Mixed Reality Platformer</p>
-    </div>
-  </a>
-</div>
+<a href="/Productions/Studio-Syro/Interactive-Experiences/PondQuest" class="production-card">
+  <img src="/static/images/work/PondQuest_Thumbnail.png" alt="PondQuest" />
+  <div class="production-info">
+    <strong>PondQuest</strong>
+    <span>Mixed Reality Platformer</span>
+  </div>
+</a>
 
-<div style="border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.2s;">
-  <a href="/Productions/Studio-Syro/Animated-Experiences/The-Art-of-Change" style="text-decoration: none; color: inherit;">
-    <img src="/static/images/artofchange/promoposter.png" alt="The Art of Change" style="width: 100%; height: 200px; object-fit: cover;">
-    <div style="padding: 1.5rem;">
-      <div style="margin: 0 0 0.5rem 0; font-size: 1.12rem; font-weight: 600;">The Art of Change</div>
-      <p style="margin: 0; color: var(--gray);">VR Music Experience</p>
-    </div>
-  </a>
-</div>
+<a href="/Productions/Studio-Syro/Animated-Experiences/The-Art-of-Change" class="production-card">
+  <img src="/static/images/artofchange/promoposter.png" alt="The Art of Change" />
+  <div class="production-info">
+    <strong>The Art of Change</strong>
+    <span>VR Music Experience (Venice 2024)</span>
+  </div>
+</a>
 
-<div style="border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.2s;">
-  <a href="/Productions/Studio-Syro/Interactive-Experiences/Dear-Metaverse" style="text-decoration: none; color: inherit;">
-    <img src="/static/images/work/DearMetaverse_Thumbnail_Landscape.png" alt="Dear Metaverse" style="width: 100%; height: 200px; object-fit: cover;">
-    <div style="padding: 1.5rem;">
-      <div style="margin: 0 0 0.5rem 0; font-size: 1.12rem; font-weight: 600;">Dear Metaverse</div>
-      <p style="margin: 0; color: var(--gray);">VR/AR Messaging App</p>
-    </div>
-  </a>
-</div>
+<a href="/Productions/Studio-Syro/Interactive-Experiences/Dear-Metaverse" class="production-card">
+  <img src="/static/images/work/DearMetaverse_Thumbnail_Landscape.png" alt="Dear Metaverse" />
+  <div class="production-info">
+    <strong>Dear Metaverse</strong>
+    <span>VR/AR Messaging App</span>
+  </div>
+</a>
 
-<div style="border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.2s;">
-  <a href="/Productions/Wevr" style="text-decoration: none; color: inherit;">
-    <img src="/static/images/wevr/slide_image_2.png" alt="Terracotta Warriors" style="width: 100%; height: 200px; object-fit: cover;">
-    <div style="padding: 1.5rem;">
-      <div style="margin: 0 0 0.5rem 0; font-size: 1.12rem; font-weight: 600;">Terracotta Warriors</div>
-      <p style="margin: 0; color: var(--gray);">Location-Based VR Experience</p>
-    </div>
-  </a>
-</div>
+<a href="/Productions/Wevr/Location-Based-Experiences/Terracotta-Warriors" class="production-card">
+  <img src="/static/images/wevr/slide_image_2.png" alt="Terracotta Warriors" />
+  <div class="production-info">
+    <strong>Terracotta Warriors</strong>
+    <span>Location-Based VR (HTC VIVE Arts)</span>
+  </div>
+</a>
 
 </div>
+
+<a href="/Productions/" class="cta-link">View all productions →</a>
 
 ## Publications & Research
 
-- **[Creating a Universe from Scratch: Studio Syro's Handcrafted VR Pipeline](publications/Creating%20a%20Universe%20from%20Scratch)** (with Nick Ladd)
-  *SIGGRAPH Spatial Storytelling '25*, Vancouver, BC, Canada, August 2025
+**[Creating a Universe from Scratch: Studio Syro's Handcrafted VR Pipeline](publications/Creating%20a%20Universe%20from%20Scratch)** (with Nick Ladd)
+*SIGGRAPH Spatial Storytelling '25*, Vancouver, BC, Canada, August 2025
 
-[[publications/index|View all publications →]]
+<a href="/publications/" class="cta-link">View all publications →</a>
 
 ## About
 
-With over five years of production experience, I have leveraged my expertise in creative storytelling and technical skills to create captivating VR experiences at Studio Syro. As **Co-Founder** and **Creative Producer**, I have helped steer our talented artists and developers towards the successful creation of "Tales From Soda Island," a VR animated series.
+I am a Creative Producer and technical artist, and Co-Founder of Studio Syro. I lead end-to-end XR productions across VR, AR, and location based experiences, bridging storytelling, team leadership, and hands on technical problem solving. My work includes the Meta published VR animated series Tales From Soda Island and the immersive album experience The Art of Change, with projects showcased at Venice, SXSW, and SIGGRAPH.
 
-[[about|Read more about me →]]
+If you want to collaborate or talk about art and emerging tech, feel free to reach out.
 
-## Contact
-
-- Email: [pjpariet@gmail.com](mailto:pjpariet@gmail.com)
-- LinkedIn: [linkedin.com/in/peter-ariet](https://www.linkedin.com/in/peter-ariet/)
-- Twitter: [@peterariet](https://twitter.com/peterariet)
-- Instagram: [@peterariet](https://www.instagram.com/peterariet/)
-
+<a href="/about" class="cta-link">Read more about me →</a>

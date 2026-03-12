@@ -62,7 +62,26 @@ function toggleFolderByPath(folderPath: string) {
   localStorage.setItem("fileTree", JSON.stringify(currentExplorerState))
 }
 
+function updateActiveNavLink() {
+  const currentPath = window.location.pathname
+  const navLinks = document.querySelectorAll(".nav-link") as NodeListOf<HTMLAnchorElement>
+
+  navLinks.forEach((link) => {
+    link.classList.remove("active")
+    const href = link.getAttribute("href") || ""
+
+    if (href === "/" && (currentPath === "/" || currentPath === "/index.html")) {
+      link.classList.add("active")
+    } else if (href !== "/" && currentPath.startsWith(href)) {
+      link.classList.add("active")
+    }
+  })
+}
+
 document.addEventListener("nav", () => {
+  // Set active state on current nav link
+  updateActiveNavLink()
+
   // Set up navigation button click handlers
   const navButtons = document.querySelectorAll(".nav-link") as NodeListOf<HTMLElement>
 

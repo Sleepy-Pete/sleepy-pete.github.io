@@ -11,8 +11,6 @@ tags:
 date: 2025-01-16
 ---
 
-# The Golden Record
-
 **Chapter 4 - Tales From Soda Island**
 
 ## Trailer

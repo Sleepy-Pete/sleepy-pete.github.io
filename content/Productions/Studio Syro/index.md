@@ -6,8 +6,6 @@ tags:
   - Production
 ---
 
-# Studio Syro
-
 <img src="../../static/images/branding/Syro_logo_text_1920.png" alt="Studio Syro Logo" />
 
 **Co-Founder & Creative Producer** | 2020 - Present

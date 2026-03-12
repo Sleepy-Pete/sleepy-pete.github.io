@@ -10,8 +10,6 @@ tags:
 date: 2021-06-01
 ---
 
-# The Art of Change
-
 **VR Animated Music Experience** | Studio Syro x DROELOE | 2021
 
 ## Trailer

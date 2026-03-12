@@ -25,10 +25,10 @@ ProfilePhoto.css = `
 
 .profile-photo img {
   width: 100%;
-  height: 250px;
+  aspect-ratio: 4 / 3;
   object-fit: cover;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  border-radius: 5px;
+  border-radius: 12px;
   border: 1px solid var(--lightgray);
 }
 `

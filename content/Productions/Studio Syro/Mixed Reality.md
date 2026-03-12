@@ -10,8 +10,6 @@ tags:
 date: 2024-12-31
 ---
 
-# Mixed Reality (MR)
-
 ![Mixed Reality](/static/images/work/PondQuest_Thumbnail.png)
 
 ## What is Mixed Reality?

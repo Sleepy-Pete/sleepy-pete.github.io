@@ -11,11 +11,20 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 1rem 0;
+  padding: 0.75rem 2rem;
   margin: 0;
   gap: 1.5rem;
-  border-bottom: 1px solid var(--lightgray);
-  background: var(--light);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(var(--light-rgb, 250, 248, 248), 0.72);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+}
+
+:root[saved-theme="dark"] header {
+  background: rgba(22, 22, 24, 0.72);
 }
 
 header h1 {

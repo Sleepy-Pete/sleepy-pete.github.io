@@ -7,8 +7,6 @@ tags:
   - StudioSyro
 ---
 
-# Animated Experiences
-
 Studio Syro's VR animated projects are hand-painted entirely in Quill, creating immersive narrative experiences with a unique hand-crafted aesthetic.
 
 ## Projects

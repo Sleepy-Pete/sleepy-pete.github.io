@@ -11,8 +11,6 @@ tags:
 date: 2025-01-16
 ---
 
-# The Quantum Race
-
 **Chapter 3 - Tales From Soda Island**
 
 ## Trailer
