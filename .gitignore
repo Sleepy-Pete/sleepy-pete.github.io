@@ -17,3 +17,6 @@ content/.obsidian/workspace.json
 content/.obsidian/workspace-mobile.json
 content/.obsidian/plugins/
 content/.obsidian/community-plugins.json
+
+# Studio Syro press kit / videos stay local only - too heavy for Pages deploys
+quartz/static/studiosyro/

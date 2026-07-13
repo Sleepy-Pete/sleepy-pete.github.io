@@ -137,6 +137,15 @@ export default ((userOpts?: Partial<CarouselOptions>) => {
               aria-label={`Go to project ${index + 1}`}
             ></button>
           ))}
+          <button class="carousel-pause" aria-label="Pause slideshow">
+            <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <rect x="6" y="5" width="4" height="14" rx="1"></rect>
+              <rect x="14" y="5" width="4" height="14" rx="1"></rect>
+            </svg>
+            <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <polygon points="8 5 19 12 8 19"></polygon>
+            </svg>
+          </button>
         </div>
       </section>
     )

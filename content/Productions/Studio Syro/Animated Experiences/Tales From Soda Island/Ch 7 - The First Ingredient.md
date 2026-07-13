@@ -16,7 +16,7 @@ date: 2025-01-16
 
 ## Trailer
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/IjEd83g3m3Y" title="Tales from Soda Island | The First Ingredient: Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/IjEd83g3m3Y" title="Tales from Soda Island | The First Ingredient: Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Overview
 

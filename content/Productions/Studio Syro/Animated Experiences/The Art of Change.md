@@ -14,7 +14,7 @@ date: 2021-06-01
 
 ## Trailer
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dvGaDGs31C8" title="The Art of Change // Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/dvGaDGs31C8" title="The Art of Change // Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Overview
 

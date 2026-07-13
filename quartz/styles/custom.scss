@@ -50,6 +50,25 @@
   }
 }
 
+// --- Mobile: panels are always visible (no hover on touch), stacked cleanly ---
+@media (max-width: 800px) {
+  // The reader-mode toggle does nothing on mobile, so hide it
+  .readermode {
+    display: none;
+  }
+
+  // Stack right-rail widgets full-width instead of squeezing them side by side
+  .page > #quartz-body .sidebar.right {
+    flex-direction: column;
+
+    & > * {
+      flex: unset;
+      width: 100%;
+      max-height: 20rem;
+    }
+  }
+}
+
 // --- Subtle sidebar styling (desktop only) ---
 @media (min-width: 1200px) {
   .sidebar.right {
@@ -366,6 +385,38 @@ a.cta-link {
   gap: 0.75rem;
   margin: 1rem 0;
 
+  // Icon-only contact buttons
+  .contact-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: var(--secondary);
+    background: var(--highlight);
+    border: 1px solid rgba(0, 102, 204, 0.15);
+    transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    // One icon per button: suppress the automatic external-link arrow
+    .external-icon {
+      display: none;
+    }
+
+    &:hover {
+      background: var(--secondary);
+      color: #fff;
+      opacity: 1;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 14px rgba(0, 102, 204, 0.3);
+    }
+  }
+
   .contact-link {
     display: inline-flex;
     align-items: center;
@@ -390,7 +441,8 @@ a.cta-link {
   }
 }
 
-:root[saved-theme="dark"] .contact-bar .contact-link {
+:root[saved-theme="dark"] .contact-bar .contact-link,
+:root[saved-theme="dark"] .contact-bar .contact-icon {
   border-color: rgba(41, 151, 255, 0.2);
 
   &:hover {

@@ -14,7 +14,7 @@ date: 2023-09-01
 
 ## Trailer
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/p9p5aMJZnW8" title="Spatial Mailbox Announcement Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/p9p5aMJZnW8" title="Spatial Mailbox Announcement Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 **Hand-Tracking VR/AR Messaging App** | Studio Syro | 2023 - Present
 

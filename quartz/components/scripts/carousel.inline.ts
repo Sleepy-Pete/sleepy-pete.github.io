@@ -14,6 +14,10 @@ document.addEventListener("nav", () => {
   let current = 0
   let autoTimer: number | null = null
   const interval = parseInt(section.dataset.autoRotateInterval || "5000")
+  const pauseBtn = section.querySelector(".carousel-pause") as HTMLElement | null
+  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches
+  // Explicit user intent; starts paused for reduced-motion users
+  let userPaused = prefersReducedMotion
 
   // --- Core: go to slide ---
   function goTo(index: number) {
@@ -35,6 +39,7 @@ document.addEventListener("nav", () => {
   // --- Auto-rotate ---
   function startAuto() {
     stopAuto()
+    if (userPaused) return
     autoTimer = window.setInterval(next, interval)
   }
   function stopAuto() {
@@ -132,18 +137,30 @@ document.addEventListener("nav", () => {
   }
   document.addEventListener("visibilitychange", onVisibility)
 
-  // --- Initialize ---
-  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches
-  goTo(0)
-  if (!prefersReducedMotion) {
-    startAuto()
+  // --- Visible pause/play control ---
+  const updatePauseUI = () => {
+    if (!pauseBtn) return
+    pauseBtn.classList.toggle("paused", userPaused)
+    pauseBtn.setAttribute("aria-label", userPaused ? "Play slideshow" : "Pause slideshow")
   }
+  const onPauseClick = () => {
+    userPaused = !userPaused
+    userPaused ? stopAuto() : startAuto()
+    updatePauseUI()
+  }
+  pauseBtn?.addEventListener("click", onPauseClick)
+
+  // --- Initialize ---
+  goTo(0)
+  startAuto()
+  updatePauseUI()
 
   // --- Cleanup on SPA navigation ---
   window.addCleanup(() => {
     stopAuto()
     prevBtn?.removeEventListener("click", onPrev)
     nextBtn?.removeEventListener("click", onNext)
+    pauseBtn?.removeEventListener("click", onPauseClick)
     document.removeEventListener("keydown", onKey)
     document.removeEventListener("visibilitychange", onVisibility)
     track.removeEventListener("touchstart", onTouchStart)

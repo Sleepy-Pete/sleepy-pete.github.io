@@ -42,26 +42,30 @@
   }
 }
 
-:root[reader-mode="on"] {
-  & .sidebar.left,
-  & .sidebar.right {
-    opacity: 0;
-    transition:
-      opacity 0.3s ease,
-      transform 0.3s ease;
-    transform: translateX(-10px);
+// Ghost panels are a desktop interaction (hover to reveal). On touch devices
+// there is no hover, so panels stay fully visible there.
+@media (min-width: 800px) {
+  :root[reader-mode="on"] {
+    & .sidebar.left,
+    & .sidebar.right {
+      opacity: 0;
+      transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+      transform: translateX(-10px);
 
-    &:hover {
-      opacity: 1;
-      transform: translateX(0);
+      &:hover {
+        opacity: 1;
+        transform: translateX(0);
+      }
     }
-  }
 
-  & .sidebar.right {
-    transform: translateX(10px);
+    & .sidebar.right {
+      transform: translateX(10px);
 
-    &:hover {
-      transform: translateX(0);
+      &:hover {
+        transform: translateX(0);
+      }
     }
   }
 }

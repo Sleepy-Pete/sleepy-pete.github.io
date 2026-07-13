@@ -12,7 +12,7 @@ date: 2025-07-29
 socialImage: /static/images/wevr/slide_image_2.png
 ---
 
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/WkQBdG4m8WA" title="Terracotta Warriors VR Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe loading="lazy" width="100%" height="400" src="https://www.youtube.com/embed/WkQBdG4m8WA" title="Terracotta Warriors VR Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Overview
 

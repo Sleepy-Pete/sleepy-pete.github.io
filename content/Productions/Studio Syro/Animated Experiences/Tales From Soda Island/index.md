@@ -12,7 +12,7 @@ Explore all seven chapters of the Tales From Soda Island series:
     <img src="/static/images/optimized/tfsi/episodes/1_TheMultiverseBakery_notimecode.jpg" alt="Ch 1 - The Multiverse Bakery" style="width: 100%; height: 200px; object-fit: cover;">
     <div style="padding: 1.5rem;">
       <h3 style="margin: 0 0 0.5rem 0;">Ch 1 - The Multiverse Bakery</h3>
-      <p style="margin: 0; color: var(--gray);">Begin your journey to Soda Island!</p>
+      <p style="margin: 0; color: var(--darkgray);">Begin your journey to Soda Island!</p>
     </div>
   </a>
 </div>
@@ -22,7 +22,7 @@ Explore all seven chapters of the Tales From Soda Island series:
     <img src="/static/images/optimized/tfsi/episodes/2_TheNeonJungle_notimecode.jpg" alt="Ch 2 - The Neon Jungle" style="width: 100%; height: 200px; object-fit: cover;">
     <div style="padding: 1.5rem;">
       <h3 style="margin: 0 0 0.5rem 0;">Ch 2 - The Neon Jungle</h3>
-      <p style="margin: 0; color: var(--gray);">Adventure through the Neon Jungle</p>
+      <p style="margin: 0; color: var(--darkgray);">Adventure through the Neon Jungle</p>
     </div>
   </a>
 </div>
@@ -32,7 +32,7 @@ Explore all seven chapters of the Tales From Soda Island series:
     <img src="/static/images/optimized/tfsi/episodes/3_TheQuantumRace_notimecode.jpg" alt="Ch 3 - The Quantum Race" style="width: 100%; height: 200px; object-fit: cover;">
     <div style="padding: 1.5rem;">
       <h3 style="margin: 0 0 0.5rem 0;">Ch 3 - The Quantum Race</h3>
-      <p style="margin: 0; color: var(--gray);">High-octave speed racing</p>
+      <p style="margin: 0; color: var(--darkgray);">High-octave speed racing</p>
     </div>
   </a>
 </div>
@@ -42,7 +42,7 @@ Explore all seven chapters of the Tales From Soda Island series:
     <img src="/static/images/optimized/tfsi/episodes/4_TheGoldenRecord_notimecode.jpg" alt="Ch 4 - The Golden Record" style="width: 100%; height: 200px; object-fit: cover;">
     <div style="padding: 1.5rem;">
       <h3 style="margin: 0 0 0.5rem 0;">Ch 4 - The Golden Record</h3>
-      <p style="margin: 0; color: var(--gray);">Discover an alien artifact</p>
+      <p style="margin: 0; color: var(--darkgray);">Discover an alien artifact</p>
     </div>
   </a>
 </div>
@@ -52,7 +52,7 @@ Explore all seven chapters of the Tales From Soda Island series:
     <img src="/static/images/optimized/tfsi/episodes/5_TheSchoolTrip_notimecode.jpg" alt="Ch 5 - The School Trip" style="width: 100%; height: 200px; object-fit: cover;">
     <div style="padding: 1.5rem;">
       <h3 style="margin: 0 0 0.5rem 0;">Ch 5 - The School Trip</h3>
-      <p style="margin: 0; color: var(--gray);">Journey of a glucose drop</p>
+      <p style="margin: 0; color: var(--darkgray);">Journey of a glucose drop</p>
     </div>
   </a>
 </div>
@@ -62,7 +62,7 @@ Explore all seven chapters of the Tales From Soda Island series:
     <img src="/static/images/optimized/tfsi/episodes/6_Silence_notimecode.jpg" alt="Ch 6 - Silence" style="width: 100%; height: 200px; object-fit: cover;">
     <div style="padding: 1.5rem;">
       <h3 style="margin: 0 0 0.5rem 0;">Ch 6 - Silence</h3>
-      <p style="margin: 0; color: var(--gray);">When ritual is interrupted</p>
+      <p style="margin: 0; color: var(--darkgray);">When ritual is interrupted</p>
     </div>
   </a>
 </div>
@@ -72,7 +72,7 @@ Explore all seven chapters of the Tales From Soda Island series:
     <img src="/static/images/optimized/tfsi/episodes/7_TheFirstIngredient_notimecode.jpg" alt="Ch 7 - The First Ingredient" style="width: 100%; height: 200px; object-fit: cover;">
     <div style="padding: 1.5rem;">
       <h3 style="margin: 0 0 0.5rem 0;">Ch 7 - The First Ingredient</h3>
-      <p style="margin: 0; color: var(--gray);">Mission to restore balance</p>
+      <p style="margin: 0; color: var(--darkgray);">Mission to restore balance</p>
     </div>
   </a>
 </div>

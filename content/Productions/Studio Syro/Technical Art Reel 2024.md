@@ -11,7 +11,7 @@ date: 2024-12-31
 
 ## Video
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/EJ0f0iGE_KI" title="Technical Art Reel 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/EJ0f0iGE_KI" title="Technical Art Reel 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 **[Watch on YouTube](https://youtu.be/EJ0f0iGE_KI)**
 
