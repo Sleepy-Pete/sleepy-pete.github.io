@@ -55,17 +55,18 @@ export default ((userOpts?: Partial<NavigationOptions>) => {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0.5rem;
-    padding: 1rem 0;
+    gap: 0.25rem;
+    padding: 0.375rem 0;
     flex-wrap: wrap;
   }
 
   .navigation .nav-link {
     color: var(--darkgray);
     font-weight: 500;
+    font-size: 0.9375rem;
     text-decoration: none;
-    min-height: 44px;
-    padding: 0.75rem 1rem;
+    min-height: 40px;
+    padding: 0.5rem 0.875rem;
     border-radius: 8px;
     transition: color 0.3s ease, background-color 0.3s ease;
     position: relative;
@@ -77,7 +78,7 @@ export default ((userOpts?: Partial<NavigationOptions>) => {
   .navigation .nav-link::after {
     content: '';
     position: absolute;
-    bottom: 0.5rem;
+    bottom: 0.3rem;
     left: 50%;
     transform: translateX(-50%);
     width: 0;
@@ -106,13 +107,26 @@ export default ((userOpts?: Partial<NavigationOptions>) => {
 
   @media (max-width: 800px) {
     .navigation {
-      gap: 0.25rem;
+      gap: 0;
+      padding: 0.25rem 0;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      max-width: 100%;
+    }
+
+    .navigation::-webkit-scrollbar {
+      display: none;
     }
 
     .navigation .nav-link {
-      padding: 0.75rem 0.75rem;
-      font-size: 0.9rem;
-      min-height: 44px;
+      padding: 0.45rem 0.55rem;
+      font-size: 0.875rem;
+      min-height: 38px;
+      white-space: nowrap;
+      flex-shrink: 0;
     }
   }
   `

@@ -11,7 +11,7 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 0.75rem 2rem;
+  padding: 0.375rem 1.5rem;
   margin: 0;
   gap: 1.5rem;
   border-bottom: 1px solid rgba(128, 128, 128, 0.15);
