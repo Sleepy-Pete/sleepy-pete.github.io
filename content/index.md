@@ -39,6 +39,6 @@ My work has been selected and honored at the Venice International Film Festival 
 
 I care deeply about the synergy between creative and technical disciplines, because that is where the strongest work happens. My job is to keep vision, process, and execution aligned so teams can do their best work and ship with confidence.
 
-If you want to collaborate or talk about art and emerging tech, feel free to reach out.
+I'm currently open to senior producer roles and production consulting. If you want to collaborate or talk about art and emerging tech, feel free to reach out.
 
 <a href="/about" class="cta-link">Read more about me →</a>

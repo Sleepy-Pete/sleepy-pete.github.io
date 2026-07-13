@@ -361,6 +361,38 @@ div[style*="border-radius: 8px"] {
   }
 }
 
+// --- Project "At a glance" fact block ---
+.at-a-glance {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem 1.5rem;
+  margin: 1.5rem 0 2rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--highlight);
+  border: 1px solid var(--lightgray);
+  border-radius: 12px;
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  strong {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--darkgray);
+  }
+
+  span {
+    font-size: 0.9375rem;
+    color: var(--dark);
+    line-height: 1.45;
+  }
+}
+
 // --- CTA Links (Apple "Learn more →" style) ---
 a.cta-link {
   display: inline-block;

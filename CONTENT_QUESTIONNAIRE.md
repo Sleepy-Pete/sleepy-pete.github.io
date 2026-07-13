@@ -1,5 +1,12 @@
 # Content Questionnaire - Project Case Study Details
 
+> **Status (2026-07-13):** Answered live in chat and applied to the site.
+> Open items:
+> - Wevr / Terracotta approved stills: Peter is digging them up - drop the folder path here when found
+> - Analytics: create a free GoatCounter account at goatcounter.com and tell Claude the site code to finish the switch
+> Everything below is kept for reference; feel free to add corrections inline.
+
+
 Fill in whatever you can, skip what you don't know, rough numbers are fine.
 Short bullets beat polished prose - I'll do the writing. When you're done,
 just tell Claude "the questionnaire is filled out" and each project page

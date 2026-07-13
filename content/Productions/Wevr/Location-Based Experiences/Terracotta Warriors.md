@@ -14,6 +14,14 @@ socialImage: /static/images/wevr/slide_image_2.png
 
 <iframe loading="lazy" width="100%" height="400" src="https://www.youtube.com/embed/WkQBdG4m8WA" title="Terracotta Warriors VR Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+<div class="at-a-glance">
+  <div><strong>Role</strong><span>Line Producer, WEVR</span></div>
+  <div><strong>Team</strong><span>Wevr core with vendor partners across six cities</span></div>
+  <div><strong>Timeline</strong><span>2024-2025, greybox through beta to deployment</span></div>
+  <div><strong>Scale</strong><span>40-minute experience, 16 QA zones, 150 visitors per hour</span></div>
+  <div><strong>Status</strong><span>Open to the public in Xi'an, China</span></div>
+</div>
+
 ## Overview
 
 A groundbreaking 40-minute location-based virtual reality experience that transports visitors inside Emperor Qin Shi Huang's mausoleum on the eve of his burial, 2,200 years after his death. This unprecedented collaboration between Wevr, VIVE Arts, and Xi'an-based Horizon Technology brings one of the world's greatest archaeological treasures to life through immersive storytelling and cutting-edge VR technology.

@@ -26,6 +26,8 @@ Before Studio Syro, I worked at the AR startup KWEST as a Technical Artist and l
 
 I care deeply about the synergy between creative and technical disciplines, because that is where the strongest work happens. My job is to keep vision, process, and execution aligned so teams can do their best work and ship with confidence.
 
+I'm currently open to senior producer roles and production consulting.
+
 **Email:** [pjpariet@gmail.com](mailto:pjpariet@gmail.com)
 
 ## Experience

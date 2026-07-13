@@ -7,10 +7,18 @@ tags:
   - Quill
   - Studio Syro
   - DROELOE
-date: 2021-06-01
+date: 2024-08-28
 ---
 
-**VR Animated Music Experience** | Studio Syro x DROELOE | 2021
+**VR Animated Music Experience** | Studio Syro x DROELOE | 2023-2024
+
+<div class="at-a-glance">
+  <div><strong>Role</strong><span>Creative Producer</span></div>
+  <div><strong>Team</strong><span>4-person core: Studio Syro x Funilab x DROELOE</span></div>
+  <div><strong>Timeline</strong><span>2023-2024</span></div>
+  <div><strong>Medium</strong><span>Hand-painted VR animation (Quill)</span></div>
+  <div><strong>Recognition</strong><span>81st Venice Film Festival 2024, SXSW 2025</span></div>
+</div>
 
 ## Trailer
 
@@ -18,9 +26,9 @@ date: 2021-06-01
 
 ## Overview
 
-**The Art of Change** is an immersive VR animation experience that brings DROELOE's music to life through hand-painted virtual reality. This project transforms voice memos and musical compositions into a stunning visual journey, showcasing the intersection of music, technology, and spatial storytelling.
+Through a unique tapestry of voice memos, music, and breathtaking VR animation, **The Art of Change** is an immersive audio-visual experience exploring a woman's dialogue with her past, present, and future selves.
 
-Created entirely in **Quill**, Meta's VR painting tool, this experience demonstrates the power of VR as a medium for artistic expression and emotional storytelling.
+Born from DROELOE's concept album, the project pairs Vincent Rooijers' music with Simone Fougnier's hand-painted worlds, built as a standalone VR piece tailored to the medium. Created entirely in **Quill**, it demonstrates the power of VR as a medium for artistic expression and emotional storytelling.
 
 ## Project Details
 
@@ -53,7 +61,8 @@ The Art of Change explores the creative process itself, visualizing the transfor
 
 ## Recognition
 
-Featured as a showcase of innovative VR storytelling and the creative potential of Quill as an animation medium.
+- **81st Venice International Film Festival (2024)** - Official Selection, Immersive Media
+- **SXSW 2025** - Official Selection
 
 ## Links
 

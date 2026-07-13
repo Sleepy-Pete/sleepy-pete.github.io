@@ -15,6 +15,13 @@ date: 2024-01-15
 
 **Mixed Reality Platformer** | Studio Syro | 2024 - Present
 
+<div class="at-a-glance">
+  <div><strong>Role</strong><span>Co-Founder & Creative Producer</span></div>
+  <div><strong>Status</strong><span>Early Access on Meta Quest</span></div>
+  <div><strong>Gameplay</strong><span>Hand-tracking mixed reality platformer</span></div>
+  <div><strong>Team</strong><span>Studio Syro</span></div>
+</div>
+
 ## Overview
 
 Take control of a frog as you leap, swim, and swing your way through serene, nature-filled levels in **PondQuest**, a mixed reality platformer featuring innovative hand tracking gameplay. Explore a lush pond ecosystem teeming with life, collect flies, and master acrobatic moves as you climb ever higher through vibrant, vertical environments. Can you make it to the top?

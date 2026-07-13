@@ -3,7 +3,15 @@ title: Tales From Soda Island - Episodes
 hideListing: true
 ---
 
-Explore all seven chapters of the Tales From Soda Island series:
+<div class="at-a-glance">
+  <div><strong>Role</strong><span>Producer & Technical Artist, Co-Founder</span></div>
+  <div><strong>Team</strong><span>5-8 person core, Studio Syro</span></div>
+  <div><strong>Timeline</strong><span>2020-2022</span></div>
+  <div><strong>Platform</strong><span>Meta Quest, funded & published by Meta</span></div>
+  <div><strong>Recognition</strong><span>SIGGRAPH 2021, Venice 2023, Webby nominee 2024, Best VR Works (Malta) 2024</span></div>
+</div>
+
+A seven-chapter VR animated series hand-painted entirely in Quill, funded and published by Meta. Explore all seven chapters:
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin: 2rem 0;">
 

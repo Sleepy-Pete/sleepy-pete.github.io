@@ -18,6 +18,13 @@ date: 2023-09-01
 
 **Hand-Tracking VR/AR Messaging App** | Studio Syro | 2023 - Present
 
+<div class="at-a-glance">
+  <div><strong>Role</strong><span>Co-Founder & Creative Producer</span></div>
+  <div><strong>Status</strong><span>In active development, Meta Quest wishlist live</span></div>
+  <div><strong>Community</strong><span>Growing Discord community</span></div>
+  <div><strong>Platform</strong><span>Meta Quest (VR/MR), hand tracking</span></div>
+</div>
+
 ## Overview
 
 **Spatial Mailbox** is an innovative hand-tracking VR and AR messaging application that reimagines how we communicate in spatial computing environments. Using advanced hand tracking technology, users can create and share immersive messages that blend the physical and virtual worlds.
@@ -38,7 +45,7 @@ Available on **Meta Quest** (VR/MR)
 
 ## Development Status
 
-Currently in active development. Join the community to stay updated on progress and upcoming features.
+Currently in active development, with the Meta Quest wishlist live and a growing community following along. Join the Discord to stay updated on progress and upcoming features.
 
 ## My Role
 

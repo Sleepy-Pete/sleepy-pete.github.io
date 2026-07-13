@@ -14,6 +14,14 @@ date: 2023-03-03
 
 **VR Animated Short Film** | 15 minutes | 2023
 
+<div class="at-a-glance">
+  <div><strong>Role</strong><span>Creative Producer</span></div>
+  <div><strong>Production</strong><span>Very Cavaliere Productions x Studio Syro, in partnership with Meta</span></div>
+  <div><strong>Runtime</strong><span>15 minutes</span></div>
+  <div><strong>Release</strong><span>March 2023, Meta Quest TV</span></div>
+  <div><strong>Recognition</strong><span>79th Venice Film Festival 2022, SIGGRAPH 2023 VR Theater</span></div>
+</div>
+
 ## Trailer
 
 <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/EOaCbYZlrrU" title="Reimagined Volume I: Nyssa | Meta Quest" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
