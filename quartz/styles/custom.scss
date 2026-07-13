@@ -361,35 +361,34 @@ div[style*="border-radius: 8px"] {
   }
 }
 
-// --- Project "At a glance" fact block ---
+// --- Project "At a glance" credits line (subtle, single flowing line) ---
 .at-a-glance {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1rem 1.5rem;
-  margin: 1.5rem 0 2rem;
-  padding: 1.25rem 1.5rem;
-  background: var(--highlight);
-  border: 1px solid var(--lightgray);
-  border-radius: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem 1.5rem;
+  margin: 0.25rem 0 2rem;
 
   > div {
     display: flex;
-    flex-direction: column;
-    gap: 0.2rem;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 0.45rem;
   }
 
   strong {
-    font-size: 0.75rem;
+    font-size: 0.6875rem;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: var(--darkgray);
+    letter-spacing: 0.06em;
+    color: var(--gray);
+    white-space: nowrap;
   }
 
   span {
-    font-size: 0.9375rem;
-    color: var(--dark);
-    line-height: 1.45;
+    font-size: 0.875rem;
+    color: var(--darkgray);
+    line-height: 1.5;
   }
 }
 
@@ -437,7 +436,7 @@ a.cta-link {
 
     // One icon per button: suppress the automatic external-link arrow
     .external-icon {
-      display: none;
+      display: none !important;
     }
 
     &:hover {
