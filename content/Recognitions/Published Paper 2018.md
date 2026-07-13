@@ -26,7 +26,7 @@ This peer-reviewed academic paper explores the effectiveness of emoticon-like sc
 
 ## Significance
 
-This publication demonstrates a commitment to advancing the field through rigorous research and academic contribution, bridging the gap between creative expression and technical implementation—a theme that continues throughout my career in immersive technology and interactive design.
+This publication demonstrates a commitment to advancing the field through rigorous research and academic contribution, bridging the gap between creative expression and technical implementation, a theme that continues throughout my career in immersive technology and interactive design.
 
 ## Academic Impact
 

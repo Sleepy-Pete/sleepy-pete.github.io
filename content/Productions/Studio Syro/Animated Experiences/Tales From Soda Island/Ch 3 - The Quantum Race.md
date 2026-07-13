@@ -43,11 +43,11 @@ Watch more content about the world of Soda Island:
 
 ## Gallery
 
-![The Quantum Race](/static/images/tfsi/episodes/3_TheQuantumRace_notimecode.png)
-![Quantum Race Scene 1](/static/images/tfsi/episodes/QuantumRace_promopic1.png)
-![Quantum Race Scene 2](/static/images/tfsi/episodes/QuantumRace_promopic2.png)
-![Quantum Race Scene 3](/static/images/tfsi/episodes/QuantumRace_promopic3.png)
-![Quantum Race Scene 4](/static/images/tfsi/episodes/QuantumRace_promopic4.png)
+![The Quantum Race](/static/images/optimized/tfsi/episodes/3_TheQuantumRace_notimecode.jpg)
+![Quantum Race Scene 1](/static/images/optimized/tfsi/episodes/QuantumRace_promopic1.jpg)
+![Quantum Race Scene 2](/static/images/optimized/tfsi/episodes/QuantumRace_promopic2.jpg)
+![Quantum Race Scene 3](/static/images/optimized/tfsi/episodes/QuantumRace_promopic3.jpg)
+![Quantum Race Scene 4](/static/images/optimized/tfsi/episodes/QuantumRace_promopic4.jpg)
 
 ## Watch Now
 

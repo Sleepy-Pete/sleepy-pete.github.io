@@ -68,7 +68,7 @@
       transform: scale(1.04);
     }
 
-    // Always visible — Apple: content first
+    // Always visible - Apple: content first
     .card-content {
       position: absolute;
       bottom: 0;
@@ -193,8 +193,12 @@
         width: 18px;
         height: 18px;
       }
-      &.carousel-prev { left: 0.5rem; }
-      &.carousel-next { right: 0.5rem; }
+      &.carousel-prev {
+        left: 0.5rem;
+      }
+      &.carousel-next {
+        right: 0.5rem;
+      }
     }
   }
 }

@@ -1,20 +1,11 @@
 document.addEventListener("nav", () => {
-  // Add reveal class to content sections
+  // Reveal only large blocks (section headings, card grids, the carousel).
+  // Body text stays visible at all times.
   const selectors = [
     "article > h2",
-    "article > h3",
-    "article > p",
-    "article > ul",
-    "article > ol",
-    "article > blockquote",
-    "article > .table-container",
-    "article > figure",
-    "article > pre",
     "article div[style*='display: grid']",
+    "article .productions-grid",
     ".featured-carousel-section",
-    ".backlinks",
-    ".graph",
-    ".toc",
   ]
 
   const elements = document.querySelectorAll(selectors.join(", "))
@@ -26,7 +17,9 @@ document.addEventListener("nav", () => {
   })
 
   // Add stagger class to grids
-  const grids = document.querySelectorAll("article div[style*='display: grid']")
+  const grids = document.querySelectorAll(
+    "article div[style*='display: grid'], article .productions-grid",
+  )
   grids.forEach((grid) => {
     grid.classList.add("reveal-stagger")
   })

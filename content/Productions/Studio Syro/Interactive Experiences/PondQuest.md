@@ -42,7 +42,7 @@ As Co-Founder and Creative Producer at Studio Syro, I contributed to the creativ
 
 ## Gallery
 
-![PondQuest](/static/images/work/PondQuest_Thumbnail.png)
+![PondQuest](/static/images/optimized/work/PondQuest_Thumbnail.jpg)
 
 ---
 

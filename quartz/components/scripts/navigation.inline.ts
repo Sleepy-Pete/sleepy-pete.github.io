@@ -1,9 +1,11 @@
 function toggleFolderByPath(folderPath: string) {
-  // Find the folder container with the matching path
+  // Find the folder container with the matching path.
+  // Explorer folder nodes are keyed by their index slug (e.g. "Productions/index"),
+  // so accept both forms.
   const folderContainer = document.querySelector(
-    `.folder-container[data-folderpath="${folderPath}"]`
+    `.folder-container[data-folderpath="${folderPath}"], .folder-container[data-folderpath="${folderPath}/index"]`,
   ) as HTMLElement | null
-  
+
   if (!folderContainer) {
     console.warn(`Folder not found: ${folderPath}`)
     return
@@ -86,7 +88,7 @@ document.addEventListener("nav", () => {
   const navButtons = document.querySelectorAll(".nav-link") as NodeListOf<HTMLElement>
 
   navButtons.forEach((button) => {
-    button.addEventListener("click", (e) => {
+    button.addEventListener("click", () => {
       const folderPath = button.dataset.folderpath
 
       if (folderPath) {

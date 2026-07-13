@@ -51,7 +51,7 @@ Experience this episode in VR on Meta Quest:
 
 ## Gallery
 
-![The First Ingredient](/static/images/tfsi/episodes/7_TheFirstIngredient_notimecode.png)
+![The First Ingredient](/static/images/optimized/tfsi/episodes/7_TheFirstIngredient_notimecode.jpg)
 
 ---
 

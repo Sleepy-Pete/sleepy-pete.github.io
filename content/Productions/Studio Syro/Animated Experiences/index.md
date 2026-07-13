@@ -5,6 +5,7 @@ tags:
   - Animation
   - Quill
   - StudioSyro
+hideListing: true
 ---
 
 Studio Syro's VR animated projects are hand-painted entirely in Quill, creating immersive narrative experiences with a unique hand-crafted aesthetic.
@@ -13,7 +14,7 @@ Studio Syro's VR animated projects are hand-painted entirely in Quill, creating 
 
 ### The Art of Change
 
-![The Art of Change](/static/images/artofchange/promoposter.png)
+![The Art of Change](/static/images/optimized/artofchange/promoposter.jpg)
 
 **[[Productions/Studio Syro/Animated Experiences/The Art of Change|Explore The Art of Change →]]**
 

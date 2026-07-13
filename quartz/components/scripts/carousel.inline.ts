@@ -126,9 +126,18 @@ document.addEventListener("nav", () => {
   section.addEventListener("mouseenter", onEnter)
   section.addEventListener("mouseleave", onLeave)
 
+  // --- Pause when the tab is hidden ---
+  const onVisibility = () => {
+    document.hidden ? stopAuto() : startAuto()
+  }
+  document.addEventListener("visibilitychange", onVisibility)
+
   // --- Initialize ---
+  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches
   goTo(0)
-  startAuto()
+  if (!prefersReducedMotion) {
+    startAuto()
+  }
 
   // --- Cleanup on SPA navigation ---
   window.addCleanup(() => {
@@ -136,6 +145,7 @@ document.addEventListener("nav", () => {
     prevBtn?.removeEventListener("click", onPrev)
     nextBtn?.removeEventListener("click", onNext)
     document.removeEventListener("keydown", onKey)
+    document.removeEventListener("visibilitychange", onVisibility)
     track.removeEventListener("touchstart", onTouchStart)
     track.removeEventListener("touchmove", onTouchMove)
     track.removeEventListener("touchend", onTouchEnd)
@@ -143,4 +153,3 @@ document.addEventListener("nav", () => {
     section.removeEventListener("mouseleave", onLeave)
   })
 })
-

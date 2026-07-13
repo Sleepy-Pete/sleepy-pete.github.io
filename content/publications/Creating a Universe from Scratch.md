@@ -33,7 +33,7 @@ date: 2025-08-14
 
 At Studio Syro, we create animated stories entirely within virtual reality. Using **Quill**, a VR-native painting and animation tool, we draw, animate, and build worlds directly inside the headset. Our first project, **Tales from Soda Island**, was the first animated series made completely in VR, and it laid the groundwork for an expressive, handcrafted production pipeline that we've used for every project since.
 
-We've since expanded this approach across mediums and formats, creating and publishing animated pieces like **Nyssa**, **The Art of Change**, and various music videos and stage visuals, as well as interactive experiences like our SXVA prototype, **PondQuest**, and **Dear Metaverse**.
+We've since expanded this approach across mediums and formats, creating and publishing animated pieces like **Nyssa**, **The Art of Change**, and various music videos and stage visuals, as well as interactive experiences like our SXVA prototype, **PondQuest**, and **Spatial Mailbox**.
 
 In this talk, we walk through the way we work, how we build and animate in VR, prototype in Unity, and keep our tools lightweight and artist-friendly. From quick sketches to spatial storytelling, we share what it takes to build entire worlds with small teams and big ideas.
 
@@ -49,7 +49,7 @@ In this talk, we walk through the way we work, how we build and animate in VR, p
 2. **Nyssa (Reimagined Volume I)** - VR animated short film
 3. **The Art of Change** - Immersive music experience
 4. **PondQuest** - Interactive VR experience
-5. **Dear Metaverse** - Interactive narrative experience
+5. **Spatial Mailbox** - Interactive narrative experience
 6. Music videos and stage visuals
 
 ### Technical Approach
@@ -83,7 +83,7 @@ The Spatial Storytelling track at SIGGRAPH 2025 brought together creators, resea
 - [Reimagined Volume I: Nyssa](../Productions/Studio%20Syro/Animated%20Experiences/Reimagined%20Volume%20I%20-%20Nyssa) - VR short film
 - [The Art of Change](../Productions/Studio%20Syro/Animated%20Experiences/The%20Art%20of%20Change) - Music experience
 - [PondQuest](../Productions/Studio%20Syro/Interactive%20Experiences/PondQuest) - Interactive VR
-- [Dear Metaverse](../Productions/Studio%20Syro/Interactive%20Experiences/Dear%20Metaverse) - Interactive narrative
+- [Spatial Mailbox](../Productions/Studio%20Syro/Interactive%20Experiences/Spatial%20Mailbox) - Interactive narrative
 - [Studio Syro](../Productions/Studio%20Syro) - Main studio page
 
 ## Citation

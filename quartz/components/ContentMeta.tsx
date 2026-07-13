@@ -26,6 +26,14 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
   function ContentMetadata({ cfg, fileData, displayClass }: QuartzComponentProps) {
     const text = fileData.text
 
+    // Only show metadata on pages with an intentional, hand-authored date.
+    // Git-derived dates read as noise on portfolio pages.
+    const fm = fileData.frontmatter as Record<string, unknown> | undefined
+    const hasExplicitDate = Boolean(fm?.date ?? fm?.created ?? fm?.published)
+    if (!hasExplicitDate) {
+      return null
+    }
+
     if (text) {
       const segments: (string | JSX.Element)[] = []
 

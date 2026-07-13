@@ -8,6 +8,7 @@ tags:
   - Technology
   - XR
 date: 2024-12-31
+hideListing: true
 ---
 
 ## Projects

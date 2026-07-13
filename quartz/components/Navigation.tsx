@@ -41,11 +41,7 @@ export default ((userOpts?: Partial<NavigationOptions>) => {
           }
 
           return (
-            <a
-              href={href}
-              class="nav-link"
-              data-folderpath={link.folderPath || ""}
-            >
+            <a href={href} class="nav-link" data-folderpath={link.folderPath || ""}>
               {link.text}
             </a>
           )
@@ -125,4 +121,3 @@ export default ((userOpts?: Partial<NavigationOptions>) => {
 
   return Navigation
 }) satisfies QuartzComponentConstructor
-

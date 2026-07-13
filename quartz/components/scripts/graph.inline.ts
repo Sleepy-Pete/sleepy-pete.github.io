@@ -578,7 +578,7 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
         if (n.label.parent === labelsContainer) labelsContainer.setChildIndex(n.label, i)
       }
     } catch (_) {
-      // depth sorting is cosmetic — skip if it fails
+      // depth sorting is cosmetic - skip if it fails
     }
 
     for (const n of nodeRenderData) {

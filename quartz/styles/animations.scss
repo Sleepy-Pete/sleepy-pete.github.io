@@ -52,7 +52,8 @@ html {
 
 // Gentle pulse for interactive elements
 @keyframes gentlePulse {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1);
   }
   50% {
@@ -62,7 +63,9 @@ html {
 
 // Smooth hover lift
 @mixin hoverLift {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 
   &:hover {
     transform: translateY(-2px);
@@ -70,7 +73,7 @@ html {
   }
 }
 
-// Apply animations to main content areas — only the first few elements
+// Apply animations to main content areas - only the first few elements
 // (scroll reveals handle the rest)
 article {
   animation: fadeIn 0.5s ease-out;
@@ -98,7 +101,7 @@ article {
 // Explorer items fade in
 .explorer-ul li {
   animation: fadeIn 0.3s ease-out backwards;
-  
+
   @for $i from 1 through 20 {
     &:nth-child(#{$i}) {
       animation-delay: #{$i * 0.03}s;
@@ -108,7 +111,9 @@ article {
 
 // Smooth transitions for links
 a {
-  transition: color 0.15s ease, opacity 0.15s ease;
+  transition:
+    color 0.15s ease,
+    opacity 0.15s ease;
 
   &:hover {
     opacity: 0.8;
@@ -125,7 +130,7 @@ a {
 // Search bar animation
 .search {
   transition: all 0.3s ease;
-  
+
   &:focus-within {
     transform: scale(1.02);
   }
@@ -201,7 +206,9 @@ button {
 
 // Folder animations in explorer
 .folder-outer {
-  transition: max-height 0.3s ease, opacity 0.3s ease;
+  transition:
+    max-height 0.3s ease,
+    opacity 0.3s ease;
 
   &:not(.open) {
     max-height: 0;
@@ -227,7 +234,7 @@ button {
     position: relative;
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       bottom: -2px;
       left: 0;
@@ -273,7 +280,9 @@ h1.article-title {
 
 // Image lazy load animation
 img {
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
 
   &:hover {
     transform: scale(1.01);
@@ -284,4 +293,3 @@ img {
 footer {
   animation: fadeIn 0.5s ease-out 0.3s backwards;
 }
-

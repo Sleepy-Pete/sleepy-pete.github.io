@@ -10,8 +10,9 @@
 .reveal {
   opacity: 0;
   transform: translateY(24px);
-  transition: opacity 0.8s cubic-bezier(0.25, 0.1, 0.25, 1),
-              transform 0.8s cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition:
+    opacity 0.8s cubic-bezier(0.25, 0.1, 0.25, 1),
+    transform 0.8s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 .reveal.visible {
@@ -23,8 +24,9 @@
 .reveal-stagger > * {
   opacity: 0;
   transform: translateY(16px);
-  transition: opacity 0.6s cubic-bezier(0.25, 0.1, 0.25, 1),
-              transform 0.6s cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition:
+    opacity 0.6s cubic-bezier(0.25, 0.1, 0.25, 1),
+    transform 0.6s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 .reveal-stagger.visible > * {
@@ -35,6 +37,16 @@
     &:nth-child(#{$i}) {
       transition-delay: #{$i * 0.08}s;
     }
+  }
+}
+
+// Never hide content for users who prefer reduced motion
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .reveal-stagger > * {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
   }
 }
 
@@ -98,7 +110,7 @@ body[data-slug="index"] {
     margin-bottom: 2rem;
   }
 
-  // Featured work grid cards — Apple style
+  // Featured work grid cards - Apple style
   article div[style*="display: grid"] {
     gap: 2rem !important;
     margin: 2.5rem 0 !important;
@@ -107,8 +119,9 @@ body[data-slug="index"] {
   article div[style*="border-radius: 8px"] {
     border-radius: 12px !important;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06) !important;
-    transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1),
-                box-shadow 0.3s cubic-bezier(0.25, 0.1, 0.25, 1) !important;
+    transition:
+      transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1),
+      box-shadow 0.3s cubic-bezier(0.25, 0.1, 0.25, 1) !important;
     overflow: hidden;
 
     &:hover {
@@ -158,7 +171,12 @@ body[data-slug="index"] {
 }
 
 // --- Global Typography Refinements ---
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   letter-spacing: -0.015em;
 }
 
@@ -167,16 +185,26 @@ article > p {
   line-height: 1.7;
 }
 
-// --- Links — Apple-style blue ---
+// --- Links - Apple-style blue ---
 a {
-  transition: color 0.15s ease, opacity 0.15s ease;
+  transition:
+    color 0.15s ease,
+    opacity 0.15s ease;
 
   &:hover {
     opacity: 1;
   }
 }
 
-// --- Blockquotes — refined ---
+// --- Accessibility: visible keyboard focus ---
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--secondary);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+// --- Blockquotes - refined ---
 blockquote {
   border-left-width: 3px;
   border-left-color: var(--secondary);
@@ -186,13 +214,13 @@ blockquote {
   border-radius: 0 8px 8px 0;
 }
 
-// --- Code blocks — refined ---
+// --- Code blocks - refined ---
 pre {
   border-radius: 12px;
   border-color: var(--lightgray);
 }
 
-// --- Horizontal rules — Apple style ---
+// --- Horizontal rules - Apple style ---
 hr {
   border: none;
   height: 1px;
@@ -200,14 +228,14 @@ hr {
   margin: 3rem auto;
 }
 
-// --- Footer — cleaner ---
+// --- Footer - cleaner ---
 footer {
   margin-top: 3rem;
   padding-top: 2rem;
   border-top: 1px solid var(--lightgray);
 }
 
-// --- Search modal — glass effect ---
+// --- Search modal - glass effect ---
 .search > .search-container {
   backdrop-filter: blur(20px) saturate(180%);
   -webkit-backdrop-filter: blur(20px) saturate(180%);
@@ -218,12 +246,12 @@ footer {
   border-radius: 16px;
 }
 
-// --- Graph — refined ---
+// --- Graph - refined ---
 .graph > .graph-outer {
   border-radius: 12px;
 }
 
-// --- Explorer — refined ---
+// --- Explorer - refined ---
 .explorer {
   border-radius: 12px;
 }

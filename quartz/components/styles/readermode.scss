@@ -30,7 +30,10 @@
     top: calc(50% - 10px);
     fill: var(--darkgray);
     stroke: var(--darkgray);
-    transition: opacity 0.3s ease, fill 0.3s ease, stroke 0.3s ease;
+    transition:
+      opacity 0.3s ease,
+      fill 0.3s ease,
+      stroke 0.3s ease;
   }
 
   &:hover svg {
@@ -43,7 +46,9 @@
   & .sidebar.left,
   & .sidebar.right {
     opacity: 0;
-    transition: opacity 0.3s ease, transform 0.3s ease;
+    transition:
+      opacity 0.3s ease,
+      transform 0.3s ease;
     transform: translateX(-10px);
 
     &:hover {

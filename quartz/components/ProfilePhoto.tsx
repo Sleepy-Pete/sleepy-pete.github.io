@@ -9,10 +9,7 @@ function ProfilePhoto({ displayClass, fileData }: QuartzComponentProps) {
 
   return (
     <div class={classNames(displayClass, "profile-photo")}>
-      <img 
-        src="/static/images/ProfilePhoto_Peter.png" 
-        alt="Peter Ariet" 
-      />
+      <img src="/static/images/optimized/ProfilePhoto_Peter.jpg" alt="Peter Ariet" />
     </div>
   )
 }
@@ -34,4 +31,3 @@ ProfilePhoto.css = `
 `
 
 export default (() => ProfilePhoto) satisfies QuartzComponentConstructor
-

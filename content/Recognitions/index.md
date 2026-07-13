@@ -4,9 +4,8 @@ tags:
   - awards
   - recognition
   - achievements
+hideListing: true
 ---
-
-# Recognitions and Awards
 
 A collection of awards, nominations, and recognitions for my work in immersive storytelling, technical art, and creative production.
 

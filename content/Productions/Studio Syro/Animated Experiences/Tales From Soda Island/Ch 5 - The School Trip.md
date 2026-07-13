@@ -46,7 +46,7 @@ Experience this episode in VR on Meta Quest:
 
 ## Gallery
 
-![The School Trip](/static/images/tfsi/episodes/5_TheSchoolTrip_notimecode.png)
+![The School Trip](/static/images/optimized/tfsi/episodes/5_TheSchoolTrip_notimecode.jpg)
 
 ---
 

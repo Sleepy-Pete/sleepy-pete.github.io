@@ -102,21 +102,28 @@ export default ((opts?: Partial<FolderContentOptions>) => {
         : htmlToJsx(fileData.filePath!, tree)
     ) as ComponentChildren
 
+    // Folder pages that hand-curate their children (cards, sections) can opt
+    // out of the automatic listing with `hideListing: true` in frontmatter.
+    const hideListing =
+      (fileData.frontmatter as Record<string, unknown> | undefined)?.hideListing === true
+
     return (
       <div class="popover-hint">
         <article class={classes}>{content}</article>
-        <div class="page-listing">
-          {options.showFolderCount && (
-            <p>
-              {i18n(cfg.locale).pages.folderContent.itemsUnderFolder({
-                count: allPagesInFolder.length,
-              })}
-            </p>
-          )}
-          <div>
-            <PageList {...listProps} />
+        {!hideListing && (
+          <div class="page-listing">
+            {options.showFolderCount && (
+              <p>
+                {i18n(cfg.locale).pages.folderContent.itemsUnderFolder({
+                  count: allPagesInFolder.length,
+                })}
+              </p>
+            )}
+            <div>
+              <PageList {...listProps} />
+            </div>
           </div>
-        </div>
+        )}
       </div>
     )
   }

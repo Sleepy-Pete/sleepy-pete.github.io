@@ -20,7 +20,7 @@ Unlike traditional 2D animation software, Quill allows artists to paint and anim
 ## Key Features
 
 ### Illustration & Painting
-Quill is designed to let the artist's "hand" come through clearly — whether that's a watercolor style, pencil style, oil painting style, or other creative look. Artists can paint with expressive brushstrokes that exist in 3D space, creating immersive environments and characters.
+Quill is designed to let the artist's "hand" come through clearly, whether that's a watercolor style, pencil style, oil painting style, or other creative look. Artists can paint with expressive brushstrokes that exist in 3D space, creating immersive environments and characters.
 
 ### Animation Timeline
 With Quill's Animation Timeline feature, storytellers can:
@@ -39,7 +39,7 @@ While Quill enables artists to create finished illustrations, experiences, and a
 
 ## Quill at Studio Syro
 
-At **Studio Syro**, Quill is the primary tool used to create all of our VR animated experiences. Every project — from the whimsical worlds of **Tales from Soda Island** to the emotional journey of **The Art of Change** and the haunting beauty of **Reimagined Volume I: Nyssa** — is hand-painted entirely in Quill.
+At **Studio Syro**, Quill is the primary tool used to create all of our VR animated experiences. Every project, from the whimsical worlds of **Tales from Soda Island** to the emotional journey of **The Art of Change** and the haunting beauty of **Reimagined Volume I: Nyssa**, is hand-painted entirely in Quill.
 
 This workflow allows us to:
 - **Maintain artistic consistency** across all projects with a distinctive hand-crafted aesthetic
@@ -50,9 +50,9 @@ This workflow allows us to:
 ### Studio Syro's Quill Projects
 
 **Animated Experiences:**
-- [Tales from Soda Island](Tales%20From%20Soda%20Island) - 7-episode VR animated series
-- [The Art of Change](The%20Art%20of%20Change) - VR music experience with DROELOE
-- [Reimagined Volume I: Nyssa](Reimagined%20Volume%20I%20-%20Nyssa) - VR animated short film
+- [[Productions/Studio Syro/Animated Experiences/Tales From Soda Island/index|Tales from Soda Island]] - 7-episode VR animated series
+- [[Productions/Studio Syro/Animated Experiences/The Art of Change|The Art of Change]] - VR music experience with DROELOE
+- [[Productions/Studio Syro/Animated Experiences/Reimagined Volume I - Nyssa|Reimagined Volume I: Nyssa]] - VR animated short film
 
 All of these projects showcase the unique capabilities of Quill, from its expressive painting tools to its powerful animation timeline, demonstrating how VR-native creation tools can produce world-class animated content.
 

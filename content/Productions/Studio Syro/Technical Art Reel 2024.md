@@ -26,11 +26,11 @@ This reel includes work from:
 - The Art of Change
 - Reimagined Volume I: Nyssa
 - PondQuest
-- Dear Metaverse
+- Spatial Mailbox
 
 ## Gallery
 
-![Technical Art Reel 2024](/static/images/work/Audio_BTS.png)
+![Technical Art Reel 2024](/static/images/optimized/work/Audio_BTS.jpg)
 
 ---
 

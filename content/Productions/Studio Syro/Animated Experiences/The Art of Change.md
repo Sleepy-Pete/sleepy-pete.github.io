@@ -43,13 +43,13 @@ The Art of Change explores the creative process itself, visualizing the transfor
 
 ## Gallery
 
-![The Art of Change](/static/images/artofchange/promoposter.png)
-![TAOC Still 1](/static/images/artofchange/promoTAOC_2.png)
-![TAOC Still 2](/static/images/artofchange/promoTAOC_3.png)
+![The Art of Change](/static/images/optimized/artofchange/promoposter.jpg)
+![TAOC Still 1](/static/images/optimized/artofchange/promoTAOC_2.jpg)
+![TAOC Still 2](/static/images/optimized/artofchange/promoTAOC_3.jpg)
 ![TAOC Still 3](/static/images/artofchange/promoTAOC_5.png)
 ![TAOC Still 4](/static/images/artofchange/promoTAOC_8.png)
-![TAOC Still 5](/static/images/artofchange/TAOC_9.png)
-![TAOC Still 6](/static/images/artofchange/TAOC_10.png)
+![TAOC Still 5](/static/images/optimized/artofchange/TAOC_9.jpg)
+![TAOC Still 6](/static/images/optimized/artofchange/TAOC_10.jpg)
 
 ## Recognition
 

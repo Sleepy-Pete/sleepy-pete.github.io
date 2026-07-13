@@ -25,7 +25,7 @@ Explore each chapter of the Tales from Soda Island series:
 
 ### 1. Chapter 1 - The Multiverse Bakery
 
-<img src="../../../../static/images/tfsi/episodes/1_TheMultiverseBakery_notimecode.png" alt="The Multiverse Bakery" />
+<img src="../../../../static/images/optimized/tfsi/episodes/1_TheMultiverseBakery_notimecode.jpg" alt="The Multiverse Bakery" />
 
 **[[Productions/Studio Syro/Animated Experiences/Tales From Soda Island/Ch 1 - The Multiverse Bakery|Watch Chapter 1 →]]**
 
@@ -33,7 +33,7 @@ Begin your journey to Soda Island! Witness a strange ritual with shifting rooms,
 
 ### 2. Chapter 2 - The Neon Jungle
 
-<img src="../../../../static/images/tfsi/episodes/2_TheNeonJungle_notimecode.png" alt="The Neon Jungle" />
+<img src="../../../../static/images/optimized/tfsi/episodes/2_TheNeonJungle_notimecode.jpg" alt="The Neon Jungle" />
 
 **[[Productions/Studio Syro/Animated Experiences/Tales From Soda Island/Ch 2 - The Neon Jungle|Watch Chapter 2 →]]**
 
@@ -41,7 +41,7 @@ Embark on an adventure through the Neon Jungle as you follow a Tadpolotl on its 
 
 ### 3. Chapter 3 - The Quantum Race
 
-<img src="../../../../static/images/tfsi/episodes/3_TheQuantumRace_notimecode.png" alt="The Quantum Race" />
+<img src="../../../../static/images/optimized/tfsi/episodes/3_TheQuantumRace_notimecode.jpg" alt="The Quantum Race" />
 
 **[[Productions/Studio Syro/Animated Experiences/Tales From Soda Island/Ch 3 - The Quantum Race|Watch Chapter 3 →]]**
 
@@ -49,7 +49,7 @@ Experience high-octave speed and molecular deconstruction as racers compete acro
 
 ### 4. Chapter 4 - The Golden Record
 
-<img src="../../../../static/images/tfsi/episodes/4_TheGoldenRecord_notimecode.png" alt="The Golden Record" />
+<img src="../../../../static/images/optimized/tfsi/episodes/4_TheGoldenRecord_notimecode.jpg" alt="The Golden Record" />
 
 **[[Productions/Studio Syro/Animated Experiences/Tales From Soda Island/Ch 4 - The Golden Record|Watch Chapter 4 →]]**
 
@@ -57,7 +57,7 @@ Follow TT, a lone worker in the Ant Megacolony, after discovering an alien artif
 
 ### 5. Chapter 5 - The School Trip
 
-<img src="../../../../static/images/tfsi/episodes/5_TheSchoolTrip_notimecode.png" alt="The School Trip" />
+<img src="../../../../static/images/optimized/tfsi/episodes/5_TheSchoolTrip_notimecode.jpg" alt="The School Trip" />
 
 **[[Productions/Studio Syro/Animated Experiences/Tales From Soda Island/Ch 5 - The School Trip|Watch Chapter 5 →]]**
 
@@ -65,7 +65,7 @@ Follow a single drop of glucose rain on a transformative journey as the ecosyste
 
 ### 6. Chapter 6 - Silence
 
-<img src="../../../../static/images/tfsi/episodes/6_Silence_notimecode.png" alt="Silence" />
+<img src="../../../../static/images/optimized/tfsi/episodes/6_Silence_notimecode.jpg" alt="Silence" />
 
 **[[Productions/Studio Syro/Animated Experiences/Tales From Soda Island/Ch 6 - Silence|Watch Chapter 6 →]]**
 
@@ -73,7 +73,7 @@ When a mystical coastal ritual is interrupted by an unwelcome visitor, events ar
 
 ### 7. Chapter 7 - The First Ingredient
 
-<img src="../../../../static/images/tfsi/episodes/7_TheFirstIngredient_notimecode.png" alt="The First Ingredient" />
+<img src="../../../../static/images/optimized/tfsi/episodes/7_TheFirstIngredient_notimecode.jpg" alt="The First Ingredient" />
 
 **[[Productions/Studio Syro/Animated Experiences/Tales From Soda Island/Ch 7 - The First Ingredient|Watch Chapter 7 →]]**
 
@@ -89,10 +89,10 @@ I encourage you to watch the series for yourself on MetaQuest - it is like nothi
 
 ## Gallery
 
-<img src="../../../../static/images/tfsi/still01.png" alt="Still 1" />
-<img src="../../../../static/images/tfsi/still02.png" alt="Still 2" />
-<img src="../../../../static/images/tfsi/still03.png" alt="Still 3" />
-<img src="../../../../static/images/tfsi/still04.png" alt="Still 4" />
+<img src="../../../../static/images/optimized/tfsi/still01.jpg" alt="Still 1" />
+<img src="../../../../static/images/optimized/tfsi/still02.jpg" alt="Still 2" />
+<img src="../../../../static/images/optimized/tfsi/still03.jpg" alt="Still 3" />
+<img src="../../../../static/images/optimized/tfsi/still04.jpg" alt="Still 4" />
 
 ## Achievement
 

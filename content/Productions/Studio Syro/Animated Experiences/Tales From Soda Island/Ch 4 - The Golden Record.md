@@ -46,7 +46,7 @@ Experience this episode in VR on Meta Quest:
 
 ## Gallery
 
-![The Golden Record](/static/images/tfsi/episodes/4_TheGoldenRecord_notimecode.png)
+![The Golden Record](/static/images/optimized/tfsi/episodes/4_TheGoldenRecord_notimecode.jpg)
 
 ---
 

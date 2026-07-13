@@ -10,7 +10,7 @@ tags:
 date: 2024-12-31
 ---
 
-![Mixed Reality](/static/images/work/PondQuest_Thumbnail.png)
+![Mixed Reality](/static/images/optimized/work/PondQuest_Thumbnail.jpg)
 
 ## What is Mixed Reality?
 
@@ -78,7 +78,7 @@ A Mixed Reality platformer that transforms your living room into a magical pond 
 - Physics-based interactions with real surfaces
 - Hand tracking for natural gesture controls
 
-### Dear Metaverse
+### Spatial Mailbox
 A Mixed Reality messaging application that brings asynchronous communication into physical space. Users can leave virtual messages, drawings, and 3D objects anchored to real-world locations for others to discover.
 
 **Key MR Features:**

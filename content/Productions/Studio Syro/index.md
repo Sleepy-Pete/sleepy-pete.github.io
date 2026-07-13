@@ -4,6 +4,7 @@ tags:
   - VR
   - Animation
   - Production
+hideListing: true
 ---
 
 <img src="../../static/images/branding/Syro_logo_text_1920.png" alt="Studio Syro Logo" />
@@ -14,7 +15,7 @@ tags:
 
 Studio Syro is an independent creative studio specializing in immersive storytelling, VR animation, and mixed reality experiences. As Co-Founder and Creative Producer, I've helped lead our international team in crafting rich, interactive worlds using innovative tools like Quill and real-time engines.
 
-Our work blends artistry and technology to create experiences that transport audiences into new dimensions—whether in virtual reality, mixed reality, or beyond. With a passion for cinematic storytelling and cutting-edge production, we push the boundaries of spatial storytelling.
+Our work blends artistry and technology to create experiences that transport audiences into new dimensions, whether in virtual reality, mixed reality, or beyond. With a passion for cinematic storytelling and cutting-edge production, we push the boundaries of spatial storytelling.
 
 ## Our Creative Tool: Quill
 
@@ -46,7 +47,7 @@ Our interactive projects push the boundaries of mixed reality and hand-tracking 
 #### [[Productions/Studio Syro/Interactive Experiences/PondQuest|PondQuest]]
 Mixed reality platformer featuring innovative hand tracking gameplay. Take control of a frog as you leap, swim, and swing through nature-filled levels.
 
-#### [[Productions/Studio Syro/Interactive Experiences/Dear Metaverse|Dear Metaverse]]
+#### [[Productions/Studio Syro/Interactive Experiences/Spatial Mailbox|Spatial Mailbox]]
 Hand-tracking VR/AR messaging app that reimagines communication in spatial computing environments.
 
 ### [[Productions/Studio Syro/Technical Art Reel 2024|Technical Art Reel 2024]]
@@ -75,7 +76,7 @@ Over three years, we've grown from a small team working on a single music video 
 
 ## Gallery
 
-<img src="../../static/images/work/ST.jpg" alt="School Trip" />
+<img src="../../static/images/optimized/work/ST.jpg" alt="School Trip" />
 
 <img src="../../static/images/work/dawsonCrop.jpg" alt="Dawson" />
 

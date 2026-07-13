@@ -50,7 +50,7 @@ Explore the creation and evolution of the Multiverse Bakery environment and char
 
 ## Gallery
 
-![The Multiverse Bakery](/static/images/tfsi/episodes/1_TheMultiverseBakery_notimecode.png)
+![The Multiverse Bakery](/static/images/optimized/tfsi/episodes/1_TheMultiverseBakery_notimecode.jpg)
 
 ---
 

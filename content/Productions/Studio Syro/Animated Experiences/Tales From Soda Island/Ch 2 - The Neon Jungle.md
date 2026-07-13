@@ -50,7 +50,7 @@ Experience this episode in VR on Meta Quest:
 
 ## Gallery
 
-![The Neon Jungle](/static/images/tfsi/episodes/2_TheNeonJungle_notimecode.png)
+![The Neon Jungle](/static/images/optimized/tfsi/episodes/2_TheNeonJungle_notimecode.jpg)
 
 ---
 

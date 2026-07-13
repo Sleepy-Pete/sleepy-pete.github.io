@@ -18,40 +18,40 @@ interface CarouselOptions {
 
 const defaultProjects: Project[] = [
   {
-    title: "Studio Syro",
-    description: "VR Animation Studio",
-    image: "/static/images/branding/Syro_logo_social.png",
-    link: "/Productions/Studio-Syro",
-  },
-  {
     title: "Tales From Soda Island",
-    description: "VR Animated Series",
+    description: "VR Animated Series - published by Meta",
     image: "/static/images/work/bakery.jpg",
     link: "/Productions/Studio-Syro/Animated-Experiences/Tales-From-Soda-Island",
   },
   {
-    title: "PondQuest",
-    description: "Mixed Reality Platformer",
-    image: "/static/images/work/PondQuest_Thumbnail.png",
-    link: "/Productions/Studio-Syro/Interactive-Experiences/PondQuest",
-  },
-  {
     title: "The Art of Change",
-    description: "VR Music Experience",
-    image: "/static/images/artofchange/promoposter.png",
+    description: "VR Music Experience - 81st Venice Film Festival",
+    image: "/static/images/optimized/artofchange/promoposter.jpg",
     link: "/Productions/Studio-Syro/Animated-Experiences/The-Art-of-Change",
   },
   {
-    title: "Dear Metaverse",
-    description: "VR/AR Messaging App",
-    image: "/static/images/work/DearMetaverse_Thumbnail_Landscape.png",
-    link: "/Productions/Studio-Syro/Interactive-Experiences/Dear-Metaverse",
+    title: "PondQuest",
+    description: "Mixed Reality Platformer",
+    image: "/static/images/optimized/work/PondQuest_Thumbnail.jpg",
+    link: "/Productions/Studio-Syro/Interactive-Experiences/PondQuest",
   },
   {
     title: "Terracotta Warriors",
-    description: "Location-Based VR Experience",
+    description: "Location-Based VR - with HTC VIVE Arts",
     image: "/static/images/wevr/slide_image_2.png",
     link: "/Productions/Wevr/Location-Based-Experiences/Terracotta-Warriors",
+  },
+  {
+    title: "Spatial Mailbox",
+    description: "VR/AR Messaging App",
+    image: "/static/images/optimized/work/SpatialMailbox_Thumbnail.jpg",
+    link: "/Productions/Studio-Syro/Interactive-Experiences/Spatial-Mailbox",
+  },
+  {
+    title: "Studio Syro",
+    description: "VR Animation Studio - Co-Founder",
+    image: "/static/images/branding/Syro_logo_social.png",
+    link: "/Productions/Studio-Syro",
   },
 ]
 
@@ -61,10 +61,7 @@ const defaultOptions: CarouselOptions = {
 }
 
 export default ((userOpts?: Partial<CarouselOptions>) => {
-  const FeaturedCarousel: QuartzComponent = ({
-    displayClass,
-    fileData,
-  }: QuartzComponentProps) => {
+  const FeaturedCarousel: QuartzComponent = ({ displayClass, fileData }: QuartzComponentProps) => {
     if (fileData.slug !== "index") {
       return null
     }
@@ -91,7 +88,12 @@ export default ((userOpts?: Partial<CarouselOptions>) => {
                 data-index={index}
                 aria-label={`View ${project.title}`}
               >
-                <img src={project.image} alt={project.title} loading="lazy" />
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  loading={index === 0 ? "eager" : "lazy"}
+                  decoding="async"
+                />
                 <div class="card-content">
                   <h3 class="card-title">{project.title}</h3>
                   <p class="card-description">{project.description}</p>
@@ -101,13 +103,27 @@ export default ((userOpts?: Partial<CarouselOptions>) => {
           </div>
 
           <button class="carousel-nav carousel-prev" aria-label="Previous project">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
               <polyline points="15 18 9 12 15 6"></polyline>
             </svg>
           </button>
 
           <button class="carousel-nav carousel-next" aria-label="Next project">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
               <polyline points="9 18 15 12 9 6"></polyline>
             </svg>
           </button>
@@ -131,4 +147,3 @@ export default ((userOpts?: Partial<CarouselOptions>) => {
 
   return FeaturedCarousel
 }) satisfies QuartzComponentConstructor
-

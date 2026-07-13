@@ -1,5 +1,6 @@
 ---
 title: Tales From Soda Island - Episodes
+hideListing: true
 ---
 
 Explore all seven chapters of the Tales From Soda Island series:
@@ -8,7 +9,7 @@ Explore all seven chapters of the Tales From Soda Island series:
 
 <div style="border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.2s;">
   <a href="/Productions/Studio-Syro/Animated-Experiences/Tales-From-Soda-Island/Ch-1---The-Multiverse-Bakery" style="text-decoration: none; color: inherit;">
-    <img src="/static/images/tfsi/episodes/1_TheMultiverseBakery_notimecode.png" alt="Ch 1 - The Multiverse Bakery" style="width: 100%; height: 200px; object-fit: cover;">
+    <img src="/static/images/optimized/tfsi/episodes/1_TheMultiverseBakery_notimecode.jpg" alt="Ch 1 - The Multiverse Bakery" style="width: 100%; height: 200px; object-fit: cover;">
     <div style="padding: 1.5rem;">
       <h3 style="margin: 0 0 0.5rem 0;">Ch 1 - The Multiverse Bakery</h3>
       <p style="margin: 0; color: var(--gray);">Begin your journey to Soda Island!</p>
@@ -18,7 +19,7 @@ Explore all seven chapters of the Tales From Soda Island series:
 
 <div style="border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.2s;">
   <a href="/Productions/Studio-Syro/Animated-Experiences/Tales-From-Soda-Island/Ch-2---The-Neon-Jungle" style="text-decoration: none; color: inherit;">
-    <img src="/static/images/tfsi/episodes/2_TheNeonJungle_notimecode.png" alt="Ch 2 - The Neon Jungle" style="width: 100%; height: 200px; object-fit: cover;">
+    <img src="/static/images/optimized/tfsi/episodes/2_TheNeonJungle_notimecode.jpg" alt="Ch 2 - The Neon Jungle" style="width: 100%; height: 200px; object-fit: cover;">
     <div style="padding: 1.5rem;">
       <h3 style="margin: 0 0 0.5rem 0;">Ch 2 - The Neon Jungle</h3>
       <p style="margin: 0; color: var(--gray);">Adventure through the Neon Jungle</p>
@@ -28,7 +29,7 @@ Explore all seven chapters of the Tales From Soda Island series:
 
 <div style="border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.2s;">
   <a href="/Productions/Studio-Syro/Animated-Experiences/Tales-From-Soda-Island/Ch-3---The-Quantum-Race" style="text-decoration: none; color: inherit;">
-    <img src="/static/images/tfsi/episodes/3_TheQuantumRace_notimecode.png" alt="Ch 3 - The Quantum Race" style="width: 100%; height: 200px; object-fit: cover;">
+    <img src="/static/images/optimized/tfsi/episodes/3_TheQuantumRace_notimecode.jpg" alt="Ch 3 - The Quantum Race" style="width: 100%; height: 200px; object-fit: cover;">
     <div style="padding: 1.5rem;">
       <h3 style="margin: 0 0 0.5rem 0;">Ch 3 - The Quantum Race</h3>
       <p style="margin: 0; color: var(--gray);">High-octave speed racing</p>
@@ -38,7 +39,7 @@ Explore all seven chapters of the Tales From Soda Island series:
 
 <div style="border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.2s;">
   <a href="/Productions/Studio-Syro/Animated-Experiences/Tales-From-Soda-Island/Ch-4---The-Golden-Record" style="text-decoration: none; color: inherit;">
-    <img src="/static/images/tfsi/episodes/4_TheGoldenRecord_notimecode.png" alt="Ch 4 - The Golden Record" style="width: 100%; height: 200px; object-fit: cover;">
+    <img src="/static/images/optimized/tfsi/episodes/4_TheGoldenRecord_notimecode.jpg" alt="Ch 4 - The Golden Record" style="width: 100%; height: 200px; object-fit: cover;">
     <div style="padding: 1.5rem;">
       <h3 style="margin: 0 0 0.5rem 0;">Ch 4 - The Golden Record</h3>
       <p style="margin: 0; color: var(--gray);">Discover an alien artifact</p>
@@ -48,7 +49,7 @@ Explore all seven chapters of the Tales From Soda Island series:
 
 <div style="border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.2s;">
   <a href="/Productions/Studio-Syro/Animated-Experiences/Tales-From-Soda-Island/Ch-5---The-School-Trip" style="text-decoration: none; color: inherit;">
-    <img src="/static/images/tfsi/episodes/5_TheSchoolTrip_notimecode.png" alt="Ch 5 - The School Trip" style="width: 100%; height: 200px; object-fit: cover;">
+    <img src="/static/images/optimized/tfsi/episodes/5_TheSchoolTrip_notimecode.jpg" alt="Ch 5 - The School Trip" style="width: 100%; height: 200px; object-fit: cover;">
     <div style="padding: 1.5rem;">
       <h3 style="margin: 0 0 0.5rem 0;">Ch 5 - The School Trip</h3>
       <p style="margin: 0; color: var(--gray);">Journey of a glucose drop</p>
@@ -58,7 +59,7 @@ Explore all seven chapters of the Tales From Soda Island series:
 
 <div style="border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.2s;">
   <a href="/Productions/Studio-Syro/Animated-Experiences/Tales-From-Soda-Island/Ch-6---Silence" style="text-decoration: none; color: inherit;">
-    <img src="/static/images/tfsi/episodes/6_Silence_notimecode.png" alt="Ch 6 - Silence" style="width: 100%; height: 200px; object-fit: cover;">
+    <img src="/static/images/optimized/tfsi/episodes/6_Silence_notimecode.jpg" alt="Ch 6 - Silence" style="width: 100%; height: 200px; object-fit: cover;">
     <div style="padding: 1.5rem;">
       <h3 style="margin: 0 0 0.5rem 0;">Ch 6 - Silence</h3>
       <p style="margin: 0; color: var(--gray);">When ritual is interrupted</p>
@@ -68,7 +69,7 @@ Explore all seven chapters of the Tales From Soda Island series:
 
 <div style="border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.2s;">
   <a href="/Productions/Studio-Syro/Animated-Experiences/Tales-From-Soda-Island/Ch-7---The-First-Ingredient" style="text-decoration: none; color: inherit;">
-    <img src="/static/images/tfsi/episodes/7_TheFirstIngredient_notimecode.png" alt="Ch 7 - The First Ingredient" style="width: 100%; height: 200px; object-fit: cover;">
+    <img src="/static/images/optimized/tfsi/episodes/7_TheFirstIngredient_notimecode.jpg" alt="Ch 7 - The First Ingredient" style="width: 100%; height: 200px; object-fit: cover;">
     <div style="padding: 1.5rem;">
       <h3 style="margin: 0 0 0.5rem 0;">Ch 7 - The First Ingredient</h3>
       <p style="margin: 0; color: var(--gray);">Mission to restore balance</p>

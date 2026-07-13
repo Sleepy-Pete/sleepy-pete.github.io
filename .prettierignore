@@ -1,3 +1,22 @@
 public
 node_modules
 .quartz-cache
+
+# Legacy pre-Quartz template, archives, and working notes - not part of the site build
+_old_themebau_template/
+_genuary_archive/
+.augment/
+.github/
+assets/
+src/
+docs/
+logs/
+scripts/
+/*.md
+/*.html
+/video.js
+/gulpfile.babel.js
+/babel.config.js
+/.travis.yml
+content/
+quartz/static/

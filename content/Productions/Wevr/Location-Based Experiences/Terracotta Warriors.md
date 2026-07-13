@@ -16,7 +16,7 @@ socialImage: /static/images/wevr/slide_image_2.png
 
 ## Overview
 
-A groundbreaking 40-minute location-based virtual reality experience that transports visitors inside Emperor Qin Shi Huang's mausoleum on the eve of his burial—2,200 years after his death. This unprecedented collaboration between Wevr, VIVE Arts, and Xi'an-based Horizon Technology brings one of the world's greatest archaeological treasures to life through immersive storytelling and cutting-edge VR technology.
+A groundbreaking 40-minute location-based virtual reality experience that transports visitors inside Emperor Qin Shi Huang's mausoleum on the eve of his burial, 2,200 years after his death. This unprecedented collaboration between Wevr, VIVE Arts, and Xi'an-based Horizon Technology brings one of the world's greatest archaeological treasures to life through immersive storytelling and cutting-edge VR technology.
 
 **Launch Date**: July 29, 2025  
 **Location**: Xi'an, China (next to Emperor Qin Shi Huang's Mausoleum Site Museum)  
@@ -57,7 +57,7 @@ As **Line Producer** on this ambitious project, I coordinated production teams a
 Visitors embark on an archaeological adventure complete with ancient traps, guided by a companion from the future. The experience allows exploration of previously unseen areas of the mausoleum.
 
 **Act II: The Emperor's Legacy**
-A magical transformation where archaeological artifacts come to life—terracotta warriors march in formation, and visitors witness the workshops where these eternal guardians were created.
+A magical transformation where archaeological artifacts come to life: terracotta warriors march in formation, and visitors witness the workshops where these eternal guardians were created.
 
 ![Ancient Workshop](/static/images/wevr/slide_image_6.png)
 

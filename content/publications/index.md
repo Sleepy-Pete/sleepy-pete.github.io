@@ -6,9 +6,8 @@ tags:
   - SIGGRAPH
   - VR
   - Academic
+hideListing: true
 ---
-
-# Publications & Research
 
 Academic papers, conference presentations, and research contributions exploring VR animation, spatial storytelling, and immersive media production.
 
@@ -23,7 +22,7 @@ Academic papers, conference presentations, and research contributions exploring 
 *SIGGRAPH Spatial Storytelling '25*, Vancouver, BC, Canada
 August 10-14, 2025
 
-A comprehensive look at Studio Syro's VR-native production pipeline, covering how we create animated stories entirely within virtual reality using Quill. The paper discusses our work on Tales from Soda Island, Nyssa, The Art of Change, and interactive experiences like PondQuest and Dear Metaverse.
+A comprehensive look at Studio Syro's VR-native production pipeline, covering how we create animated stories entirely within virtual reality using Quill. The paper discusses our work on Tales from Soda Island, Nyssa, The Art of Change, and interactive experiences like PondQuest and Spatial Mailbox.
 
 **Topics**: VR animation, Quill, spatial storytelling, production pipeline, handcrafted animation
 
@@ -54,6 +53,6 @@ Explore the projects and creative work that inform this research:
 - [Reimagined Volume I: Nyssa](../Productions/Studio%20Syro/Animated%20Experiences/Reimagined%20Volume%20I%20-%20Nyssa) - VR short film
 - [The Art of Change](../Productions/Studio%20Syro/Animated%20Experiences/The%20Art%20of%20Change) - Immersive music experience
 - [PondQuest](../Productions/Studio%20Syro/Interactive%20Experiences/PondQuest) - Interactive VR experience
-- [Dear Metaverse](../Productions/Studio%20Syro/Interactive%20Experiences/Dear%20Metaverse) - Interactive narrative
+- [Spatial Mailbox](../Productions/Studio%20Syro/Interactive%20Experiences/Spatial%20Mailbox) - Interactive narrative
 
 
