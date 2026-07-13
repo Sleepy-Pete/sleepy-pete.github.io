@@ -110,23 +110,18 @@ export default ((userOpts?: Partial<NavigationOptions>) => {
       gap: 0;
       padding: 0.25rem 0;
       flex-wrap: nowrap;
-      justify-content: flex-start;
-      overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
-      scrollbar-width: none;
+      justify-content: space-between;
+      width: auto;
+      flex: 1 1 auto;
+      min-width: 0;
       max-width: 100%;
     }
 
-    .navigation::-webkit-scrollbar {
-      display: none;
-    }
-
     .navigation .nav-link {
-      padding: 0.45rem 0.55rem;
-      font-size: 0.875rem;
+      padding: 0.45rem 0.1rem;
+      font-size: clamp(0.7rem, 3.3vw, 0.8125rem);
       min-height: 38px;
       white-space: nowrap;
-      flex-shrink: 0;
     }
   }
   `

@@ -5,6 +5,14 @@
 // Apple-Inspired Design System
 // ============================================
 
+// The ghosted sidebars park translated 10px outward, which otherwise
+// extends the horizontal scroll area. Clip (not hidden: keeps sticky
+// positioning intact) so the page never scrolls sideways.
+html,
+body {
+  overflow-x: clip;
+}
+
 // --- Scroll Reveal ---
 // Elements with .reveal animate in when scrolled into view
 .reveal {
@@ -116,6 +124,13 @@
 
 // --- Tighter page frame ---
 .page > #quartz-body {
+  // base.scss sets min-width: 100% on these grid items, which inflates the
+  // middle track and pushes the right sidebar past the viewport
+  .center,
+  & > footer {
+    min-width: 0;
+  }
+
   .center {
     padding-top: 0.75rem;
   }

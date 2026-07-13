@@ -7,6 +7,7 @@ const Header: QuartzComponent = ({ children }: QuartzComponentProps) => {
 Header.css = `
 header {
   width: 100%;
+  box-sizing: border-box;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -25,6 +26,12 @@ header {
 
 :root[saved-theme="dark"] header {
   background: rgba(22, 22, 24, 0.72);
+}
+
+@media (max-width: 800px) {
+  header {
+    padding: 0.25rem 0.75rem;
+  }
 }
 
 header h1 {
