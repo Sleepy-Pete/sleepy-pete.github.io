@@ -8,15 +8,13 @@ tags:
   - immersive media
 ---
 
-# 80th Venice International Film Festival (2023)
-
 **Immersive Media - Tales From Soda Island: The First Ingredient**
 
 ## Recognition
 
 Tales From Soda Island: The First Ingredient (Chapter 7) was selected for the Immersive Media section of the 80th Venice International Film Festival in 2023.
 
-**Venice Immersive 2023**: [Tales From Soda Island: The First Ingredient](https://www.labiennale.org/en/cinema/2023/venice-immersive/tales-soda-island-first-ingredient)
+**Venice Immersive 2023**: [Tales From Soda Island: The First Ingredient](https://www.labiennale.org/en/cinema/2023/venice-immersive/first-ingredient-tales-soda-island-ch-7)
 
 ## About Tales From Soda Island: The First Ingredient
 
@@ -27,11 +25,7 @@ Chapter 7: The First Ingredient is the final chapter of the Tales From Soda Isla
 
 ## About Venice International Film Festival
 
-The Venice International Film Festival is one of the most prestigious and publicized film festivals in the world. Held annually in Venice, Italy, it showcases innovative and groundbreaking work in cinema and immersive media.
-
-## Significance
-
-This recognition at Venice affirms Tales From Soda Island as a landmark work in VR animation, demonstrating the artistic and technical excellence achieved through innovative use of Quill and real-time production techniques.
+The Venice International Film Festival is one of the most prestigious and publicized film festivals in the world. Held annually in Venice, Italy, it showcases innovative and work in cinema and immersive media.
 
 ---
 

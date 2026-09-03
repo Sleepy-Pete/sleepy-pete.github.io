@@ -106,8 +106,10 @@ body {
 }
 
 // --- Subtle sidebar styling (desktop only) ---
+// Only when the rail has widgets: the 404 page renders an empty rail and
+// should not show a bare glass box.
 @media (min-width: 1200px) {
-  .sidebar.right {
+  .sidebar.right:has(> *) {
     background: rgba(251, 251, 253, 0.5);
     backdrop-filter: blur(16px) saturate(150%);
     -webkit-backdrop-filter: blur(16px) saturate(150%);
@@ -116,7 +118,7 @@ body {
     margin-top: 1rem;
   }
 
-  :root[saved-theme="dark"] .sidebar.right {
+  :root[saved-theme="dark"] .sidebar.right:has(> *) {
     background: rgba(30, 30, 32, 0.5);
     border: 1px solid rgba(255, 255, 255, 0.05);
   }
@@ -152,98 +154,6 @@ h1.article-title {
 article h2 {
   font-size: 1.5rem;
   margin-top: 2.25rem;
-}
-
-// --- Homepage-specific Styles ---
-body[data-slug="index"] {
-  // Full-width intro text
-  .center > .page-header .popover-hint > p:first-of-type {
-    font-size: 1.125rem;
-    line-height: 1.6;
-    color: var(--darkgray);
-    max-width: 640px;
-  }
-
-  // Article title as hero headline
-  h1.article-title {
-    font-size: clamp(1.55rem, 2.8vw, 2.1rem);
-    font-weight: 700;
-    letter-spacing: -0.025em;
-    line-height: 1.1;
-    margin-bottom: 0.75rem;
-    background: linear-gradient(135deg, var(--dark) 0%, var(--darkgray) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-
-  // Featured Work section headings
-  article h2 {
-    font-size: 1.6rem;
-    font-weight: 600;
-    letter-spacing: -0.02em;
-    margin-top: 2.5rem;
-    margin-bottom: 0.875rem;
-  }
-
-  // Featured work grid cards - Apple style
-  article div[style*="display: grid"] {
-    gap: 2rem !important;
-    margin: 2.5rem 0 !important;
-  }
-
-  article div[style*="border-radius: 8px"] {
-    border-radius: 12px !important;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06) !important;
-    transition:
-      transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1),
-      box-shadow 0.3s cubic-bezier(0.25, 0.1, 0.25, 1) !important;
-    overflow: hidden;
-
-    &:hover {
-      transform: translateY(-4px) !important;
-      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12) !important;
-    }
-
-    img {
-      transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
-      margin: 0 !important;
-      display: block;
-      vertical-align: bottom;
-    }
-
-    &:hover img {
-      transform: scale(1.04);
-    }
-
-    a {
-      display: block;
-      line-height: 0;
-      text-decoration: none;
-      color: inherit;
-    }
-
-    div[style*="padding"] {
-      line-height: 1.5;
-    }
-  }
-}
-
-:root[saved-theme="dark"] body[data-slug="index"] {
-  h1.article-title {
-    background: linear-gradient(135deg, var(--dark) 0%, var(--darkgray) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-
-  article div[style*="border-radius: 8px"] {
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2) !important;
-
-    &:hover {
-      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35) !important;
-    }
-  }
 }
 
 // --- Global Typography Refinements ---
@@ -332,7 +242,7 @@ footer {
   border-radius: 12px;
 }
 
-// --- Fix for grey line on thumbnails in card containers ---
+// --- Fix for grey line on thumbnails in legacy inline-style card containers ---
 div[style*="border-radius: 8px"] {
   img {
     margin: 0 !important;
@@ -346,7 +256,127 @@ div[style*="border-radius: 8px"] {
   }
 }
 
-// --- Productions Grid (Apple-style cards with thumbnails) ---
+// ============================================
+// Shared building blocks
+// ============================================
+
+// --- Card grid: projects, episodes, featured work ---
+// auto-fill (not auto-fit) so a lone card keeps its width instead of
+// stretching to a full-width banner.
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(240px, 100%), 1fr));
+  gap: 1.25rem;
+  margin: 1.25rem 0 2rem;
+}
+
+.card-grid > a.project-card,
+a.project-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  text-decoration: none !important;
+  color: inherit;
+  font-weight: 400 !important;
+  transition:
+    transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1),
+    box-shadow 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+    opacity: 1;
+  }
+
+  img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+    border-radius: 0;
+    transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+
+  &:hover img {
+    transform: scale(1.03);
+  }
+
+  .card-body {
+    padding: 0.875rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .card-kicker {
+    font-size: 0.6875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--gray);
+  }
+
+  .card-title {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--dark);
+    line-height: 1.3;
+  }
+
+  .card-meta {
+    font-size: 0.8125rem;
+    color: var(--darkgray);
+    line-height: 1.45;
+  }
+}
+
+:root[saved-theme="dark"] a.project-card {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
+
+  &:hover {
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+  }
+}
+
+// --- Gallery: two-up stills with optional captions ---
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
+  gap: 1rem;
+  margin: 1rem 0 1.5rem;
+
+  img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+    margin: 0;
+  }
+
+  figure {
+    margin: 0;
+  }
+
+  figcaption {
+    font-size: 0.8125rem;
+    color: var(--gray);
+    margin-top: 0.375rem;
+    line-height: 1.4;
+  }
+
+  // Poster-format stills keep their own aspect ratio
+  img.portrait {
+    aspect-ratio: 2 / 3;
+  }
+}
+
+// --- Productions Grid (legacy row cards, kept for compatibility) ---
 .productions-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
@@ -509,22 +539,34 @@ a.cta-link {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 0.625rem 1.25rem;
-    min-height: 44px;
-    border-radius: 8px;
+    gap: 0.4rem;
+    padding: 0.5rem 1.1rem;
+    min-height: 40px;
+    border-radius: 999px;
     font-weight: 500;
     font-size: 0.9375rem;
-    text-decoration: none;
+    text-decoration: none !important;
     color: var(--secondary);
     background: var(--highlight);
     border: 1px solid rgba(0, 102, 204, 0.15);
     transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+
+    .external-icon {
+      display: none !important;
+    }
+
+    &.primary {
+      background: var(--secondary);
+      color: #fff;
+      border-color: var(--secondary);
+    }
 
     &:hover {
       background: var(--secondary);
       color: #fff;
       opacity: 1;
       transform: translateY(-1px);
+      box-shadow: 0 4px 14px rgba(0, 102, 204, 0.25);
     }
   }
 }
@@ -536,6 +578,14 @@ a.cta-link {
   &:hover {
     background: var(--secondary);
     color: #fff;
+  }
+}
+
+:root[saved-theme="dark"] .contact-bar .contact-link.primary {
+  color: #0b0b0c;
+
+  &:hover {
+    color: #0b0b0c;
   }
 }
 
@@ -560,4 +610,255 @@ article iframe[src*="youtube"] {
   height: 2px;
   background: var(--secondary);
   border-radius: 0;
+}
+
+// ============================================
+// Homepage one-pager
+// ============================================
+body[data-slug="index"] {
+  // Hero: photo, name, role, summary, actions
+  .hero {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.75rem;
+    margin: 1rem 0 2.25rem;
+  }
+
+  .hero-photo {
+    width: 132px;
+    height: 132px;
+    flex-shrink: 0;
+    border-radius: 18px;
+    object-fit: cover;
+    object-position: 60% 30%;
+    margin: 0;
+    border: 1px solid var(--lightgray);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  .hero-text {
+    min-width: 0;
+  }
+
+  .hero h1 {
+    font-size: clamp(1.9rem, 3.4vw, 2.5rem);
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    line-height: 1.1;
+    margin: 0 0 0.3rem;
+  }
+
+  .hero-role {
+    font-size: 1.0625rem;
+    font-weight: 500;
+    color: var(--secondary);
+    margin: 0 0 0.75rem;
+  }
+
+  .hero-summary {
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--darkgray);
+    margin: 0 0 0.875rem;
+    max-width: 62ch;
+  }
+
+  // Plain text links, aligned with the text column
+  .hero-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1.5rem;
+    margin: 0;
+    font-size: 0.9375rem;
+    font-weight: 500;
+
+    a {
+      color: var(--secondary);
+      text-decoration: none;
+      background: none;
+
+      .external-icon {
+        display: none !important;
+      }
+
+      &:hover {
+        color: var(--tertiary);
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+    }
+  }
+
+  @media (max-width: 800px) {
+    .hero {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .hero-photo {
+      width: 96px;
+      height: 96px;
+    }
+  }
+
+  // Key numbers
+  .facts {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    @media (max-width: 800px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    gap: 0.875rem;
+    margin: 0 0 1rem;
+  }
+
+  .fact {
+    padding: 1rem 1.125rem;
+    border-radius: 12px;
+    background: var(--highlight);
+  }
+
+  .fact-number {
+    display: block;
+    font-size: 1.375rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    color: var(--dark);
+  }
+
+  .fact-label {
+    display: block;
+    font-size: 0.8125rem;
+    line-height: 1.35;
+    color: var(--darkgray);
+    margin-top: 0.3rem;
+  }
+
+  // Section headings are quieter than on content pages, with room above
+  article h2 {
+    font-size: 1.35rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin-top: 3.25rem;
+    margin-bottom: 1rem;
+  }
+
+  article .card-grid {
+    margin: 1.25rem 0 1.25rem;
+  }
+
+  article a.cta-link {
+    margin-top: 0.25rem;
+  }
+
+  // Experience: the two main jobs sit side by side at equal weight
+  .experience {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+    gap: 1.25rem;
+    margin: 1.25rem 0 1.25rem;
+  }
+
+  .job {
+    padding: 1.25rem 1.375rem 1.375rem;
+    border: 1px solid var(--lightgray);
+    border-radius: 12px;
+    background: var(--light);
+
+    h3 {
+      font-size: 1.0625rem;
+      margin: 0 0 0.15rem;
+    }
+
+    .job-meta {
+      font-size: 0.8125rem;
+      color: var(--gray);
+      margin: 0 0 0.625rem;
+      line-height: 1.4;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 1.1rem;
+      font-size: 0.9375rem;
+      line-height: 1.5;
+    }
+
+    li {
+      margin: 0.3rem 0;
+    }
+  }
+
+  .earlier {
+    font-size: 0.9375rem;
+    color: var(--darkgray);
+    line-height: 1.55;
+    margin: 0 0 0.5rem;
+  }
+
+  // Compact lists (recognition, skills)
+  ul.compact {
+    margin: 0.5rem 0 0.75rem;
+    padding-left: 1.1rem;
+    font-size: 0.9375rem;
+    line-height: 1.55;
+
+    li {
+      margin: 0.45rem 0;
+    }
+
+    strong {
+      color: var(--dark);
+      font-weight: 600;
+    }
+  }
+
+  // Links into the rest of the site
+  .explore {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    @media (max-width: 800px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    gap: 0.875rem;
+    margin: 1.25rem 0 1rem;
+  }
+
+  a.explore-link {
+    display: block;
+    padding: 0.875rem 1rem;
+    border-radius: 12px;
+    border: 1px solid var(--lightgray);
+    background: var(--light);
+    text-decoration: none !important;
+    color: inherit;
+    font-weight: 400 !important;
+    transition:
+      transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1),
+      box-shadow 0.3s cubic-bezier(0.25, 0.1, 0.25, 1),
+      border-color 0.3s ease;
+
+    strong {
+      display: block;
+      font-size: 0.9375rem;
+      font-weight: 600;
+      color: var(--secondary);
+      margin-bottom: 0.2rem;
+    }
+
+    span {
+      display: block;
+      font-size: 0.8125rem;
+      color: var(--darkgray);
+      line-height: 1.4;
+    }
+
+    &:hover {
+      transform: translateY(-2px);
+      border-color: var(--secondary);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      opacity: 1;
+    }
+  }
 }

@@ -7,19 +7,19 @@ tags:
 hideListing: true
 ---
 
-<img src="../../static/images/branding/Syro_logo_text_1920.png" alt="Studio Syro Logo" />
+<img src="/static/images/branding/Syro_logo_text_1920.png" alt="Studio Syro Logo" />
 
-**Co-Founder & Creative Producer** | 2020 - Present
+**Lead Producer** | 2019 to present | Commissioned interactive production for Meta
 
 ## Overview
 
-Studio Syro is an independent creative studio specializing in immersive storytelling, VR animation, and mixed reality experiences. As Co-Founder and Creative Producer, I've helped lead our international team in crafting rich, interactive worlds using innovative tools like Quill and real-time engines.
+Studio Syro is an independent creative studio specializing in immersive storytelling, VR animation, and mixed reality experiences. As Lead Producer, I run production for an international team building interactive worlds with Quill and real-time engines.
 
-Our work blends artistry and technology to create experiences that transport audiences into new dimensions, whether in virtual reality, mixed reality, or beyond. With a passion for cinematic storytelling and cutting-edge production, we push the boundaries of spatial storytelling.
+Our work blends artistry and technology to create experiences that transport audiences into new dimensions, whether in virtual reality, mixed reality, or beyond. With a passion for cinematic storytelling and production, we push the boundaries of spatial storytelling.
 
 ## Our Creative Tool: Quill
 
-All of our animated experiences are created using **[[Productions/Studio Syro/Quill|Quill]]**, a revolutionary VR illustration and animation tool. Working natively in VR allows us to craft hand-painted, immersive worlds with a distinctive artistic style that sets our work apart.
+All of our animated experiences are created using **[[Productions/Studio Syro/Quill|Quill]]**, a VR illustration and animation tool. Working natively in VR allows us to craft hand-painted, immersive worlds with a distinctive artistic style that sets our work apart.
 
 **[[Productions/Studio Syro/Quill|Learn more about Quill →]]**
 
@@ -55,13 +55,17 @@ Showcasing technical art work across various Studio Syro projects throughout 202
 
 ### Recognition
 
-- **80th Venice International Film Festival** - Immersive Media for "Tales From Soda Island: The First Ingredient"
-- **79th Venice International Film Festival** - Immersive Media for "Reimagined Volume 1: Nyssa"
-- **SIGGRAPH '21: ACM SIGGRAPH 2021** - VR Theater for "Tales From Soda Island: The Neon Jungle"
+- **81st Venice International Film Festival (2024)** - Immersive, "The Art of Change"
+- **SXSW 2025** - Narrative VR selection, "The Art of Change"
+- **80th Venice International Film Festival (2023)** - Immersive, "Tales From Soda Island: The First Ingredient"
+- **Webby Awards (2024)** - Nominee, Best Narrative Experience, "Silence"
+- **ACM SIGGRAPH 2023** - VR Theater, "Reimagined Volume I: Nyssa"
+- **79th Venice International Film Festival (2022)** - Immersive, "Reimagined Volume I: Nyssa"
+- **ACM SIGGRAPH 2021** - VR Theater, "Tales From Soda Island: The Neon Jungle"
 
 ## My Role
 
-As Creative Producer, I:
+As Lead Producer, I:
 - Coordinate efforts between artists, developers, and stakeholders
 - Foster a collaborative and innovative studio culture
 - Manage production timelines and deliverables
@@ -76,11 +80,11 @@ Over three years, we've grown from a small team working on a single music video 
 
 ## Gallery
 
-<img src="../../static/images/optimized/work/ST.jpg" alt="School Trip" />
-
-<img src="../../static/images/work/dawsonCrop.jpg" alt="Dawson" />
-
-<img src="../../static/images/work/bakery.jpg" alt="Multiverse Bakery" />
+<div class="gallery">
+  <img src="/static/images/optimized/work/ST.jpg" alt="School Trip" loading="lazy" />
+  <img src="/static/images/work/dawsonCrop.jpg" alt="Dawson" loading="lazy" />
+  <img src="/static/images/work/bakery.jpg" alt="Multiverse Bakery" loading="lazy" />
+</div>
 
 ## Connect With Studio Syro
 

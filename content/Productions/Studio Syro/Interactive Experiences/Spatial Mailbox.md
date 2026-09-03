@@ -1,5 +1,6 @@
 ---
 title: "Spatial Mailbox"
+description: "Spatial Mailbox is a hand-tracked VR letter app on Meta Quest, launched May 2026. Peter Ariet produced it and built the backend, admin dashboard, and release process."
 aliases:
   - Productions/Studio Syro/Interactive Experiences/Dear Metaverse
 tags:
@@ -9,57 +10,42 @@ tags:
   - Hand Tracking
   - Social App
   - Studio Syro
-date: 2023-09-01
+date: 2026-05-01
 ---
 
 ## Trailer
 
 <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/p9p5aMJZnW8" title="Spatial Mailbox Announcement Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-**Hand-Tracking VR/AR Messaging App** | Studio Syro | 2023 - Present
+**Hand-tracked VR letter app** | Studio Syro for Meta | 2023 to 2026
 
 <div class="at-a-glance">
-  <div><strong>Role</strong><span>Co-Founder & Creative Producer</span></div>
-  <div><strong>Status</strong><span>In active development, Meta Quest wishlist live</span></div>
-  <div><strong>Community</strong><span>Growing Discord community</span></div>
-  <div><strong>Platform</strong><span>Meta Quest (VR/MR), hand tracking</span></div>
+  <div><strong>Role</strong><span>Lead Producer, Studio Syro</span></div>
+  <div><strong>Status</strong><span>Launched on Meta Quest, May 2026</span></div>
+  <div><strong>Platform</strong><span>Meta Quest, VR and mixed reality, hand tracking</span></div>
+  <div><strong>Stack</strong><span>Unity client, Firebase backend, React admin dashboard</span></div>
 </div>
 
 ## Overview
 
-**Spatial Mailbox** is an innovative hand-tracking VR and AR messaging application that reimagines how we communicate in spatial computing environments. Using advanced hand tracking technology, users can create and share immersive messages that blend the physical and virtual worlds.
+Spatial Mailbox is a messaging app for Meta Quest. You write and decorate a letter with your hands, send it to a friend, and they open it in their own space in VR or mixed reality. The app started as Dear Metaverse and launched under its new name in May 2026, with a web portal at [spatialmailbox.com](https://spatialmailbox.com).
 
-This project explores the future of communication in mixed reality, making messaging more expressive, intuitive, and spatially aware.
+## Key features
 
-## Key Features
+- **Hand tracking**: no controllers, you write and fold letters with your hands
+- **VR and mixed reality**: works fully immersive or with passthrough in your room
+- **Spatial letters**: messages exist as objects in 3D space
+- **Accounts and notifications**: letters sync between devices through a cloud backend
 
-- **Hand Tracking Interface** - Natural, controller-free interaction using Meta Quest's hand tracking
-- **VR & AR Support** - Works in both fully immersive VR and mixed reality AR modes
-- **Spatial Messaging** - Create messages that exist in 3D space
-- **Intuitive Design** - Easy-to-use interface designed for spatial computing
-- **Cross-Reality Communication** - Share experiences across virtual and augmented reality
+## My role
 
-## Platform
+I produced the app from prototype to launch and built most of what runs behind it. That includes the Firebase backend (authentication, database, cloud functions, and storage), an internal React dashboard for user, letter, and notification operations, and the release and incident process. When a production issue hit on 12 May 2026, it was diagnosed and hot-fixed the same day with a written post-mortem. I run support and operations after launch.
 
-Available on **Meta Quest** (VR/MR)
+## Links
 
-## Development Status
-
-Currently in active development, with the Meta Quest wishlist live and a growing community following along. Join the Discord to stay updated on progress and upcoming features.
-
-## My Role
-
-As Co-Founder and Creative Producer at Studio Syro, I led the creative vision and production of Spatial Mailbox, helping shape the future of spatial communication.
-
-## Community & Links
-
-- [Join Discord Community](https://discord.gg/studiosyro)
-- [Wishlist on Meta Quest](https://www.meta.com/experiences/dear-metaverse/9146278305451259/)
-- [Studio Syro Website](https://studiosyro.com/spatial-mailbox)
-
-## Vision
-
-Spatial Mailbox represents our vision for the future of communication in spatial computing, where messages aren't just text on a screen, but immersive experiences that blend seamlessly with our physical world.
+- [Get it on Meta Quest](https://www.meta.com/experiences/dear-metaverse/9146278305451259/)
+- [Join the Discord community](https://discord.gg/studiosyro)
+- [Studio Syro website](https://studiosyro.com/spatial-mailbox)
 
 ## Gallery
 

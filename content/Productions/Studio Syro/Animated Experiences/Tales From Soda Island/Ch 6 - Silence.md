@@ -41,11 +41,13 @@ Watch more content about the world of Soda Island:
 
 ## Gallery
 
-![Silence](/static/images/optimized/tfsi/episodes/6_Silence_notimecode.jpg)
-![Silence Scene 1](/static/images/tfsi/episodes/SIlence1.png)
-![Silence Scene 2](/static/images/optimized/tfsi/episodes/silence2.jpg)
-![Silence Scene 3](/static/images/optimized/tfsi/episodes/silence3.jpg)
-![Silence Scene 4](/static/images/optimized/tfsi/episodes/silence4.jpg)
+<div class="gallery">
+  <img src="/static/images/optimized/tfsi/episodes/6_Silence_notimecode.jpg" alt="Silence" loading="lazy" />
+  <img src="/static/images/tfsi/episodes/SIlence1.png" alt="Silence Scene 1" loading="lazy" />
+  <img src="/static/images/optimized/tfsi/episodes/silence2.jpg" alt="Silence Scene 2" loading="lazy" />
+  <img src="/static/images/optimized/tfsi/episodes/silence3.jpg" alt="Silence Scene 3" loading="lazy" />
+  <img src="/static/images/optimized/tfsi/episodes/silence4.jpg" alt="Silence Scene 4" loading="lazy" />
+</div>
 
 ## Watch Now
 

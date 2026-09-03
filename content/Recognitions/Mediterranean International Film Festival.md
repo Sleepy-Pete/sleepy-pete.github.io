@@ -8,8 +8,6 @@ tags:
   - VR
 ---
 
-# Mediterranean International Film Festival (2024)
-
 **Best VR Works - Tales From Soda Island, Chapter 7**
 
 ## Recognition
@@ -27,11 +25,7 @@ Chapter 7: The First Ingredient is part of the Tales From Soda Island series, a 
 
 ## About Mediterranean International Film Festival
 
-The Mediterranean International Film Festival is held annually in Malta and celebrates innovative and groundbreaking work in cinema and immersive media, with a focus on Mediterranean culture and contemporary storytelling.
-
-## Significance
-
-This award recognizes the artistic excellence and technical achievement of Tales From Soda Island, Chapter 7, affirming its position as a leading work in VR animation and immersive storytelling.
+The Mediterranean International Film Festival is held annually in Malta and celebrates innovative and work in cinema and immersive media, with a focus on Mediterranean culture and contemporary storytelling.
 
 ---
 

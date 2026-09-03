@@ -7,7 +7,6 @@ tags:
   - Meta
   - Technology
   - XR
-date: 2024-12-31
 ---
 
 ![Mixed Reality](/static/images/optimized/work/PondQuest_Thumbnail.jpg)

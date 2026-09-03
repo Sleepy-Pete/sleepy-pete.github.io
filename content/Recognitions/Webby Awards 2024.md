@@ -8,8 +8,6 @@ tags:
   - nomination
 ---
 
-# Webby Awards 2024
-
 **Nominee - Best Narrative Experience (Immersive Features)**  
 **Silence: Tales From Soda Island, Chapter 6**
 
@@ -29,10 +27,6 @@ Chapter 6: Silence is part of the Tales From Soda Island series, a Meta-publishe
 ## About Webby Awards
 
 The Webby Awards are the leading international awards honoring excellence on the Internet, including websites, interactive media, online advertising, mobile sites and apps, social media, virtual reality, and podcasts.
-
-## Significance
-
-This nomination recognizes the narrative excellence and immersive design of Silence, affirming the importance of storytelling in VR experiences and the innovative approaches being developed in spatial narrative design.
 
 ---
 

@@ -13,8 +13,8 @@ date: 2024-08-28
 **VR Animated Music Experience** | Studio Syro x DROELOE | 2023-2024
 
 <div class="at-a-glance">
-  <div><strong>Role</strong><span>Creative Producer</span></div>
-  <div><strong>Team</strong><span>4-person core: Studio Syro x Funilab x DROELOE</span></div>
+  <div><strong>Role</strong><span>Lead Producer, Studio Syro</span></div>
+  <div><strong>Team</strong><span>Studio Syro x Funilab x DROELOE</span></div>
   <div><strong>Timeline</strong><span>2023-2024</span></div>
   <div><strong>Medium</strong><span>Hand-painted VR animation (Quill)</span></div>
   <div><strong>Recognition</strong><span>81st Venice Film Festival 2024, SXSW 2025</span></div>
@@ -26,7 +26,7 @@ date: 2024-08-28
 
 ## Overview
 
-Through a unique tapestry of voice memos, music, and breathtaking VR animation, **The Art of Change** is an immersive audio-visual experience exploring a woman's dialogue with her past, present, and future selves.
+Through a unique tapestry of voice memos, music, and hand-painted VR animation, **The Art of Change** is an immersive audio-visual experience exploring a woman's dialogue with her past, present, and future selves.
 
 Born from DROELOE's concept album, the project pairs Vincent Rooijers' music with Simone Fougnier's hand-painted worlds, built as a standalone VR piece tailored to the medium. Created entirely in **Quill**, it demonstrates the power of VR as a medium for artistic expression and emotional storytelling.
 
@@ -40,7 +40,7 @@ Born from DROELOE's concept album, the project pairs Vincent Rooijers' music wit
 
 ## Creative Team
 
-- **Peter Ariet** - Creative Producer, Co-Founder Studio Syro
+- **Peter Ariet** - Lead Producer, Studio Syro
 - **Simone Fougnier** - VR Artist
 - **Vincent Rooijers** - DROELOE (Music)
 - **Megan Holland** - Production Support
@@ -51,13 +51,14 @@ The Art of Change explores the creative process itself, visualizing the transfor
 
 ## Gallery
 
-![The Art of Change](/static/images/optimized/artofchange/promoposter.jpg)
-![TAOC Still 1](/static/images/optimized/artofchange/promoTAOC_2.jpg)
-![TAOC Still 2](/static/images/optimized/artofchange/promoTAOC_3.jpg)
-![TAOC Still 3](/static/images/artofchange/promoTAOC_5.png)
-![TAOC Still 4](/static/images/artofchange/promoTAOC_8.png)
-![TAOC Still 5](/static/images/optimized/artofchange/TAOC_9.jpg)
-![TAOC Still 6](/static/images/optimized/artofchange/TAOC_10.jpg)
+<div class="gallery">
+  <img src="/static/images/optimized/artofchange/promoTAOC_2.jpg" alt="TAOC Still 1" loading="lazy" />
+  <img src="/static/images/optimized/artofchange/promoTAOC_3.jpg" alt="TAOC Still 2" loading="lazy" />
+  <img src="/static/images/artofchange/promoTAOC_5.png" alt="TAOC Still 3" loading="lazy" />
+  <img src="/static/images/artofchange/promoTAOC_8.png" alt="TAOC Still 4" loading="lazy" />
+  <img src="/static/images/optimized/artofchange/TAOC_9.jpg" alt="TAOC Still 5" loading="lazy" />
+  <img src="/static/images/optimized/artofchange/TAOC_10.jpg" alt="TAOC Still 6" loading="lazy" />
+</div>
 
 ## Recognition
 
@@ -67,7 +68,6 @@ The Art of Change explores the creative process itself, visualizing the transfor
 ## Links
 
 - [View on Studio Syro](https://studiosyro.com/the-art-of-change)
-- [Press Kit](https://studiosyro.com/presskit)
 
 ---
 

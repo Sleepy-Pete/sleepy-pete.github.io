@@ -8,8 +8,6 @@ tags:
   - VR Theater
 ---
 
-# SIGGRAPH 2021
-
 **VR Theater - Tales From Soda Island: The Neon Jungle**
 
 ## Recognition
@@ -27,11 +25,7 @@ Chapter 2: The Neon Jungle is part of the Tales From Soda Island series, a Meta-
 
 ## About SIGGRAPH
 
-SIGGRAPH is the premier international conference and exhibition on computer graphics and interactive techniques. The VR Theater program showcases cutting-edge immersive experiences and demonstrates the latest advances in virtual reality technology and artistic expression.
-
-## Significance
-
-This selection for SIGGRAPH's VR Theater program recognized Tales From Soda Island as a landmark achievement in VR animation and demonstrated the potential of Quill as a professional production tool for creating immersive narrative experiences.
+SIGGRAPH is the premier international conference and exhibition on computer graphics and interactive techniques. The VR Theater program showcases immersive experiences and demonstrates the latest advances in virtual reality technology and artistic expression.
 
 ---
 

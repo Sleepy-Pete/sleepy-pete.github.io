@@ -40,9 +40,7 @@ A comprehensive look at Studio Syro's VR-native production pipeline, covering ho
 
 ## Presentations & Talks
 
-- **SIGGRAPH 2025** - Spatial Storytelling Track, Vancouver, BC
-- **Venice International Film Festival 2022** - Immersive Media Showcase
-- **ACM SIGGRAPH 2023** - VR Theater
+- **SIGGRAPH 2025**, Spatial Storytelling program, Vancouver, BC: presented Creating a Universe from Scratch with Nick Ladd
 
 ## Related Work
 

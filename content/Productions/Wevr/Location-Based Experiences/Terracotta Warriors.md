@@ -17,19 +17,19 @@ socialImage: /static/images/wevr/slide_image_2.png
 <div class="at-a-glance">
   <div><strong>Role</strong><span>Line Producer, WEVR</span></div>
   <div><strong>Team</strong><span>Wevr core with vendor partners across six cities</span></div>
-  <div><strong>Timeline</strong><span>2024-2025, greybox through beta to deployment</span></div>
-  <div><strong>Scale</strong><span>40-minute experience, 16 QA zones, 150 visitors per hour</span></div>
+  <div><strong>Timeline</strong><span>2024 to 2025, first playable through beta to public opening</span></div>
+  <div><strong>Scale</strong><span>40-minute experience, three stages, 16 delivery zones, up to 150 guests per session</span></div>
   <div><strong>Status</strong><span>Open to the public in Xi'an, China</span></div>
 </div>
 
 ## Overview
 
-A groundbreaking 40-minute location-based virtual reality experience that transports visitors inside Emperor Qin Shi Huang's mausoleum on the eve of his burial, 2,200 years after his death. This unprecedented collaboration between Wevr, VIVE Arts, and Xi'an-based Horizon Technology brings one of the world's greatest archaeological treasures to life through immersive storytelling and cutting-edge VR technology.
+A 40-minute location-based virtual reality experience that transports visitors inside Emperor Qin Shi Huang's mausoleum on the eve of his burial, 2,200 years after his death. This collaboration between Wevr, VIVE Arts, and Xi'an-based Horizon Technology brings one of the world's greatest archaeological treasures to life through immersive storytelling and VR technology.
 
 **Launch Date**: July 29, 2025  
 **Location**: Xi'an, China (next to Emperor Qin Shi Huang's Mausoleum Site Museum)  
 **Duration**: 40 minutes  
-**Capacity**: Up to 150 visitors per hour  
+**Capacity**: Up to 150 guests per session  
 **Platform**: VIVE Focus Vision headsets
 **Engine**: Unreal Engine
 
@@ -37,7 +37,7 @@ A groundbreaking 40-minute location-based virtual reality experience that transp
 
 ## My Role: Line Producer
 
-As **Line Producer** on this ambitious project, I coordinated production teams across six international locations to deliver this historically accurate, large-scale immersive experience.
+As **Line Producer**, I coordinated production teams across six international locations to deliver this historically accurate, large-scale immersive experience.
 
 ### Key Responsibilities
 
@@ -72,7 +72,7 @@ A magical transformation where archaeological artifacts come to life: terracotta
 ### Technical Innovation
 
 - **Massive Scale**: Three stages, each over 2,000 square feet
-- **Synchronized Experience**: 150 people per hour flowing through shared virtual space
+- **Synchronized Experience**: up to 150 guests per session moving through a shared virtual space
 - **Real-Time Coordination**: 100+ headsets connected via WiFi in synchronized adventure
 - **Historical Accuracy**: Every element rendered to historically accurate dimensions based on extensive research
 - **Mobile VR**: Entire experience built in Unreal Engine running on standalone VIVE Focus Vision headsets

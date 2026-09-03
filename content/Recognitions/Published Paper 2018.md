@@ -7,8 +7,6 @@ tags:
   - computer science
 ---
 
-# Published Paper 2018
-
 **Assessing the Effectiveness of Emoticon-Like Scripting in Computer Programming**
 
 ## Publication Details
@@ -23,10 +21,6 @@ tags:
 ## About the Research
 
 This peer-reviewed academic paper explores the effectiveness of emoticon-like scripting approaches in computer programming education and practice. The research contributes to the broader understanding of how visual and symbolic representations can enhance programming comprehension and usability.
-
-## Significance
-
-This publication demonstrates a commitment to advancing the field through rigorous research and academic contribution, bridging the gap between creative expression and technical implementation, a theme that continues throughout my career in immersive technology and interactive design.
 
 ## Academic Impact
 

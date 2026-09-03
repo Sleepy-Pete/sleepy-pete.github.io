@@ -13,7 +13,7 @@ tags:
 
 ## What is Quill?
 
-**Quill** is a revolutionary VR illustration and animation tool that empowers creators to tell immersive stories directly in virtual reality. Originally developed by Oculus (now Meta) and currently maintained by Smoothstep, Quill has become the industry-standard tool for creating hand-painted VR experiences and animations.
+**Quill** is a VR illustration and animation tool that empowers creators to tell immersive stories directly in virtual reality. Originally developed by Oculus (now Meta) and currently maintained by Smoothstep, Quill has become the industry-standard tool for creating hand-painted VR experiences and animations.
 
 Unlike traditional 2D animation software, Quill allows artists to paint and animate in three-dimensional space, creating artwork that viewers can step inside and explore from any angle. This spatial approach to storytelling has opened up entirely new possibilities for narrative experiences in VR.
 
@@ -54,7 +54,7 @@ This workflow allows us to:
 - [[Productions/Studio Syro/Animated Experiences/The Art of Change|The Art of Change]] - VR music experience with DROELOE
 - [[Productions/Studio Syro/Animated Experiences/Reimagined Volume I - Nyssa|Reimagined Volume I: Nyssa]] - VR animated short film
 
-All of these projects showcase the unique capabilities of Quill, from its expressive painting tools to its powerful animation timeline, demonstrating how VR-native creation tools can produce world-class animated content.
+All of these projects showcase the unique capabilities of Quill, from its expressive painting tools to its powerful animation timeline, demonstrating how VR-native creation tools can produce animated content.
 
 ## Why Quill Matters
 

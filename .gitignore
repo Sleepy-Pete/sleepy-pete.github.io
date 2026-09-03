@@ -20,3 +20,6 @@ content/.obsidian/community-plugins.json
 
 # Studio Syro press kit / videos stay local only - too heavy for Pages deploys
 quartz/static/studiosyro/
+
+# Legacy themebau template assets (1.8 GB incl. studio videos) stay local only
+assets/

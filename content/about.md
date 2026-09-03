@@ -1,125 +1,81 @@
 ---
 title: About Me
+description: "Peter Ariet is a producer and technical program manager in San Diego. Eight years shipping interactive software and real-time 3D products for Meta and HTC VIVE Arts."
 ---
 
-I am a producer and technical artist based in San Diego, operating at the intersection of storytelling and emerging technology. I co-founded Studio Syro to build immersive worlds where hand crafted art direction and real time production can live together, and I specialize in aligning creative teams, technical constraints, and partner expectations to ship audience ready experiences.
+I am a producer and technical program manager based in San Diego. For eight years I have shipped interactive software and real-time 3D products for Meta and HTC VIVE Arts, as the lead producer and as a hands-on technical lead.
 
-At Studio Syro, I lead production across the full lifecycle, including scoping, budgeting, scheduling, resourcing, risk management, and delivery. I also contribute as a technical artist, with a focus on shader development and optimization for headset class hardware, Quill to engine workflows, and performance planning (frame time, draw calls, memory, lighting, VFX). Across studio projects, I have supported source control and production tooling (GitHub and Perforce collaboration workflows) and helped build reliable pipelines for artists and developers working in Unity and Unreal.
+I run delivery end to end: scoping, budgets, contracts, schedules, vendors, testing, and release. I also work as a technical artist, with a focus on shader development and performance for standalone headsets, Quill-to-engine workflows, and the tooling and source control that keep artists and developers moving in Unity and Unreal.
 
-My studio credits include Tales From Soda Island (sponsored and published by Meta) and Reimagined Vol. I: Nyssa, plus a range of commercial and music driven work. Tales From Soda Island includes:
+My job is to keep vision, process, and execution aligned so teams can do their best work and ship with confidence. I care about the overlap between creative and technical work, because that is where the strongest results come from.
 
-- Chapter 1: The Multiverse Bakery
-- Chapter 2: The Neon Jungle (SIGGRAPH 2021 VR Theater)
-- Chapter 3: The Quantum Race
-- Chapter 4: The Golden Record
-- Chapter 5: The School Trip
-- Chapter 6: Silence (Webby Awards nominee)
-- Chapter 7: The First Ingredient (80th Venice International Film Festival)
-
-I also produced and supported The Art of Change (81st Venice International Film Festival), directed by Simone Fougnier (Funilab) and Vincent Rooijers (Droeloe), and worked on Reimagined Vol. I: Nyssa (79th Venice International Film Festival), directed by Julie Cavaliere. Additional credits include development and technical production across a vertical slice for Flipside (unreleased), commercial work with Level99 and Area23 (unreleased), and live visuals for artists including Bad Bunny and Mr. Bill, plus the music video Dreaming of You / Far Away for Slushii.
-
-More recently, I served as Lead Producer at WEVR for the large scale location based VR experience Emperor: Dust-Covered Empire (Terracotta Warriors: Secrets of the First Emperor's Mausoleum), in partnership with HTC VIVE Arts and China based stakeholders. I guided delivery from greybox to beta and deployment planning, built production systems (SOWs, addenda, milestones, invoicing, vendor coordination), and ran zone based QA tracking (Z01 to Z16) to keep fixes, defers, and acceptance criteria aligned across multiple teams. I also helped coordinate narrative, dialogue review, and VO timing passes and approvals, while managing historically sensitive review cycles and documentation for culturally significant content. On the technical side, I collaborated within Unreal Engine pipelines and worked with engineering to navigate Perforce constraints and make pragmatic performance decisions and content cuts for headset class limits.
-
-Alongside shipped work, I prototype and build toward new interactive products. Recent initiatives include early production leadership for PondQuest (mixed reality gameplay) and Spatial Mailbox (a hand tracking MR messaging experience), defining scope, KPIs, and vertical slice deliverables.
-
-Before Studio Syro, I worked at the AR startup KWEST as a Technical Artist and later as Producer, leading creative and technical development for platform features and narrative driven AR experiences playable anywhere. Earlier roles include Technical Sales Engineer at e-TechServices, where I designed and supported customized server solutions and infrastructure planning, and Technical Artist Intern at Perilous Orbit, where I gained hands on experience with Unreal Engine 4, shader networks, visual scripting, and C++ while researching technical art best practices for VR tool design. I also worked at the University of Florida Digital Worlds Institute as an AV Technician and Student Assistant, supporting classroom operations, live streams, lecture capture, and building wide technical support.
-
-I care deeply about the synergy between creative and technical disciplines, because that is where the strongest work happens. My job is to keep vision, process, and execution aligned so teams can do their best work and ship with confidence.
-
-I'm currently open to senior producer roles and production consulting.
-
-**Email:** [pjpariet@gmail.com](mailto:pjpariet@gmail.com)
+I am open to producer, program manager, and technical program manager roles, and to production consulting. Email me at [pjpariet@gmail.com](mailto:pjpariet@gmail.com) or download my [résumé (PDF)](/static/Ariet_Peter_Producer_Resume_2026.pdf).
 
 ## Experience
 
-### Studio Syro (2019 to Present)
+### Studio Syro, Lead Producer (2019 to present)
 
-**Co-Founder, Studio Head, Producer, Technical Artist**
+Commissioned interactive production for Meta. San Diego, with a distributed international team.
 
-- End-to-end production leadership across VR titles and partner deliverables
-- Cross functional coordination across artists, developers, audio, and external stakeholders
-- Technical art support, including shader optimization and Quill to engine workflows
-- Source control and pipeline support across GitHub and Perforce workflows
-- Selected technical credits: Unity Quill shader development, spatial audio coordination for VR animated shorts
-- Selected project contributions: Paradiddle VR (environments for Quest release, Unreal Engine and Quill), Dawson College Virtual Vernissage (web metaverse platform, Unity and Quill)
+- Delivered four products for Meta, including the seven-episode [[Productions/Studio Syro/Animated Experiences/Tales From Soda Island/index|Tales From Soda Island]] series, funded and published by Meta, with 5 million+ views
+- Launched [[Productions/Studio Syro/Interactive Experiences/Spatial Mailbox|Spatial Mailbox]] on Meta Quest in May 2026: built the Firebase backend, the React admin dashboard, and the release process, and run support after launch
+- Produce and operate River Rush (April 2026), a free-to-play multiplayer world on Meta Horizon Worlds with a live cosmetics economy
+- Contribute to Smoothstep's open-source Immersive Media (IMM) format, originally built at Meta: fixed Vulkan rendering defects and shipped a Quest player plugin
+- Write and negotiate contracts, change orders, and milestone invoicing with Meta; track spend weekly and re-scope early when a milestone is at risk
+- Hire, contract, and mentor a distributed team and a vendor network of studios, engineers, composers, and sound designers
+- Hold performance budgets (frame time, draw calls, memory) alongside financial ones; built the Quill-to-engine pipeline and shader optimization the series shipped on
+- Other credits: [[Productions/Studio Syro/Animated Experiences/The Art of Change|The Art of Change]] (Venice 2024, SXSW 2025), [[Productions/Studio Syro/Animated Experiences/Reimagined Volume I - Nyssa|Reimagined Vol. I: Nyssa]] (Venice 2022), [[Productions/Studio Syro/Interactive Experiences/PondQuest|PondQuest]], concert visuals for Bad Bunny and Mr. Bill, the Slushii music video Dreaming of You / Far Away, environments for Paradiddle VR, and the Dawson College Virtual Vernissage
 
-### WEVR (2024 to 2025)
+### Wevr, Line Producer, location-based VR (2024 to 2025)
 
-**Producer (VR LBE)**
+[[Productions/Wevr/Location-Based Experiences/Terracotta Warriors|Terracotta Warriors: Secrets of the First Emperor's Mausoleum]], for HTC VIVE Arts. Los Angeles and Xi'an.
 
-- Lead producer for Emperor: Dust-Covered Empire (Terracotta Warriors) in partnership with HTC VIVE Arts
-- Zone based QA systems, cross stakeholder approvals, deployment readiness support
+- Led delivery from first playable to public opening on 29 July 2025, next to the Emperor Qin Shi Huang Mausoleum Site Museum in Xi'an, China
+- Shipped a 40-minute, three-stage VR experience for up to 150 guests per session; an international launch is in preparation
+- Defined acceptance criteria and ran a verification matrix across 16 delivery zones; triaged defects and made fix-or-defer calls at each release gate
+- Managed two external 3D studios and other vendors to scope, milestones, and acceptance criteria across three time zones
+- Ran schedules, budgets, contracts, and change orders across art, engineering, narrative, and operations; set performance and content limits with engineering for standalone headsets in Unreal
+- Ran historical-accuracy reviews and approvals with HTC VIVE Arts and cultural stakeholders; documented decisions; oversaw script, dialogue, and voice-over review passes
 
-### KWEST (Dec 2018 to Dec 2019)
+### Earlier
 
-**Producer and Technical Artist (Apr 2019 to Dec 2019), Technical Artist (Dec 2018 to Apr 2019)**
+- **KWEST**, Producer and Technical Artist (2018 to 2019). Feature delivery and production coordination for an AR startup; technical art, VFX, materials, shaders, and optimization
+- **e-TechServices**, Technical Sales Engineer (2018). Server solution design, configuration, and support
+- **Perilous Orbit**, Technical Artist Intern (2017 to 2018). Unreal Engine 4, shader networks, visual scripting, and C++ on VR projects
+- **University of Florida Digital Worlds Institute**, AV Technician and Student Assistant (2016 to 2017)
 
-- Feature delivery and production coordination across a multidisciplinary team
-- Technical art implementation, VFX, materials, shaders, and optimization
+## Recognition
 
-### e-TechServices (Mar 2018 to Dec 2018)
+**[[Recognitions/index|All recognitions →]]**
 
-**Technical Sales Engineer**
-
-- Customer focused server solution design, configuration, and technical support
-
-### Perilous Orbit, Inc. (Sep 2017 to Feb 2018)
-
-**Technical Artist Intern**
-
-- Unreal Engine 4, shader networks, visual scripting, and C++ exposure on VR projects
-
-### University of Florida Digital Worlds Institute (Aug 2016 to Jun 2017)
-
-**AV Technician and Student Assistant**
-
-- Classroom operations, live streaming, lecture recording and editing, technical support
-
-## Selected Work
-
-- The Art of Change (Studio Syro)
-- Tales From Soda Island (Studio Syro, Chapters 1 through 7)
-- Reimagined Vol. I: Nyssa (Studio Syro)
-- Emperor: Dust-Covered Empire (Terracotta Warriors) (WEVR)
-- Flipside, Vertical Slice (unreleased)
-- Level99, Commercial Work
-- Area23, Commercial Work (unreleased)
-- Bad Bunny, Concert Visuals
-- Mr. Bill, Concert Visuals and Album Visuals
-- Slushii, Dreaming of You / Far Away, Music Video
-
-## Recognition and Awards
-
-**[[Recognitions/index|View all recognitions and awards →]]**
-
-- SIGGRAPH Spatial Storytelling 2025, Proceedings of the Special Interest Group on Computer Graphics and Interactive Techniques Conference, Spatial Storytelling
-- SXSW 2025, The Art of Change
-- 81st Venice International Film Festival (2024), Immersive Media, The Art of Change
-- Mediterranean International Film Festival (Malta) (2024), Best VR Works, Tales From Soda Island, Chapter 7
-- Webby Awards (2024), Nominee, Best Narrative Experience (Immersive Features), Silence: Tales From Soda Island, Chapter 6
-- 80th Venice International Film Festival (2023), Immersive Media, Tales From Soda Island: The First Ingredient
-- 79th Venice International Film Festival (2022), Immersive Media, Reimagined Vol. I: Nyssa
+- SIGGRAPH Spatial Storytelling 2025, published paper: Creating a Universe from Scratch: Studio Syro's Handcrafted VR Pipeline (with Nick Ladd)
+- SXSW 2025, Narrative VR selection, The Art of Change
+- 81st Venice International Film Festival (2024), Immersive, The Art of Change
+- Mediterranean International Film Festival (2024), Best VR Works, Tales From Soda Island: The First Ingredient
+- Webby Awards (2024), Nominee, Best Narrative Experience, Silence: Tales From Soda Island
+- 80th Venice International Film Festival (2023), Immersive, Tales From Soda Island: The First Ingredient
+- ACM SIGGRAPH 2023, VR Theater, Reimagined Vol. I: Nyssa
+- 79th Venice International Film Festival (2022), Immersive, Reimagined Vol. I: Nyssa
 - SIGGRAPH 2021, VR Theater, Tales From Soda Island: The Neon Jungle
-- Published paper (2018), Springer International Publishing, Advances in Human Factors, Software, and Systems Engineering: Assessing the Effectiveness of Emoticon-Like Scripting in Computer Programming
+- Springer (2018), published paper: Assessing the Effectiveness of Emoticon-Like Scripting in Computer Programming
 
 ## Skills and Tools
 
-**Production:** Agile and Scrum, Kanban, roadmaps, budgeting and burn tracking, risk management, SOWs and milestones, vendor coordination, festival submissions and marketing deployments
+**Production and program management:** contracts, milestones and invoicing, budgets and spend tracking, risk registers, acceptance criteria and verification, vendor management, Agile and Kanban, release planning, festival submissions
 
-**Engines and XR:** Unity (Quest and Android), Unreal Engine 5, OpenXR, Meta Presence Platform tooling, hand tracking, passthrough workflows, LBE workflows
+**Engines and XR:** Unity (Quest and Android), Unreal Engine 5, OpenXR, Meta Presence Platform, hand tracking, passthrough, location-based VR workflows, Quill-to-engine pipelines
 
-**Technical Art:** GLSL, HLSL, Shader Graph, profiling (Unity Profiler, UE Insights), LODs, lightmaps, performance budgets
+**Technical:** GLSL, HLSL, Shader Graph, Vulkan, Unity Profiler and Unreal Insights; Firebase (Auth, Realtime Database, Cloud Functions), Node.js, TypeScript, REST and WebSocket, Python data pipelines and model evaluation
 
-**Backend and Networking:** Firebase (Auth, Firestore or Realtime DB, Cloud Functions, Storage), Photon (rooms and matchmaking), REST and WebSocket basics, basic Node.js
+**Tools:** Git, Perforce, CI/CD, Figma, Adobe CC, Miro, Notion, Asana, Trello, Ableton Live
 
-**Tooling:** GitHub, Perforce, CI and CD basics, Figma, Adobe CC, Miro, Notion, Asana, Trello
+## Education
 
-**Audio:** Pipeline coordination, dialogue and VO review oversight, Ableton Live, music and sound design
+**University of Florida**, Bachelor of Arts, Digital Arts and Sciences
 
 ## Links
 
 - [LinkedIn](https://www.linkedin.com/in/peter-ariet/)
-- [Twitter](https://twitter.com/peterariet)
+- [X](https://x.com/peterariet)
 - [Instagram](https://www.instagram.com/peterariet/)
-- [Download Résumé](/static/Ariet_Peter_Senior_Producer_Resume_2025.pdf)
-
+- [Download Résumé (PDF)](/static/Ariet_Peter_Producer_Resume_2026.pdf)

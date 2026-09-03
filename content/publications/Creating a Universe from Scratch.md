@@ -12,8 +12,6 @@ tags:
 date: 2025-08-14
 ---
 
-# Creating a Universe from Scratch: Studio Syro's Handcrafted VR Pipeline
-
 **SIGGRAPH Spatial Storytelling '25** | Vancouver, BC, Canada | August 10-14, 2025
 
 ## Authors
@@ -60,7 +58,7 @@ In this talk, we walk through the way we work, how we build and animate in VR, p
 
 ## Significance
 
-This paper represents the first comprehensive documentation of Studio Syro's pioneering VR production pipeline. As creators of the first fully VR-animated series, we share insights into:
+This paper represents the first comprehensive documentation of Studio Syro's VR production pipeline. As creators of the first fully VR-animated series, we share insights into:
 
 - How to build sustainable VR animation workflows
 - Balancing artistic vision with technical constraints
@@ -109,5 +107,5 @@ VR animation, Quill, immersive animation, spatial storytelling, VR production pi
 
 ---
 
-[← Back to Publications](#) | [← Back to Home](/)
+[[publications/index|← Back to Publications]] | [[index|← Home]]
 

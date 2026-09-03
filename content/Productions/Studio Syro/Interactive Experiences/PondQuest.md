@@ -16,7 +16,7 @@ date: 2024-01-15
 **Mixed Reality Platformer** | Studio Syro | 2024 - Present
 
 <div class="at-a-glance">
-  <div><strong>Role</strong><span>Co-Founder & Creative Producer</span></div>
+  <div><strong>Role</strong><span>Lead Producer, Studio Syro</span></div>
   <div><strong>Status</strong><span>Early Access on Meta Quest</span></div>
   <div><strong>Gameplay</strong><span>Hand-tracking mixed reality platformer</span></div>
   <div><strong>Team</strong><span>Studio Syro</span></div>
@@ -40,7 +40,7 @@ Available in **Early Access** on Meta Quest
 
 ## My Role
 
-As Co-Founder and Creative Producer at Studio Syro, I contributed to the creative direction, production, and development of PondQuest, helping bring this innovative mixed reality platformer to life.
+As Lead Producer at Studio Syro, I ran production for PondQuest and contributed to its creative direction and development, from scope and milestones to the Early Access release on Meta Quest.
 
 ## Links
 

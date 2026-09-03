@@ -8,8 +8,6 @@ tags:
   - immersive media
 ---
 
-# 81st Venice International Film Festival (2024)
-
 **Immersive Media - The Art of Change**
 
 ## Recognition
@@ -27,11 +25,7 @@ The Art of Change is an immersive album experience created in collaboration with
 
 ## About Venice International Film Festival
 
-The Venice International Film Festival is one of the most prestigious and publicized film festivals in the world. Held annually in Venice, Italy, it showcases innovative and groundbreaking work in cinema and immersive media.
-
-## Significance
-
-This recognition at Venice highlights the artistic merit and innovative approach of The Art of Change in the immersive media landscape, positioning it among the world's most important contemporary works in spatial storytelling.
+The Venice International Film Festival is one of the most prestigious and publicized film festivals in the world. Held annually in Venice, Italy, it showcases innovative and work in cinema and immersive media.
 
 ---
 

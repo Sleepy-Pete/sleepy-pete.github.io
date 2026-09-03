@@ -15,7 +15,7 @@ date: 2023-03-03
 **VR Animated Short Film** | 15 minutes | 2023
 
 <div class="at-a-glance">
-  <div><strong>Role</strong><span>Creative Producer</span></div>
+  <div><strong>Role</strong><span>Lead Producer, Studio Syro</span></div>
   <div><strong>Production</strong><span>Very Cavaliere Productions x Studio Syro, in partnership with Meta</span></div>
   <div><strong>Runtime</strong><span>15 minutes</span></div>
   <div><strong>Release</strong><span>March 2023, Meta Quest TV</span></div>
@@ -28,7 +28,7 @@ date: 2023-03-03
 
 ## Overview
 
-**Reimagined Volume I: Nyssa** is an immersive VR animated short film that reimagines the classic Brothers Grimm folktale "A Tale of the Boy Who Went Forth to Learn What Fear Was." Created entirely in **Quill**, this groundbreaking VR experience premiered at the **79th Venice International Film Festival** and debuted on **Meta Quest TV** in March 2023.
+**Reimagined Volume I: Nyssa** is an immersive VR animated short film that reimagines the classic Brothers Grimm folktale "A Tale of the Boy Who Went Forth to Learn What Fear Was." Created entirely in **Quill**, this VR experience premiered at the **79th Venice International Film Festival** and debuted on **Meta Quest TV** in March 2023.
 
 The story follows Nyssa, a fearless yet naive young witch who embarks on a journey to find her best friend, a toy broom named...Broom. Along the way, she meets a familiar spirit named Blue, and together they venture into the depths of the dark migration where not all ghosts are friendly and the creature of darkness, Teemencaag, lurks in the shadows.
 
@@ -52,7 +52,7 @@ Can Nyssa learn the meaning of fear and intuition in time to save her village be
 
 - **Julie Cavaliere** - Writer, Director, Producer
 - **Michaela Ternasky-Holland** - Co-Creator
-- **Peter Ariet** - Creative Producer, Co-Founder Studio Syro
+- **Peter Ariet** - Lead Producer, Studio Syro
 - **Production Company**: Very Cavaliere Productions
 
 ## About the Director
@@ -75,7 +75,7 @@ Julie Cavaliere is an award-winning writer, actor, director, and producer based 
 
 ## Artistic Approach
 
-Created entirely in Quill, Meta's VR painting and animation tool, Nyssa showcases the unique storytelling possibilities of hand-painted VR animation. The film's whimsical art style contrasts with darker, more atmospheric sequences as Nyssa ventures deeper into the dark migration, creating a visually stunning journey that can only be fully experienced in virtual reality.
+Created entirely in Quill, Meta's VR painting and animation tool, Nyssa showcases the unique storytelling possibilities of hand-painted VR animation. The film's whimsical art style contrasts with darker, more atmospheric sequences as Nyssa ventures deeper into the dark migration, creating a journey that can only be fully experienced in virtual reality.
 
 ## Where to Watch
 

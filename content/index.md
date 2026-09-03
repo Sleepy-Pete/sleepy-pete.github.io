@@ -1,44 +1,121 @@
 ---
-title: "Peter Ariet - Creative Producer"
+title: "Peter Ariet - Producer and Technical Program Manager"
+description: "Peter Ariet is a producer and technical program manager in San Diego with eight years shipping interactive software and real-time 3D products for Meta and HTC VIVE Arts."
 ---
 
-I'm a Creative Producer, technical artist, and Co-Founder of [Studio Syro](https://studiosyro.com), a pioneering VR animation studio. I lead end-to-end XR productions across VR, AR, and location-based experiences, bridging storytelling, team leadership, and hands-on technical problem solving.
+<section class="hero">
+  <img class="hero-photo" src="/static/images/optimized/ProfilePhoto_Peter_480.jpg" alt="Peter Ariet" width="132" height="132" />
+  <div class="hero-text">
+    <h1>Peter Ariet</h1>
+    <p class="hero-role">Producer and Technical Program Manager, San Diego</p>
+    <p class="hero-summary">Eight years shipping interactive software and real-time 3D products for Meta and HTC VIVE Arts. I run delivery end to end: budgets, contracts, vendors, teams across continents, testing, and release.</p>
+    <p class="hero-links">
+      <a href="mailto:pjpariet@gmail.com">Email</a>
+      <a href="/static/Ariet_Peter_Producer_Resume_2026.pdf">Résumé (PDF)</a>
+      <a href="https://www.linkedin.com/in/peter-ariet/">LinkedIn</a>
+    </p>
+  </div>
+</section>
 
-<div class="contact-bar">
-  <a class="contact-icon" href="mailto:pjpariet@gmail.com" aria-label="Email me" title="Email">
-    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+<div class="facts">
+  <div class="fact"><span class="fact-number">8 years</span><span class="fact-label">delivering interactive software and real-time 3D</span></div>
+  <div class="fact"><span class="fact-number">8 titles</span><span class="fact-label">shipped on Meta Quest, four of them commissioned by Meta</span></div>
+  <div class="fact"><span class="fact-number">5 million+</span><span class="fact-label">views for Tales From Soda Island, funded and published by Meta</span></div>
+  <div class="fact"><span class="fact-number">3 years</span><span class="fact-label">selected at the Venice International Film Festival (2022, 2023, 2024)</span></div>
+</div>
+
+## Selected work
+
+<div class="card-grid">
+  <a class="project-card" href="/Productions/Studio-Syro/Animated-Experiences/Tales-From-Soda-Island">
+    <img src="/static/images/work/bakery.jpg" alt="Tales From Soda Island" loading="lazy" />
+    <div class="card-body"><span class="card-kicker">Studio Syro for Meta</span><span class="card-title">Tales From Soda Island</span><span class="card-meta">Seven-episode VR animated series. Funded and published by Meta. 5 million+ views. Venice 2023, SIGGRAPH 2021, Webby nominee 2024.</span></div>
   </a>
-  <a class="contact-icon" href="https://www.linkedin.com/in/peter-ariet/" aria-label="LinkedIn profile" title="LinkedIn">
-    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+  <a class="project-card" href="/Productions/Wevr/Location-Based-Experiences/Terracotta-Warriors">
+    <img src="/static/images/wevr/slide_image_2.png" alt="Terracotta Warriors: Secrets of the First Emperor's Mausoleum" loading="lazy" />
+    <div class="card-body"><span class="card-kicker">Wevr for HTC VIVE Arts</span><span class="card-title">Terracotta Warriors: Secrets of the First Emperor's Mausoleum</span><span class="card-meta">40-minute location-based VR experience for up to 150 guests per session. Open to the public in Xi'an, China since July 2025.</span></div>
   </a>
-  <a class="contact-icon" href="/static/Ariet_Peter_Senior_Producer_Resume_2025.pdf" aria-label="Download resume" title="Résumé">
-    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+  <a class="project-card" href="/Productions/Studio-Syro/Animated-Experiences/The-Art-of-Change">
+    <img src="/static/images/optimized/artofchange/promoposter.jpg" alt="The Art of Change" loading="lazy" />
+    <div class="card-body"><span class="card-kicker">Studio Syro with DROELOE</span><span class="card-title">The Art of Change</span><span class="card-meta">VR album experience built with the musician DROELOE. Venice 2024 and SXSW 2025 selections.</span></div>
+  </a>
+  <a class="project-card" href="/Productions/Studio-Syro/Interactive-Experiences/Spatial-Mailbox">
+    <img src="/static/images/optimized/work/SpatialMailbox_Thumbnail.jpg" alt="Spatial Mailbox" loading="lazy" />
+    <div class="card-body"><span class="card-kicker">Studio Syro for Meta</span><span class="card-title">Spatial Mailbox</span><span class="card-meta">Hand-tracked VR letter app, launched on Meta Quest in May 2026. I built the backend, the admin dashboard, and the release process.</span></div>
+  </a>
+  <a class="project-card" href="/Productions/Studio-Syro/Animated-Experiences/Reimagined-Volume-I---Nyssa">
+    <img src="/static/images/nyssa/nyssa-hero.jpg" alt="Reimagined Volume I: Nyssa" loading="lazy" />
+    <div class="card-body"><span class="card-kicker">Studio Syro with Very Cavaliere Productions</span><span class="card-title">Reimagined Volume I: Nyssa</span><span class="card-meta">15-minute VR short film released on Meta Quest TV. Venice 2022 and SIGGRAPH 2023 VR Theater selections.</span></div>
+  </a>
+  <a class="project-card" href="/Productions/Studio-Syro/Interactive-Experiences/PondQuest">
+    <img src="/static/images/optimized/work/PondQuest_Thumbnail.jpg" alt="PondQuest" loading="lazy" />
+    <div class="card-body"><span class="card-kicker">Studio Syro for Meta</span><span class="card-title">PondQuest</span><span class="card-meta">Mixed reality platformer played with hand tracking. Early Access on Meta Quest.</span></div>
   </a>
 </div>
 
-## Productions
+<a href="/Productions/" class="cta-link">All productions →</a>
 
-From *Tales From Soda Island*, the VR animated series published by Meta, to the immersive album experience *The Art of Change* and the large-scale location-based *Terracotta Warriors* with HTC VIVE Arts. Explore the projects I've produced with Studio Syro and WEVR.
+## Experience
 
-<a href="/Productions/" class="cta-link">View all productions →</a>
+<div class="experience">
+  <div class="job">
+    <h3>Studio Syro</h3>
+    <p class="job-meta">Lead Producer, 2019 to present. Commissioned interactive production for Meta. San Diego, distributed team.</p>
+    <ul>
+      <li>Delivered four products for Meta, including the seven-episode <em>Tales From Soda Island</em> series, with 5 million+ views.</li>
+      <li>Launched Spatial Mailbox on Meta Quest in May 2026. Built its backend, admin dashboard, and release process, and run support after launch.</li>
+      <li>Produce and operate River Rush, a free-to-play multiplayer world on Meta Horizon Worlds, live since April 2026.</li>
+      <li>Write and negotiate contracts and milestone invoices with Meta, track spend every week, and re-scope early when a milestone is at risk.</li>
+      <li>Hire, contract, and manage a distributed international team and a vendor network of studios, engineers, composers, and sound designers.</li>
+      <li>Hold performance budgets for standalone headsets, and built the Quill-to-engine pipeline and shader work the series shipped on.</li>
+    </ul>
+  </div>
+  <div class="job">
+    <h3>Wevr</h3>
+    <p class="job-meta">Line Producer, location-based VR, 2024 to 2025. <em>Terracotta Warriors: Secrets of the First Emperor's Mausoleum</em>, for HTC VIVE Arts. Los Angeles and Xi'an.</p>
+    <ul>
+      <li>Led delivery from first playable to public opening on 29 July 2025, next to the Emperor Qin Shi Huang Mausoleum Site Museum in Xi'an, China.</li>
+      <li>Shipped a 40-minute, three-stage VR experience for up to 150 guests per session. An international launch is in preparation.</li>
+      <li>Set the acceptance criteria and ran testing across 16 delivery zones, deciding what to fix and what to defer at every release gate.</li>
+      <li>Managed two external 3D studios and other vendors to scope, milestones, and acceptance criteria across three time zones.</li>
+      <li>Ran schedules, budgets, and change orders across art, engineering, narrative, and operations.</li>
+      <li>Ran historical-accuracy reviews and approvals with HTC VIVE Arts and cultural stakeholders, and oversaw script, dialogue, and voice-over review passes.</li>
+    </ul>
+  </div>
+</div>
 
-## Recognitions
+<p class="earlier"><strong>Earlier:</strong> KWEST, Producer and Technical Artist (2018 to 2019). e-TechServices, Technical Sales Engineer (2018). Perilous Orbit, Technical Artist Intern (2017). University of Florida, BA in Digital Arts and Sciences.</p>
 
-My work has been selected and honored at the Venice International Film Festival (2022, 2023, 2024), SXSW, SIGGRAPH, the Webby Awards, and the Mediterranean International Film Festival.
+<a href="/about" class="cta-link">Full background →</a>
 
-<a href="/Recognitions/" class="cta-link">View all recognitions →</a>
+## Recognition
 
-## Publications & Research
+<ul class="compact">
+  <li><strong>Venice International Film Festival, Immersive:</strong> The Art of Change (2024), Tales From Soda Island: The First Ingredient (2023), Reimagined Vol. I: Nyssa (2022)</li>
+  <li><strong>SXSW 2025:</strong> Narrative VR selection, The Art of Change</li>
+  <li><strong>SIGGRAPH:</strong> Spatial Storytelling 2025, published paper with Nick Ladd. VR Theater 2023, Nyssa. VR Theater 2021, The Neon Jungle</li>
+  <li><strong>Webby Awards 2024:</strong> Nominee, Best Narrative Experience, Silence</li>
+  <li><strong>Mediterranean International Film Festival 2024:</strong> Best VR Works, The First Ingredient</li>
+</ul>
 
-**[Creating a Universe from Scratch: Studio Syro's Handcrafted VR Pipeline](publications/Creating%20a%20Universe%20from%20Scratch)** (with Nick Ladd)
-*SIGGRAPH Spatial Storytelling '25*, Vancouver, BC, Canada, August 2025
+<a href="/Recognitions/" class="cta-link">All recognitions →</a>
 
-<a href="/publications/" class="cta-link">View all publications →</a>
+## Skills
 
-## About
+<ul class="compact">
+  <li><strong>Production and program management:</strong> contracts, milestones and invoicing, budgets and spend tracking, risk registers, acceptance criteria and testing, vendor management, Agile and Kanban, release planning, festival submissions</li>
+  <li><strong>Engines and XR:</strong> Unity (Quest and Android), Unreal Engine 5, OpenXR, Meta Presence Platform, hand tracking, passthrough, location-based VR, Quill-to-engine pipelines</li>
+  <li><strong>Technical:</strong> GLSL, HLSL, Shader Graph, Vulkan, Unity Profiler and Unreal Insights, Firebase, Node.js, TypeScript, REST and WebSocket, Python data pipelines and model evaluation</li>
+  <li><strong>Tools:</strong> Git, Perforce, CI/CD, Figma, Adobe CC, Miro, Notion, Asana, Trello, Ableton Live</li>
+</ul>
 
-I care deeply about the synergy between creative and technical disciplines, because that is where the strongest work happens. My job is to keep vision, process, and execution aligned so teams can do their best work and ship with confidence.
+## Explore the full site
 
-I'm currently open to senior producer roles and production consulting. If you want to collaborate or talk about art and emerging tech, feel free to reach out.
+This page is the short version. Every project has its own case study, and the rest of the site works like a notebook you can browse.
 
-<a href="/about" class="cta-link">Read more about me →</a>
+<div class="explore">
+  <a class="explore-link" href="/Productions/"><strong>Productions</strong><span>Case studies for every title, by studio</span></a>
+  <a class="explore-link" href="/Recognitions/"><strong>Recognitions</strong><span>Festival selections, awards, and the published paper</span></a>
+  <a class="explore-link" href="/publications/"><strong>Publications</strong><span>SIGGRAPH 2025 paper on Studio Syro's VR pipeline</span></a>
+  <a class="explore-link" href="/about"><strong>About</strong><span>Full background, experience, and skills</span></a>
+</div>

@@ -8,8 +8,6 @@ tags:
   - immersive media
 ---
 
-# 79th Venice International Film Festival (2022)
-
 **Immersive Media - Reimagined Vol. I: Nyssa**
 
 ## Recognition
@@ -28,11 +26,7 @@ Reimagined Vol. I: Nyssa is a 15-minute VR animated short film that reimagines t
 
 ## About Venice International Film Festival
 
-The Venice International Film Festival is one of the most prestigious and publicized film festivals in the world. Held annually in Venice, Italy, it showcases innovative and groundbreaking work in cinema and immersive media.
-
-## Significance
-
-This recognition at Venice established Studio Syro as a leading force in VR animation and demonstrated the viability of Quill as a professional production tool for creating cinematic VR experiences.
+The Venice International Film Festival is one of the most prestigious and publicized film festivals in the world. Held annually in Venice, Italy, it showcases innovative and work in cinema and immersive media.
 
 ---
 

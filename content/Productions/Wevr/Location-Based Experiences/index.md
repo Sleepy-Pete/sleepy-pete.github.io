@@ -7,7 +7,6 @@ tags:
   - Entertainment
   - Technology
   - XR
-date: 2024-12-31
 hideListing: true
 ---
 
@@ -15,11 +14,11 @@ hideListing: true
 
 ### Terracotta Warriors: Secrets of the First Emperor's Mausoleum
 
-<img src="../../../static/images/wevr/slide_image_2.png" alt="Terracotta Warriors" />
+<img src="/static/images/wevr/slide_image_2.png" alt="Terracotta Warriors" />
 
 **[[Productions/Wevr/Location-Based Experiences/Terracotta Warriors|Explore Terracotta Warriors →]]**
 
-A groundbreaking 40-minute location-based VR experience that transports visitors inside Emperor Qin Shi Huang's mausoleum. As Line Producer, I coordinated production teams across six cities to deliver this historically accurate, large-scale immersive experience.
+A 40-minute location-based VR experience that transports visitors inside Emperor Qin Shi Huang's mausoleum. As Line Producer, I coordinated production teams across six cities to deliver this historically accurate, large-scale immersive experience.
 
 ---
 
@@ -83,11 +82,11 @@ Museum and heritage site experiences:
 ## My Work in Location-Based Experiences
 
 ### [[Productions/Wevr/Location-Based Experiences/Terracotta Warriors|Terracotta Warriors: Secrets of the First Emperor's Mausoleum]]
-As **Line Producer** on this groundbreaking LBE project, I coordinated the creation of a 40-minute immersive journey through Emperor Qin Shi Huang's mausoleum.
+As **Line Producer** on this LBE project, I coordinated the creation of a 40-minute immersive journey through Emperor Qin Shi Huang's mausoleum.
 
 **Scale & Scope:**
 - **Three Stages**: Each over 2,000 square feet
-- **Throughput**: 150 visitors per hour
+- **Capacity**: up to 150 guests per session
 - **Technology**: 100+ VIVE Focus Vision headsets synchronized via WiFi
 - **Location**: Xi'an, China (next to the actual archaeological site)
 
@@ -177,7 +176,7 @@ Location-Based Experiences represent the premium tier of immersive entertainment
 - **Increase Sophistication**: More complex, ambitious experiences
 - **Integrate with Tourism**: Become destination attractions
 - **Preserve Culture**: Digital preservation of heritage sites
-- **Push Boundaries**: Experiment with cutting-edge technology
+- **Push Boundaries**: Experiment with technology
 
 The combination of premium hardware, dedicated spaces, and professional operation creates experiences that leave lasting impressions and introduce millions to the potential of virtual reality.
 
