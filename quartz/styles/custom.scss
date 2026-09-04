@@ -105,6 +105,45 @@ body {
   }
 }
 
+// --- Tablet widths (800px to 1200px): center the content ---
+// The tablet grid reserves a 380px column for the left panel. With the panel
+// ghosted (reader mode on, the default) that column reads as an empty gutter
+// and the content sits off-center. Collapse the grid to one centered column
+// and float the ghost panel over the left edge so hover-to-reveal still works.
+@media (min-width: 800px) and (max-width: 1200px) {
+  :root[reader-mode="on"] .page > #quartz-body {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      "grid-header"
+      "grid-center"
+      "grid-sidebar-right"
+      "grid-footer";
+
+    & > .page-header,
+    & > .center,
+    & > .sidebar.right,
+    & > footer {
+      width: 100%;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    & > .sidebar.left {
+      position: fixed;
+      top: 3.5rem;
+      left: 0;
+      width: 380px;
+      max-width: 45vw;
+      height: calc(100vh - 3.5rem);
+      overflow-y: auto;
+      background: var(--light);
+      border-right: 1px solid var(--lightgray);
+      z-index: 5;
+    }
+  }
+}
+
 // --- Subtle sidebar styling (desktop only) ---
 // Only when the rail has widgets: the 404 page renders an empty rail and
 // should not show a bare glass box.
@@ -619,7 +658,7 @@ body[data-slug="index"] {
   // Hero: photo, name, role, summary, actions
   .hero {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 1.75rem;
     margin: 1rem 0 2.25rem;
   }
@@ -667,15 +706,20 @@ body[data-slug="index"] {
   .hero-links {
     display: flex;
     flex-wrap: wrap;
+    align-items: baseline;
     gap: 0.25rem 1.5rem;
     margin: 0;
     font-size: 0.9375rem;
     font-weight: 500;
+    line-height: 1.5;
 
     a {
       color: var(--secondary);
       text-decoration: none;
       background: none;
+      padding: 0;
+      font-weight: 500;
+      line-height: inherit;
 
       .external-icon {
         display: none !important;
