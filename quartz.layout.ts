@@ -32,7 +32,7 @@ const explorerSortFn = (a: FileTrieNode, b: FileTrieNode) => {
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [Component.Navigation()],
-  afterBody: [],
+  afterBody: [Component.LiteYouTube()],
   footer: Component.Footer({
     links: {
       Résumé: "/static/Ariet_Peter_Producer_Resume_2026.pdf",

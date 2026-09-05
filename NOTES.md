@@ -1,6 +1,6 @@
 # peterariet.com - working notes
 
-Last updated: 2026-09-04
+Last updated: 2026-09-05
 
 ## What the site is
 
@@ -25,6 +25,7 @@ Site copy follows the positioning settled in the job-search project (`~/Document
 
 - Custom styles live in `quartz/styles/custom.scss`. Shared blocks: `.card-grid` + `a.project-card`, `.gallery`, `.at-a-glance`, `.contact-bar`. Homepage-only rules are scoped under `body[data-slug="index"]`.
 - Between 800 and 1200 px, with reader mode on, the grid collapses to one centered column and the explorer panel floats over the left edge on hover.
+- YouTube embeds are swapped client-side for click-to-load posters by `quartz/components/LiteYouTube.tsx` and `scripts/ytlite.inline.ts` (styles under `.yt-lite`). Keep writing plain `<iframe src="https://www.youtube.com/embed/ID">` in content; add `data-poster="/static/..."` on the iframe to use a site image instead of the YouTube thumbnail. The real player only loads on click, so YouTube's header bar never covers the poster.
 - Head metadata (`quartz/components/Head.tsx`): "Page - Peter Ariet" titles, canonical links, Person and WebSite JSON-LD on the homepage. `content/robots.txt` lands at the site root.
 - Light-mode gray is `#6e6e73` for contrast. Dark mode is handled by the theme colors in `quartz.config.ts`.
 
@@ -46,6 +47,7 @@ Then screenshot desktop, tablet (830 to 1150 px), and mobile in light and dark, 
 
 ## Changelog
 
+- **2026-09-05**: Click-to-load YouTube posters site-wide (no YouTube chrome on the poster, 3 to 6 MB less per page). Studio Syro logo on its page reduced to 400 px (300 px on mobile).
 - **2026-09-04**: Tablet-width centering, hero photo centered, text links on one baseline. npm audit taken from 14 findings to 0 (lockfile rebuilt, sharp 0.35, toml 5, xmldom override to 0.9.12).
 - **2026-09-03**: Recruiter one-pager homepage. Copy aligned to the BOJ positioning across all pages. About page rewritten. Spatial Mailbox updated to launch. SIGGRAPH 2023 VR Theater (Nyssa) added. Fixed duplicate titles and H1s, placeholder dates, four dead links, og:image type, empty 404 rail, contrast, Productions grid, galleries. SEO: JSON-LD, canonical, descriptions, robots.txt. Deploy artifact 108 MB to 16 MB.
 - **2026-07-13**: Studio Syro static payload cut from deploys. Mobile nav and type scale fixes.

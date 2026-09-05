@@ -11,7 +11,7 @@ hideListing: true
 
 ## Terracotta Warriors: Secrets of the First Emperor's Mausoleum
 
-<iframe loading="lazy" width="100%" height="400" src="https://www.youtube.com/embed/MSUy3UzvWiI" title="Terracotta Warriors VR Experience" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe loading="lazy" data-poster="/static/images/wevr/slide_image_4.png" width="100%" height="400" src="https://www.youtube.com/embed/MSUy3UzvWiI" title="Terracotta Warriors VR Experience" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## About Wevr
 

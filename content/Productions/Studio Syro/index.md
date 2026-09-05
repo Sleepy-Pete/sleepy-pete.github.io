@@ -7,7 +7,7 @@ tags:
 hideListing: true
 ---
 
-<img src="/static/images/branding/Syro_logo_text_1920.png" alt="Studio Syro Logo" />
+<img class="studio-logo" src="/static/images/branding/Syro_logo_text_1920.png" alt="Studio Syro logo" width="1920" height="1080" />
 
 **Lead Producer** | 2019 to present | Commissioned interactive production for Meta
 

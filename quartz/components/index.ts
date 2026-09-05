@@ -26,6 +26,7 @@ import ConditionalRender from "./ConditionalRender"
 import ProfilePhoto from "./ProfilePhoto"
 import Navigation from "./Navigation"
 import FeaturedCarousel from "./FeaturedCarousel"
+import LiteYouTube from "./LiteYouTube"
 
 export {
   ArticleTitle,
@@ -56,4 +57,5 @@ export {
   ProfilePhoto,
   Navigation,
   FeaturedCarousel,
+  LiteYouTube,
 }
