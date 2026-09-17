@@ -13,7 +13,7 @@ A Quartz 4.5.2 site deployed to GitHub Pages from `master` (about one minute per
 
 Site copy follows the positioning settled in the job-search project (`~/Documents/GitHub/BOJ/jobsearch-dashboard`, see `PROJECT_BRIEF.md` section 4 and `data/profile.json`):
 
-- Headline: Producer and Technical Program Manager. Lead with interactive software and real-time 3D, not VR.
+- Headline: XR Producer, Technical Program Manager, Technical Artist, and Spatial Audio (broadened 2026-09-17, was "Producer and Technical Program Manager"). The summary line still leads with interactive software and real-time 3D, not VR.
 - Studio Syro: Lead Producer, 2019 to present, "commissioned interactive production for Meta". No founder, co-founder, or studio-head language anywhere on the site.
 - Wevr: Line Producer, location-based VR, 2024 to 2025, HTC VIVE Arts named on that line.
 - Eight years of experience. Never round.

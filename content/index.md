@@ -1,13 +1,13 @@
 ---
-title: "Peter Ariet - Producer and Technical Program Manager"
-description: "Peter Ariet is a producer and technical program manager in San Diego with eight years shipping interactive software and real-time 3D products for Meta and HTC VIVE Arts."
+title: "Peter Ariet - XR Producer, Technical Program Manager, Technical Artist, Spatial Audio"
+description: "Peter Ariet is an XR producer, technical program manager, technical artist, and spatial audio lead in San Diego with eight years shipping interactive software and real-time 3D products for Meta and HTC VIVE Arts."
 ---
 
 <section class="hero">
   <img class="hero-photo" src="/static/images/optimized/ProfilePhoto_Peter_480.jpg" alt="Peter Ariet" width="132" height="132" />
   <div class="hero-text">
     <h1>Peter Ariet</h1>
-    <p class="hero-role">Producer and Technical Program Manager, San Diego</p>
+    <p class="hero-role">XR Producer, Technical Program Manager, Technical Artist, and Spatial Audio, San Diego</p>
     <p class="hero-summary">Eight years shipping interactive software and real-time 3D products for Meta and HTC VIVE Arts. I run delivery end to end: budgets, contracts, vendors, teams across continents, testing, and release.</p>
     <p class="hero-links">
       <a href="mailto:pjpariet@gmail.com">Email</a>
@@ -104,7 +104,7 @@ description: "Peter Ariet is a producer and technical program manager in San Die
 
 <ul class="compact">
   <li><strong>Production and program management:</strong> contracts, milestones and invoicing, budgets and spend tracking, risk registers, acceptance criteria and testing, vendor management, Agile and Kanban, release planning, festival submissions</li>
-  <li><strong>Engines and XR:</strong> Unity (Quest and Android), Unreal Engine 5, OpenXR, Meta Presence Platform, hand tracking, passthrough, location-based VR, Quill-to-engine pipelines</li>
+  <li><strong>Engines and XR:</strong> Unity (Quest and Android), Unreal Engine 5, OpenXR, Meta Presence Platform, hand tracking, passthrough, location-based VR, Quill-to-engine pipelines, spatial audio design and implementation</li>
   <li><strong>Technical:</strong> GLSL, HLSL, Shader Graph, Vulkan, Unity Profiler and Unreal Insights, Firebase, Node.js, TypeScript, REST and WebSocket, Python data pipelines and model evaluation</li>
   <li><strong>Tools:</strong> Git, Perforce, CI/CD, Figma, Adobe CC, Miro, Notion, Asana, Trello, Ableton Live</li>
 </ul>

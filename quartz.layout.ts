@@ -38,6 +38,7 @@ export const sharedPageComponents: SharedLayout = {
       Résumé: "/static/Ariet_Peter_Producer_Resume_2026.pdf",
       LinkedIn: "https://www.linkedin.com/in/peter-ariet/",
       X: "https://x.com/peterariet",
+      IMDb: "https://www.imdb.com/name/nm13083922/",
       Instagram: "https://www.instagram.com/peterariet/",
       Email: "mailto:pjpariet@gmail.com",
     },

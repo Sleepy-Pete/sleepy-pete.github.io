@@ -10,7 +10,12 @@ import { CustomOgImagesEmitterName } from "../plugins/emitters/ogImage"
 // same facts a recruiter sees on the page.
 const PERSON = {
   name: "Peter Ariet",
-  jobTitle: "Producer and Technical Program Manager",
+  jobTitle: [
+    "XR Producer",
+    "Technical Program Manager",
+    "Technical Artist",
+    "Spatial Audio Designer",
+  ],
   email: "pjpariet@gmail.com",
   photo: "/static/images/optimized/ProfilePhoto_Peter.jpg",
   city: "San Diego",
@@ -19,12 +24,16 @@ const PERSON = {
   school: "University of Florida",
   profiles: [
     "https://www.linkedin.com/in/peter-ariet/",
+    "https://www.imdb.com/name/nm13083922/",
     "https://www.instagram.com/peterariet/",
     "https://x.com/peterariet",
   ],
   topics: [
     "Production management",
     "Technical program management",
+    "Technical art",
+    "Shader development",
+    "Spatial audio",
     "Virtual reality",
     "Mixed reality",
     "Real-time 3D",
