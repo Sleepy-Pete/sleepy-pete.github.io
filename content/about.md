@@ -1,11 +1,11 @@
 ---
 title: About Me
-description: "Peter Ariet is an XR producer, technical program manager, technical artist, and spatial audio lead in San Diego. Eight years shipping interactive software and real-time 3D products for Meta and HTC VIVE Arts."
+description: "Peter Ariet is a producer in San Diego, working as a technical artist and in spatial audio. Eight years shipping interactive software and real-time 3D products for Meta and HTC VIVE Arts."
 ---
 
-I am an XR producer, technical program manager, technical artist, and spatial audio lead based in San Diego. For eight years I have shipped interactive software and real-time 3D products for Meta and HTC VIVE Arts, as the lead producer and as a hands-on technical lead.
+I am a producer based in San Diego, working in XR and real-time 3D. For eight years I have shipped interactive software and real-time 3D products for Meta and HTC VIVE Arts, as the lead producer and as a hands-on technical lead.
 
-I run delivery end to end: scoping, budgets, contracts, schedules, vendors, testing, and release. I also work as a technical artist, with a focus on shader development and performance for standalone headsets, Quill-to-engine workflows, and the tooling and source control that keep artists and developers moving in Unity and Unreal.
+I run delivery end to end: scoping, budgets, contracts, schedules, vendors, testing, and release. I also work as a technical artist, with a focus on shader development and performance for standalone headsets, Quill-to-engine workflows, spatial audio, and the tooling and source control that keep artists and developers moving in Unity and Unreal.
 
 My job is to keep vision, process, and execution aligned so teams can do their best work and ship with confidence. I care about the overlap between creative and technical work, because that is where the strongest results come from.
 
