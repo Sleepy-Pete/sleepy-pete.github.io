@@ -15,7 +15,7 @@ hideListing: true
 
 ## About Wevr
 
-Wevr is a virtual reality production company that has established itself as a visionary force in extended reality (XR) since 2010. The company collaborates with creators, partners, and brands to produce spectacular interactive and spatial experiences that push the boundaries of immersive storytelling.
+Wevr is a virtual reality production company in Los Angeles. It works with creators, partners, and brands on interactive and spatial experiences.
 
 ### Mission
 
@@ -32,12 +32,14 @@ Wevr specializes in creating location-based virtual reality (LBEVR) experiences 
 
 ## My Role at Wevr
 
-As a **Producer** at Wevr, I coordinated international production teams across multiple time zones and locations, managing complex VR projects from concept through deployment.
+**Line Producer, location-based VR** | Contract | Sep 2024 to Jul 2025
+
+As **Line Producer** at Wevr, I coordinated production across Wevr and partner teams in several countries and time zones on Terracotta Warriors, from first playable through beta to the public opening in July 2025.
 
 ### Key Responsibilities
 
-- **Multi-Location Production Coordination**: Managed teams in Los Angeles, Atlanta, Malta, UK, Taipei, and Xi'an
-- **Project Management**: Oversaw production pipelines for location-based VR experiences
+- **Multi-Location Production Coordination**: Coordinated teams in Los Angeles, Atlanta, Malta, the UK, Taipei, and Xi'an
+- **Project Management**: Kept schedules, budgets, and contracts on track with external studios
 - **Technical Coordination**: Worked with developers, artists, and technical teams to deliver high-quality immersive experiences
 - **Client Relations**: Collaborated with partners including VIVE Arts and cultural institutions
 
@@ -47,13 +49,13 @@ As a **Producer** at Wevr, I coordinated international production teams across m
 
 A 40-minute location-based VR experience that transports visitors inside Emperor Qin Shi Huang's mausoleum. As Line Producer, I coordinated production teams across six cities to deliver this historically accurate, large-scale immersive experience.
 
-## Recognition
+## Wevr's earlier work
 
-Wevr has been at the forefront of VR innovation for over a decade, creating award-winning experiences including:
-- The Blu (LA Natural History Museum)
+These are Wevr projects from before I joined. They are the company's work, not my credits:
+- theBlu (Natural History Museum of Los Angeles County, 2017)
 - Gnomes & Goblins
-- Harry Potter VR experiences
-- The Matrix universe VR
+- Harry Potter VR (Chaos at Hogwarts and Wizards Take Flight)
+- Matrix VR prototypes
 
 ## Gallery
 

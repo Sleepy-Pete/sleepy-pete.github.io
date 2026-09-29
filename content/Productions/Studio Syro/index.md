@@ -9,17 +9,17 @@ hideListing: true
 
 <img class="studio-logo" src="/static/images/branding/Syro_logo_text_1920.png" alt="Studio Syro logo" width="1920" height="1080" />
 
-**Lead Producer** | 2019 to present | Commissioned interactive production for Meta
+**Lead Producer** | 2020 to present | Commissioned interactive production for Meta
 
 ## Overview
 
 Studio Syro is an independent creative studio specializing in immersive storytelling, VR animation, and mixed reality experiences. As Lead Producer, I run production for an international team building interactive worlds with Quill and real-time engines.
 
-Our work blends artistry and technology to create experiences that transport audiences into new dimensions, whether in virtual reality, mixed reality, or beyond. With a passion for cinematic storytelling and production, we push the boundaries of spatial storytelling.
+Studio Syro's work combines art and technology in virtual reality, mixed reality, and real-time 3D, with a focus on cinematic storytelling.
 
-## Our Creative Tool: Quill
+## Quill
 
-All of our animated experiences are created using **[[Productions/Studio Syro/Quill|Quill]]**, a VR illustration and animation tool. Working natively in VR allows us to craft hand-painted, immersive worlds with a distinctive artistic style that sets our work apart.
+Studio Syro's animated experiences are made in **[[Productions/Studio Syro/Quill|Quill]]**, a VR illustration and animation tool. Working natively in VR gives the worlds their hand-painted look.
 
 **[[Productions/Studio Syro/Quill|Learn more about Quill →]]**
 
@@ -27,28 +27,28 @@ All of our animated experiences are created using **[[Productions/Studio Syro/Qu
 
 ### Animated Experiences
 
-Our VR animated projects are hand-painted entirely in Quill, creating immersive narrative experiences with a unique hand-crafted aesthetic.
+Studio Syro's VR animated projects are hand-painted entirely in Quill.
 
 #### [[Productions/Studio Syro/Animated Experiences/The Art of Change|The Art of Change]]
 VR animated music experience created in collaboration with DROELOE, bringing music to life through immersive spatial storytelling and hand-painted VR animation.
 
 #### [[Productions/Studio Syro/Animated Experiences/Tales From Soda Island|Tales From Soda Island]]
-Our flagship VR animated series created for Meta Quest. A collection of standalone episodes set in the whimsical world of Soda Island, each exploring different themes and characters. Features 7 unique episodes.
+Studio Syro's seven-episode VR animated series for Meta Quest, funded and published by Meta. Standalone episodes set in the world of Soda Island, each with its own themes and characters.
 
 #### [[Productions/Studio Syro/Animated Experiences/Reimagined Volume I - Nyssa|Reimagined Volume I: Nyssa]]
 A 15-minute VR animated short film reimagining the Brothers Grimm folktale. Premiered at the 79th Venice International Film Festival and debuted on Meta Quest TV.
 
 ### Interactive Experiences
 
-Our interactive projects push the boundaries of mixed reality and hand-tracking technology, creating playful and innovative ways to interact in virtual spaces.
+Studio Syro's interactive projects are built around mixed reality and hand tracking.
 
 **[[Productions/Studio Syro/Mixed Reality|Learn more about Mixed Reality →]]**
 
 #### [[Productions/Studio Syro/Interactive Experiences/PondQuest|PondQuest]]
-Mixed reality platformer featuring innovative hand tracking gameplay. Take control of a frog as you leap, swim, and swing through nature-filled levels.
+Mixed reality platformer played with hand tracking. Take control of a frog as you leap, swim, and swing through nature-filled levels.
 
 #### [[Productions/Studio Syro/Interactive Experiences/Spatial Mailbox|Spatial Mailbox]]
-Hand-tracking VR/AR messaging app that reimagines communication in spatial computing environments.
+Hand-tracked VR letter app, launched on Meta Quest in May 2026.
 
 ### [[Productions/Studio Syro/Technical Art Reel 2024|Technical Art Reel 2024]]
 Showcasing technical art work across various Studio Syro projects throughout 2024, including VR animation production, pipeline development, and creative problem-solving.
@@ -66,17 +66,17 @@ Showcasing technical art work across various Studio Syro projects throughout 202
 ## My Role
 
 As Lead Producer, I:
-- Coordinate efforts between artists, developers, and stakeholders
-- Foster a collaborative and innovative studio culture
-- Manage production timelines and deliverables
-- Guide creative direction while maintaining technical feasibility
-- Build and maintain relationships with platform partners like Meta/Oculus
+- Coordinate artists, developers, and stakeholders across a distributed international team
+- Manage production timelines, budgets, and deliverables
+- Write and negotiate contracts, change orders, and milestone invoicing with Meta
+- Keep creative goals within the performance limits of standalone headsets
+- Maintain the working relationship with platform partners like Meta
 
-## The Journey
+## Background
 
-Studio Syro began with a music video project that brought together talented VR artists who had never worked together before. This collaboration proved so successful that it evolved into a full studio, eventually catching the attention of Oculus, who approached us to create a series for their Quest platform.
+Studio Syro began with a music video project that brought together VR artists who had not worked together before. The collaboration grew into a studio, and Oculus (now Meta) commissioned a series for its Quest platform, which became Tales From Soda Island.
 
-Over three years, we've grown from a small team working on a single music video to a recognized studio in the VR animation space, with our work featured at prestigious festivals and conferences worldwide.
+Since then Studio Syro's work has been selected at the Venice International Film Festival, SXSW, and SIGGRAPH.
 
 ## Gallery
 

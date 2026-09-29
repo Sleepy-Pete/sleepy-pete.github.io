@@ -1,14 +1,14 @@
 ---
-title: "Peter Ariet - Producer, Technical Artist, Spatial Audio"
-description: "Peter Ariet is a producer in San Diego, working as a technical artist and in spatial audio, with eight years shipping interactive software and real-time 3D products for Meta and HTC VIVE Arts."
+title: "Peter Ariet - Producer and Technical Artist | Immersive, Game, Video and Animation Production | Real-Time 3D"
+description: "Peter Ariet is a producer and technical artist in San Diego, with eight years shipping immersive, game, and real-time 3D work for Meta and HTC VIVE Arts."
 ---
 
 <section class="hero">
   <img class="hero-photo" src="/static/images/optimized/ProfilePhoto_Peter_480.jpg" alt="Peter Ariet" width="132" height="132" />
   <div class="hero-text">
     <h1>Peter Ariet</h1>
-    <p class="hero-role">Producer</p>
-    <p class="hero-disciplines"><span>Technical Artist</span><span>Spatial Audio</span><span>XR and Real-Time 3D</span><span>San Diego</span></p>
+    <p class="hero-role">Producer and Technical Artist</p>
+    <p class="hero-disciplines"><span>Immersive, Game, Video and Animation Production</span><span>Real-Time 3D</span><span>San Diego</span></p>
     <p class="hero-summary">Eight years shipping interactive software and real-time 3D products for Meta and HTC VIVE Arts. I run delivery end to end: budgets, contracts, vendors, teams across continents, testing, and release.</p>
     <p class="hero-links">
       <a href="mailto:pjpariet@gmail.com">Email</a>
@@ -61,7 +61,7 @@ description: "Peter Ariet is a producer in San Diego, working as a technical art
 <div class="experience">
   <div class="job">
     <h3>Studio Syro</h3>
-    <p class="job-meta">Lead Producer, 2019 to present. Commissioned interactive production for Meta. San Diego, distributed team.</p>
+    <p class="job-meta">Lead Producer, 2020 to present. Commissioned interactive production for Meta. San Diego, distributed team.</p>
     <ul>
       <li>Delivered four products for Meta, including the seven-episode <em>Tales From Soda Island</em> series, with 5 million+ views.</li>
       <li>Launched Spatial Mailbox on Meta Quest in May 2026. Built its backend, admin dashboard, and release process, and run support after launch.</li>
@@ -73,19 +73,17 @@ description: "Peter Ariet is a producer in San Diego, working as a technical art
   </div>
   <div class="job">
     <h3>Wevr</h3>
-    <p class="job-meta">Line Producer, location-based VR, 2024 to 2025. <em>Terracotta Warriors: Secrets of the First Emperor's Mausoleum</em>, for HTC VIVE Arts. Los Angeles and Xi'an.</p>
+    <p class="job-meta">Line Producer, location-based VR, contract, Sep 2024 to Jul 2025. <em>Terracotta Warriors: Secrets of the First Emperor's Mausoleum</em>, for HTC VIVE Arts. Los Angeles and Xi'an.</p>
     <ul>
-      <li>Led delivery from first playable to public opening on 29 July 2025, next to the Emperor Qin Shi Huang Mausoleum Site Museum in Xi'an, China.</li>
-      <li>Shipped a 40-minute, three-stage VR experience for up to 150 guests per session. An international launch is in preparation.</li>
-      <li>Set the acceptance criteria and ran testing across 16 delivery zones, deciding what to fix and what to defer at every release gate.</li>
-      <li>Managed two external 3D studios and other vendors to scope, milestones, and acceptance criteria across three time zones.</li>
-      <li>Ran schedules, budgets, and change orders across art, engineering, narrative, and operations.</li>
-      <li>Ran historical-accuracy reviews and approvals with HTC VIVE Arts and cultural stakeholders, and oversaw script, dialogue, and voice-over review passes.</li>
+      <li>Coordinated production across Wevr and partner teams in Los Angeles, Atlanta, Malta, the UK, Taipei, and Xi'an, reporting to the CEO.</li>
+      <li>Kept schedules, budgets, and contracts on track with external studios, including the Atlanta interactive developer MotR.</li>
+      <li>Tracked builds, reviews, and fixes from first playable through beta to the public opening in July 2025, running in Unreal Engine on standalone VIVE Focus Vision headsets for up to 150 guests per session.</li>
+      <li>Organized script, dialogue, and voice-over reviews and historical-accuracy approvals with HTC VIVE Arts.</li>
     </ul>
   </div>
 </div>
 
-<p class="earlier"><strong>Earlier:</strong> KWEST, Producer and Technical Artist (2018 to 2019). e-TechServices, Technical Sales Engineer (2018). Perilous Orbit, Technical Artist Intern (2017). University of Florida, BA in Digital Arts and Sciences.</p>
+<p class="earlier"><strong>Earlier:</strong> KWEST, Producer and Technical Artist (2018 to 2019). Perilous Orbit, Technical Artist Intern (2017 to 2018). University of Florida, BA in Digital Arts and Sciences.</p>
 
 <a href="/about" class="cta-link">Full background →</a>
 

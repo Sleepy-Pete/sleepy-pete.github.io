@@ -17,7 +17,7 @@ socialImage: /static/images/wevr/slide_image_2.png
 <div class="at-a-glance">
   <div><strong>Role</strong><span>Line Producer, WEVR</span></div>
   <div><strong>Team</strong><span>Wevr core with vendor partners across six cities</span></div>
-  <div><strong>Timeline</strong><span>2024 to 2025, first playable through beta to public opening</span></div>
+  <div><strong>Timeline</strong><span>Sep 2024 to Jul 2025 (contract), first playable through beta to public opening</span></div>
   <div><strong>Scale</strong><span>40-minute experience, three stages, 16 delivery zones, up to 150 guests per session</span></div>
   <div><strong>Status</strong><span>Open to the public in Xi'an, China</span></div>
 </div>
@@ -41,8 +41,8 @@ As **Line Producer**, I coordinated production teams across six international lo
 
 ### Key Responsibilities
 
-- **Multi-Location Coordination**: Managed teams in Los Angeles, Atlanta, Malta, UK, Taipei, and Xi'an
-- **Production Pipeline Management**: Oversaw workflows between multiple development teams working across different time zones
+- **Multi-Location Coordination**: Coordinated teams in Los Angeles, Atlanta, Malta, the UK, Taipei, and Xi'an
+- **Production Tracking**: Tracked builds, reviews, and fixes between development teams working across different time zones
 - **Cross-Cultural Collaboration**: Facilitated communication between teams speaking different languages and working within different cultural contexts
 - **Technical Coordination**: Ensured seamless integration of assets and systems from distributed teams
 - **Schedule & Budget Management**: Kept the complex international production on track and within scope

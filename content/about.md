@@ -1,19 +1,19 @@
 ---
 title: About Me
-description: "Peter Ariet is a producer in San Diego, working as a technical artist and in spatial audio. Eight years shipping interactive software and real-time 3D products for Meta and HTC VIVE Arts."
+description: "Peter Ariet is a producer and technical artist in San Diego, with eight years shipping immersive, game, and real-time 3D work for Meta and HTC VIVE Arts."
 ---
 
-I am a producer based in San Diego, working in XR and real-time 3D. For eight years I have shipped interactive software and real-time 3D products for Meta and HTC VIVE Arts, as the lead producer and as a hands-on technical lead.
+I am a producer and technical artist based in San Diego, working in immersive, game, video, and animation production and real-time 3D. For eight years I have shipped immersive, game, and real-time 3D work for Meta and HTC VIVE Arts, as the lead producer and as a hands-on technical lead.
 
-I run delivery end to end: scoping, budgets, contracts, schedules, vendors, testing, and release. I also work as a technical artist, with a focus on shader development and performance for standalone headsets, Quill-to-engine workflows, spatial audio, and the tooling and source control that keep artists and developers moving in Unity and Unreal.
+I run delivery end to end: scoping, budgets, contracts, schedules, vendors, testing, and release. On the technical art side I focus on shader development and performance for standalone headsets, Quill-to-engine workflows, spatial audio, and the tooling and source control that keep artists and developers moving in Unity and Unreal.
 
 My job is to keep vision, process, and execution aligned so teams can do their best work and ship with confidence. I care about the overlap between creative and technical work, because that is where the strongest results come from.
 
-I am open to producer, program manager, technical program manager, technical art, and spatial audio roles, and to production consulting. Email me at [pjpariet@gmail.com](mailto:pjpariet@gmail.com) or download my [résumé (PDF)](/static/Ariet_Peter_Producer_Resume_2026.pdf).
+I am open to producer, technical producer, production manager, creative producer, and creative technologist roles. Email me at [pjpariet@gmail.com](mailto:pjpariet@gmail.com) or download my [résumé (PDF)](/static/Ariet_Peter_Producer_Resume_2026.pdf).
 
 ## Experience
 
-### Studio Syro, Lead Producer (2019 to present)
+### Studio Syro, Lead Producer (2020 to present)
 
 Commissioned interactive production for Meta. San Diego, with a distributed international team.
 
@@ -26,21 +26,18 @@ Commissioned interactive production for Meta. San Diego, with a distributed inte
 - Hold performance budgets (frame time, draw calls, memory) alongside financial ones; built the Quill-to-engine pipeline and shader optimization the series shipped on
 - Other credits: [[Productions/Studio Syro/Animated Experiences/The Art of Change|The Art of Change]] (Venice 2024, SXSW 2025), [[Productions/Studio Syro/Animated Experiences/Reimagined Volume I - Nyssa|Reimagined Vol. I: Nyssa]] (Venice 2022), [[Productions/Studio Syro/Interactive Experiences/PondQuest|PondQuest]], concert visuals for Bad Bunny and Mr. Bill, the Slushii music video Dreaming of You / Far Away, environments for Paradiddle VR, and the Dawson College Virtual Vernissage
 
-### Wevr, Line Producer, location-based VR (2024 to 2025)
+### Wevr, Line Producer, location-based VR (contract, Sep 2024 to Jul 2025)
 
 [[Productions/Wevr/Location-Based Experiences/Terracotta Warriors|Terracotta Warriors: Secrets of the First Emperor's Mausoleum]], for HTC VIVE Arts. Los Angeles and Xi'an.
 
-- Led delivery from first playable to public opening on 29 July 2025, next to the Emperor Qin Shi Huang Mausoleum Site Museum in Xi'an, China
-- Shipped a 40-minute, three-stage VR experience for up to 150 guests per session; an international launch is in preparation
-- Defined acceptance criteria and ran a verification matrix across 16 delivery zones; triaged defects and made fix-or-defer calls at each release gate
-- Managed two external 3D studios and other vendors to scope, milestones, and acceptance criteria across three time zones
-- Ran schedules, budgets, contracts, and change orders across art, engineering, narrative, and operations; set performance and content limits with engineering for standalone headsets in Unreal
-- Ran historical-accuracy reviews and approvals with HTC VIVE Arts and cultural stakeholders; documented decisions; oversaw script, dialogue, and voice-over review passes
+- Coordinated production across Wevr and partner teams in Los Angeles, Atlanta, Malta, the UK, Taipei, and Xi'an, reporting to the CEO
+- Kept schedules, budgets, and contracts on track with external studios, including the Atlanta interactive developer MotR
+- Tracked builds, reviews, and fixes from first playable through beta to the public opening on 29 July 2025, running in Unreal Engine on standalone VIVE Focus Vision headsets for up to 150 guests per session
+- Organized script, dialogue, and voice-over reviews and historical-accuracy approvals with HTC VIVE Arts
 
 ### Earlier
 
-- **KWEST**, Producer and Technical Artist (2018 to 2019). Feature delivery and production coordination for an AR startup; technical art, VFX, materials, shaders, and optimization
-- **e-TechServices**, Technical Sales Engineer (2018). Server solution design, configuration, and support
+- **KWEST**, Producer and Technical Artist (2018 to 2019). An AR startup building location-based mobile games. Started as technical artist (3D models, animation, UI, particles, materials, and shaders in Unity for iOS) and stepped up to producer, running feature planning and releases for a team of engineers, artists, and designers; produced demo builds and highlight reels, including a Niantic demo and a Mastercard reel
 - **Perilous Orbit**, Technical Artist Intern (2017 to 2018). Unreal Engine 4, shader networks, visual scripting, and C++ on VR projects
 - **University of Florida Digital Worlds Institute**, AV Technician and Student Assistant (2016 to 2017)
 
