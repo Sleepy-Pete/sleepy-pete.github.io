@@ -14,6 +14,12 @@ date: 2025-08-14
 
 **SIGGRAPH Spatial Storytelling '25** | Vancouver, BC, Canada | August 10-14, 2025
 
+## Watch the Talk
+
+<iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/_g4QYLGeNAc" title="Creating a Universe from Scratch: Studio Syro's Handcrafted VR Pipeline (SIGGRAPH 2025)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+**[Watch on YouTube](https://www.youtube.com/watch?v=_g4QYLGeNAc)**
+
 ## Authors
 
 **Peter Ariet** - Studio Syro, San Diego, USA  
@@ -101,6 +107,7 @@ VR animation, Quill, immersive animation, spatial storytelling, VR production pi
 
 ## Links
 
+- [Talk recording on YouTube](https://www.youtube.com/watch?v=_g4QYLGeNAc)
 - [ACM Digital Library](https://dl.acm.org/doi/10.1145/3721244.3742456)
 - [SIGGRAPH 2025 Spatial Storytelling Proceedings](https://www.siggraph.org/wp-content/uploads/2025/08/Spatial-Storytelling.html)
 - [Studio Syro](https://studiosyro.com)

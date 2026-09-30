@@ -26,7 +26,7 @@ A comprehensive look at Studio Syro's VR-native production pipeline, covering ho
 
 **Topics**: VR animation, Quill, spatial storytelling, production pipeline, handcrafted animation
 
-[Read More →](/publications/Creating-a-Universe-from-Scratch) | [ACM Digital Library](https://dl.acm.org/doi/10.1145/3721244.3742456)
+[Read More →](/publications/Creating-a-Universe-from-Scratch) | [Watch the Talk](https://www.youtube.com/watch?v=_g4QYLGeNAc) | [ACM Digital Library](https://dl.acm.org/doi/10.1145/3721244.3742456)
 
 ---
 
@@ -40,7 +40,7 @@ A comprehensive look at Studio Syro's VR-native production pipeline, covering ho
 
 ## Presentations & Talks
 
-- **SIGGRAPH 2025**, Spatial Storytelling program, Vancouver, BC: presented Creating a Universe from Scratch with Nick Ladd
+- **SIGGRAPH 2025**, Spatial Storytelling program, Vancouver, BC: presented Creating a Universe from Scratch with Nick Ladd ([watch the talk](https://www.youtube.com/watch?v=_g4QYLGeNAc))
 
 ## Related Work
 

@@ -1,6 +1,6 @@
 # peterariet.com - working notes
 
-Last updated: 2026-09-28
+Last updated: 2026-09-30
 
 ## What the site is
 
@@ -48,6 +48,7 @@ Then screenshot desktop, tablet (830 to 1150 px), and mobile in light and dark, 
 
 ## Changelog
 
+- **2026-09-30**: SIGGRAPH 2025 talk recording (YouTube `_g4QYLGeNAc`) embedded on the Creating a Universe from Scratch page, linked from Publications and the SIGGRAPH Spatial Storytelling 2025 recognition page.
 - **2026-09-28**: Matched the site to the updated LinkedIn profile. New headline and tab title; Studio Syro 2020 to present; Wevr as a Sep 2024 to Jul 2025 contract with the LinkedIn bullets on home, About, Wevr, and Terracotta Warriors; new open-to line; e-TechServices removed and KWEST reworded; Studio Syro page rewritten in the third person; Wevr page's older projects relabeled "Wevr's earlier work" (Matrix listed as prototypes, per wevr.com/wevrtenyears) and superlatives removed. Résumé PDF rebuilt with phone, visible LinkedIn URL, and the same facts.
 - **2026-09-05**: Click-to-load YouTube posters site-wide (no YouTube chrome on the poster, 3 to 6 MB less per page). Studio Syro logo on its page reduced to 400 px (300 px on mobile).
 - **2026-09-04**: Tablet-width centering, hero photo centered, text links on one baseline. npm audit taken from 14 findings to 0 (lockfile rebuilt, sharp 0.35, toml 5, xmldom override to 0.9.12).

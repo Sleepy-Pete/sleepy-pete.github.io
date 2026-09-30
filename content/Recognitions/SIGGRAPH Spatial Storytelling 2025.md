@@ -19,6 +19,8 @@ Publication in the SIGGRAPH 2025 Spatial Storytelling proceedings, recognizing c
 
 **Spatial Storytelling Proceedings Page**: [ACM Digital Library](https://dl.acm.org/doi/proceedings/10.1145/3721244)
 
+**Talk**: [[publications/Creating a Universe from Scratch|Creating a Universe from Scratch]], presented with Nick Ladd ([watch on YouTube](https://www.youtube.com/watch?v=_g4QYLGeNAc))
+
 ## About SIGGRAPH
 
 SIGGRAPH is the premier international conference and exhibition on computer graphics and interactive techniques. The conference brings together researchers, artists, and professionals to share the latest advances in computer graphics, animation, visualization, and interactive techniques.
